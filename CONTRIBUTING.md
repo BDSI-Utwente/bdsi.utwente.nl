@@ -4,9 +4,9 @@
 
 -   `git`
     -   install git, if needed (<https://git-scm.com/>)
--   `ruby >=2.5, >=3.x`
+-   `ruby >=2.7, >=3.x`
     -   install or update ruby, if needed (<https://jekyllrb.com/docs/installation/>)
-    - while ruby 3.x or greater _should_ work, I've had more success with ruby 2.5 or greater. 
+    - while ruby 3.x or greater _should_ work, I've only tested with ruby 2.7. 
     -   make sure to also install the jekyll and bundler gems
 
 Open a terminal, and cd to an appropriate location. Then clone this repository, and cd into it.
