@@ -30,7 +30,7 @@ function handleEvent(event) {
         return;
     }
 
-    event.querySelector(".date").textContent = formatDate(start, end, time);
+    event.querySelector(".date").innerHTML = formatDates(start, end, time);
 
     if (isFuture(end) || isFuture(start)) {
         upcoming.appendChild(event);
@@ -72,41 +72,66 @@ function isToBeAnnounced(date) {
  * @param {string?} end
  * @param {string?} time
  */
-function formatDate(start, end, time) {
+function formatDates(start, end, time) {
     if (!start) {
         return "";
     }
 
-    if (isToBeAnnounced(start)) {
-        return "To be announced";
-    }
-
+    let _start, _end;
     if (start) {
-        start = dayjs(start);
+        _start = dayjs(start);
     }
     if (end) {
-        end = dayjs(end);
+        _end = dayjs(end);
     }
 
-    let date = "";
-    if (start && end) {
-        if (start.isSame(end, "month")) {
-            date = `${start.format("MMMM D")} — ${end.format("D")}`;
-        } else {
-            date = `${start.format("MMMM D")} — ${end.format("MMMM D")}`;
-        }
+    if (!_start.isValid()) {
+        return start;
+    }
+
+    let same_month = _start.isSame(_end, "month");
+    let same_year = _start.isSame(_end, "year");
+    let this_year = _start.isSame(now, "year");
+
+    let f_start = "",
+        f_end = "";
+
+    if (!this_year && (!_end || !_end.isValid() || !same_year)) {
+        // if the event is next year, and the end date is in a different year, or there is no end date, use "month day, year"
+        f_start = _start.format("MMMM Do, YYYY");
     } else {
-        date = start.format("MMMM D");
+        // if the event is this year, use "month day"
+        f_start = _start.format("MMMM Do");
     }
-    if (!start.isSame(now, "year")) {
-        if (end) {
-            date += `, ${end.format("YYYY")}`;
-        } else {
-            date += `, ${start.format("YYYY")}`;
-        }
+
+    if (_end && _end.isValid() && (!same_year || !this_year)) {
+        // if event starts next year, or ends in a different year from the start date, use "month day[, year] - month day, year"
+        f_end = _end.format(" – MMMM Do, YYYY");
+    } else if (_end && _end.isValid() && !same_month) {
+        // if event ends in a different month from the start date, use "month day  – month day"
+        f_end = _end.format(" – MMMM Do");
+    } else if (_end && _end.isValid() && same_month) {
+        // if event ends in the same month as the start date, use "month day  – day"
+        f_end = _end.format(" – Do");
+    } else if (_end && !_end.isValid()) {
+        // if event end is not a valid date (i.e. "to be announced"), use "month day[, year]  – (raw end date)"
+        f_end = " – " + end;
     }
+
+    let date = addSuperscriptOrdinals(f_start + f_end);
     if (time) {
         date += `, ${time}`;
     }
     return date;
+}
+
+/**
+ *
+ * @param {@class String} text input string
+ * @returns input with ordinal suffixes encapulated in <sup> tags
+ */
+function addSuperscriptOrdinals(text) {
+    return text.replace(/\b(\d+)(st|nd|rd|th)\b/g, (match, p1, p2) => {
+        return `${p1}<sup style="text-transform: none;">${p2}</sup>`;
+    });
 }
