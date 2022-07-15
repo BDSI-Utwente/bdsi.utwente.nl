@@ -164,14 +164,14 @@ sup {
 }
 
 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #11d8ff;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: underline;
 }
 
@@ -2646,12 +2646,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #11d8ff;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -4003,13 +4003,13 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   background-color: #ffffff;
   border: 1px solid #dee2e6;
 }
 
 .page-link:hover {
-  color: #11d8ff;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -11000,12 +11000,12 @@ h1 + h6 {
 }
 
 a h1, h1 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h1:hover, a h1:active, a h1:focus-within, h1 a:hover, h1 a:active, h1 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11041,12 +11041,12 @@ h2 + h6 {
 }
 
 a h2, h2 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h2:hover, a h2:active, a h2:focus-within, h2 a:hover, h2 a:active, h2 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11078,12 +11078,12 @@ h3 + h6 {
 }
 
 a h3, h3 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h3:hover, a h3:active, a h3:focus-within, h3 a:hover, h3 a:active, h3 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11111,12 +11111,12 @@ h4 + h6 {
 }
 
 a h4, h4 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h4:hover, a h4:active, a h4:focus-within, h4 a:hover, h4 a:active, h4 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11140,12 +11140,12 @@ h5 + h6 {
 }
 
 a h5, h5 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h5:hover, a h5:active, a h5:focus-within, h5 a:hover, h5 a:active, h5 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11165,12 +11165,12 @@ div > h6:first-child, a > h6:first-child {
 }
 
 a h6, h6 a {
-  color: #008eaa;
+  color: var(--link-colour, var(--accent-colour, #008eaa));
   text-decoration: none;
 }
 
 a h6:hover, a h6:active, a h6:focus-within, h6 a:hover, h6 a:active, h6 a:focus-within {
-  color: #11d8ff;
+  filter: brightness(120%);
   text-decoration: underline;
 }
 
@@ -11184,7 +11184,25 @@ h2 {
 
 h1,
 h2 {
-  color: #008eaa;
+  color: var(--accent-colour, #008eaa);
+}
+
+a {
+  text-decoration: underline;
+  filter: var(--link-filter);
+}
+
+a:hover, a:active, a:focus {
+  filter: var(--link-hover-filter, brightness(120%));
+}
+
+a.button {
+  text-decoration: none;
+  filter: none;
+}
+
+a.button:hover, a.button:active, a.button:focus {
+  filter: brightness(110%);
 }
 
 .hero {
@@ -11202,7 +11220,7 @@ body {
   display: inline-block;
   white-space: nowrap;
   color: #ffffff;
-  background: #008eaa;
+  background: var(--accent-colour, #008eaa);
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   line-height: 2em;
@@ -11227,8 +11245,9 @@ body {
   font-size: 32px;
 }
 
-.button:hover {
-  background-color: #00b9dd;
+.button:hover, .button:active, .button:focus {
+  background: var(--accent-colour, #008eaa);
+  filter: brightness(110%);
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   text-decoration: none;
@@ -11247,22 +11266,6 @@ body {
   padding: 0.5em;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-.content ul,
-.content ol {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.content ul li,
-.content ol li {
-  margin-bottom: 5px;
-  margin-left: 20px;
-}
-
-.content a {
-  text-decoration: underline;
 }
 
 .hamburger {
