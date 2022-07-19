@@ -10964,6 +10964,30 @@ h3 {
   transform: translate3d(0, -16px, 0) rotate(-90deg);
 }
 
+.project .introduction {
+  max-height: 24em;
+  overflow: hidden;
+  padding-bottom: 8em;
+}
+
+.project .introduction::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 8em;
+  background: linear-gradient(to bottom, transparent, white 75%), linear-gradient(to bottom right, transparent, white);
+}
+
+.project .introduction .read-more {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1;
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: 300;
@@ -11691,6 +11715,36 @@ blockquote {
 .author-list .author-list-item {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.author-list .author-list-item.external {
+  color: #1f2229 !important;
+  text-decoration: underline;
+  text-decoration-color: #1f2229;
+}
+
+.author-list .author-list-item.external h1 {
+  color: #1f2229 !important;
+}
+
+.author-list .author-list-item.external h2 {
+  color: #1f2229 !important;
+}
+
+.author-list .author-list-item.external h3 {
+  color: #1f2229 !important;
+}
+
+.author-list .author-list-item.external h4 {
+  color: #1f2229 !important;
+}
+
+.author-list .author-list-item.external h5 {
+  color: #1f2229 !important;
+}
+
+.author-list .author-list-item.external h6 {
+  color: #1f2229 !important;
 }
 
 .author-list .author-list-item img {
