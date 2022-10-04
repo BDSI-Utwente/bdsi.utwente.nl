@@ -11236,6 +11236,13 @@ a.button:hover, a.button:active, a.button:focus {
 body {
   background-color: #ffffff;
   color: #1f2229;
+  counter-reset: figure;
+}
+
+.label-figure::before {
+  counter-increment: figure;
+  content: "Figure " counter(figure) ": ";
+  font-weight: bolder;
 }
 
 .button {
@@ -11749,9 +11756,10 @@ blockquote {
 
 .author-list .author-list-item img {
   height: 1.3em;
-  width: auto;
+  width: 1.3em;
   border-radius: 50%;
   margin-right: .2em;
+  object-fit: cover;
 }
 
 #footer {
@@ -11767,7 +11775,7 @@ blockquote {
   margin: 0 auto;
   max-width: calc(max(900px, 80vw));
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -11815,6 +11823,17 @@ blockquote {
   overflow: hidden;
 }
 
+#footer .tiny-header {
+  font-size: .8em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#footer a + .tiny-header {
+  margin-top: .5em;
+}
+
 #footer a {
   text-decoration: none;
   display: block;
@@ -11827,7 +11846,7 @@ blockquote {
 }
 
 #footer a img.profile-image {
-  height: auto;
+  height: 1.3em;
   width: 1.3em;
   border-radius: 50%;
   position: relative;
@@ -11835,6 +11854,7 @@ blockquote {
   margin-right: .3em;
   filter: saturate(0%) brightness(120%) contrast(120%);
   transition: filter .2s ease-in-out;
+  object-fit: cover;
 }
 
 #footer a img.logo {
@@ -11995,21 +12015,23 @@ blockquote {
 
 .profile-meta .profile-socials {
   display: flex;
+  flex-flow: column nowrap;
   width: min-content;
-  padding: 1.3em .3em 0em;
-  gap: .3em;
   background-color: #008eaa;
   border-radius: 3px;
   position: relative;
+  padding: 0.1em 0.6em 0;
 }
 
-.profile-meta .profile-socials::after {
-  content: "Get in touch!";
-  position: absolute;
-  left: .6em;
-  top: .1em;
+.profile-meta .profile-socials .socials-callout {
   color: #ffffff;
   font-family: "Nothing You Could Do", cursive;
+  min-width: max-content;
+}
+
+.profile-meta .profile-socials .socials-buttons {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .profile-meta .profile-socials a.icon {
