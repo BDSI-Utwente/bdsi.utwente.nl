@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>BDSi - Behavioural Data Science incubator - Services</title>
+  <title>Linear method apps using interactive visualization (Shiny Apps)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/images/favicon.png">
   <link href="/assets/css/style.css?v=1666272209" rel="stylesheet">
@@ -29,7 +29,7 @@
 
 </head>
 
-  <body class='page page-services-list'>
+  <body class='page '>
 
   <div class="main-menu-mobile" id="main-menu-mobile">
     <ul>
@@ -356,168 +356,47 @@
 </div>
 
     <div id="content">
-      <div class="container py-6">
-    <h1 class="hero text-white">Our services</h1>
-</div>
+      <p>In the latest bookdown edition of the textbook titled <a href="https://bookdown.org/pingapang9/linear_models_bookdown/"><strong>Analysing Data using Linear Models</strong></a> by Stéphanie M. van den Berg, we make use of Shiny apps to explain fundamental concepts in statistics and linear models in an interactive manner. The apps are integrated directly into the online textbook, making it accessible for both students and teachers.</p>
 
-<div class="strip strip-diagonal">
-    <div class="container">
-        
-            <div class="service service-summary mb-2">
-                <div class="service-content">
-                    <h1 class="service-title">
-                        <a href="/services/advanced_statistics/">Advanced Statistics</a>
-                    </h1>
-                    <p>Sophisticated statistical techniques, applying state of the art methods to complicated data and obtaining meaningful insights.</p>
+<p>In this article, we introduce functionalities of four apps: normal distribution, z-distribution, correlation, and intra-correlation. They are designed to suit the needs of users in different roles, such as students and teachers.</p>
 
-                    <p>A lot of modern research in the behavioural sciences involves time-intensive and/or multivariate data, think of sensor data, combined with wifi tracking, eye-tracking, and self-reports. Analysing such data sets requires knowledge and expertise in methods that are suitable for such complicated data sets. We can help you extract meaningful insights from your data sets using sophisticated methods.</p>
+<h3 id="normal-distribution-app"><a href="https://bdsi.shinyapps.io/linear-models-book__normal-distribution/">Normal distribution App</a></h3>
 
-<h2 id="what-we-can-offer">What we can offer:</h2>
+<p>This app is used in <a href="https://bookdown.org/pingapang9/linear_models_bookdown/intro.html#sec:normal"><strong>Section 1.19, The normal distribution</strong></a> of the book:</p>
+<iframe width="100%" height="400px" src="https://bdsi.shinyapps.io/linear-models-book__normal-distribution/"> </iframe>
 
-<p>We can offer help in using the following data-analytic techniques and help with the interpretation of the results.</p>
+<p>With normal distribution app, users can observe the interactive change in the shape of normal distribution when they adjusts two parameters: the mean, and the standard deviation. The default display of the app is standard normal distribution (mean = 0, std = 1), which can be reset. Thus, users can compare the change to the default setting.</p>
 
-<ol>
-  <li>Models for time-intensive data</li>
-  <li>Multilevel models/linear mixed models</li>
-  <li>Bayesian techniques and/or MCMC methods</li>
-  <li>Predictive modelling</li>
-  <li>Time-series modelling</li>
-  <li>Multidimensional scaling</li>
-  <li>Item-response theory</li>
-  <li>Structural equation modelling (SEM) and much more…</li>
-</ol>
+<h3 id="z-distribution-app"><a href="https://bdsi.shinyapps.io/linear-models-book__z-distribution/">z distribution App</a></h3>
 
-                </div>
-            </div>
-        
-            <div class="service service-summary mb-2">
-                <div class="service-content">
-                    <h1 class="service-title">
-                        <a href="/services/community/">Community</a>
-                    </h1>
-                    <p>The BDSi Data Science Community is open to everyone related to BMS and interested in data science. Within the community we can share ideas, questions, and expertise with eachother.</p>
+<p>z-distribution apps offeres users more flexibility with three modes, namely, critical values, p-values, and combined. Users can select the mode by adding <code class="language-plaintext highlighter-rouge">?mode=critical_values</code> , <code class="language-plaintext highlighter-rouge">?mode=p_values</code> , or <code class="language-plaintext highlighter-rouge">?mode=combined</code> to the app’s URL.</p>
 
-                    <p>Part of supporting data science in the long term is building a community of data scientists and researchers interested in data science. Within the community we can share ideas, questions, and expertise with eachother.</p>
+<p>In the online textbook, the mode <code class="language-plaintext highlighter-rouge">critical_values</code> is used in <a href="https://bookdown.org/pingapang9/linear_models_bookdown/prop.html#null-hypothesis-concerning-a-proportion"><strong>Section 3.4: Null hypothesis concerning a proportion</strong></a>. Accordingly, readers (i.e. students) can only change the type I error of the two-sided hypothesis testing. The corresponding change in the critical z values to reject the null-hypothesis for a proportion, and p-values are reflected in the figure.</p>
 
-<p>The BDSi Data Science Community is free to join for anyone affiliated with the University of Twente, or involved in a research project of the University of Twente.</p>
+<p>Switching to mode <code class="language-plaintext highlighter-rouge">p_values</code> allows users to calculate p-value of the two-sided hypothesis test given the z-values and vice versa.</p>
 
-<h3 class="mt-3">Do you have a University of Twente account?</h3>
-<div class="row">
-  <div class="col-md-6 panel">
-    <blockquote>Yes</blockquote>
-    You can instantly join the BDSi Data Science Community team by
-    following these steps:
-    <ol>
-      <li>Open Teams</li>
-      <li>Go to the "Teams" tab</li>
-      <li>Make sure you're on the "all teams" page</li>
-      <li>Click "Join or create team"</li>
-      <li>Use the code <code>t1p0d1d</code></li>
-    </ol>
-  </div>
-  <div class="col-md-6">
-    <blockquote class="mt-4 mt-md-0">No</blockquote>
-    You can apply to join the BDSi Data Science Community team using the
-    link below. We'll let you in as soon as possible.
-    <br />
-    <a href="https://teams.microsoft.com/l/channel/19%3aByywZOzEom4TD269aMiOnryoyS6qxlP9qHo8PONi5Y01%40thread.tacv2/General?groupId=9e63c81f-f953-4d91-8826-385bb1ddb2f8&amp;tenantId=723246a1-c3f5-43c5-acdc-43adb404ac4d" class="button mt-2 large" style="
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: min-content;
-      ">
-      Join the BDSi Data Science Community
-    </a>
-  </div>
-</div>
-<h3 class="mt-3">Welcome to the community!</h3>
-<p>Don’t forget to introduce yourself.</p>
+<iframe width="100%" height="400px" src="https://bdsi.shinyapps.io/linear-models-book__z-distribution/?mode=p_values"> </iframe>
 
-                </div>
-            </div>
-        
-            <div class="service service-summary mb-2">
-                <div class="service-content">
-                    <h1 class="service-title">
-                        <a href="/services/data_visualisation/">Data Visualisation</a>
-                    </h1>
-                    <p>Communicate your findings with superior visualizations, giving information a truthful and credible visual context.</p>
+<p>For the full illustration, users can select “combined” mode to play around with different settings in type I error, z-values, and p-values.</p>
 
-                    <blockquote>
-  <p>“When we reason about evidence, certain methods for displaying and analyzing data are better than others[…] Superior methods are more likely to produce truthful, credible, and precise findings”</p>
+<iframe width="100%" height="600px" src="https://bdsi.shinyapps.io/linear-models-book__z-distribution/?mode=combined"> </iframe>
 
-  <p>Edward Tufte</p>
-</blockquote>
+<h3 id="correlation-app"><a href="https://bdsi.shinyapps.io/linear-models-book__correlation/">Correlation App</a></h3>
 
-<p>Using abstract, non-representational pictures to illustrate data is a very complex task involving many skills: visual-artistic, empirical-statistical thinking and even logical-mathematical. We see evidence of visualisations every day, from news articles to social media shared infographics. However, most of these visual displays of data often fail to present a clear picture and to enable discovery, insights and analysis. Being able to tell compelling visual stories with your data is very important in todays’ data abundant environment. We can help you develop aesthetically pleasing and effective data visualisations for your projects, from the data structure to publication.</p>
+<p>Like previous apps, we design two modes for the correlation app: show linear fit (<code class="language-plaintext highlighter-rouge">?mode = linear</code>), or not (<code class="language-plaintext highlighter-rouge">?mode = null</code>, default mode).</p>
 
-<p>What we can offer:</p>
+<p>In <a href="https://bookdown.org/pingapang9/linear_models_bookdown/simple.html#pearson-correlation"><strong>section 4.8 Pearson correlation</strong></a> of the book, the embedded app shows the default mode. Readers can only interact by changing the value of Pearson correlation from 0 to 1. When the correlation is 1, the dots are on a perfect straight line; when the correlation is 0, there is complete randomness.</p>
 
-<ol>
-  <li>Data preparation techniques for visualisation, from dot to story</li>
-  <li>Data visualisation software and open source codes (e.g., plotly, d3, gephi, dash, ggplot2, etc)</li>
-  <li>Workshops in basic principles of visualisations, fundamentals of communicating with data, visual and statistical thinking, tools and techniques for building visualisations</li>
-  <li>Interactive data visualisation systems - escaping the flatland of paper (adding interactivity to your data)</li>
-  <li>Building dashboards (e.g., R shiny apps, dash apps, web apps)</li>
-  <li>Visualisation theories for decision making</li>
-  <li>Fundamentals for displaying quantitative and qualitative information</li>
-</ol>
+<p>If users select mode <code class="language-plaintext highlighter-rouge">linear</code>, they can see the “show linear fit” checkbox as below.</p>
 
-                </div>
-            </div>
-        
-            <div class="service service-summary mb-2">
-                <div class="service-content">
-                    <h1 class="service-title">
-                        <a href="/services/events/">Workshops & Webinars</a>
-                    </h1>
-                    <p>We organise workshops and courses related to programming and statistics, and webinars on trends and advancements in data science.</p>
+<iframe width="100%" height="400px" src="https://bdsi.shinyapps.io/linear-models-book__correlation/?mode=linear"> </iframe>
 
-                    <p>BDSi organizes a broad scope of workshops and seminars aimed at supporting data science at BMS. For an overview of upcoming and previous events, see our <a href="/events/">events</a> page.</p>
+<h3 id="intra-class-correlation-app"><a href="https://bdsi.shinyapps.io/linear-models-book__intra-class-correlation/">Intra-class correlation App</a></h3>
 
-<p>If you or your research group feel there is a need for a workshop on a particular topic, please do not hesitate to get in touch. You can email us at <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a>, or contact anyone in our <a href="/team/">team</a> directly.</p>
+<p>The intra-class correlation app also has two modes: <code class="language-plaintext highlighter-rouge">light</code> and <code class="language-plaintext highlighter-rouge">full</code>. The version embedded in <a href="https://bookdown.org/pingapang9/linear_models_bookdown/premidpost.html#pre-mid-post-intervention-designs"><strong>Section 13.1 - Pre-mid-post intervention designs</strong></a> uses <code class="language-plaintext highlighter-rouge">light</code> mode to visualize the influence of high ICC values on the residual plots. The residuals plots in two panels are different due to whether patient variable is included in the linear model (the right panel) or not (the left panel).</p>
 
-                </div>
-            </div>
-        
-            <div class="service service-summary mb-2">
-                <div class="service-content">
-                    <h1 class="service-title">
-                        <a href="/services/machine_learning/">Machine Learning</a>
-                    </h1>
-                    <p>Adapt and fine-tune research questions for machine intelligence to understand. Implement, tune, evaluate and explain models and results.</p>
-
-                    <p>We offer a range of support for researchers looking to apply machine learning techniques, from the conception of new lines of research to running large-scale models on a high-performance computing cluster on campus, or in the cloud.</p>
-
-<h3 id="conception">Conception</h3>
-
-<p>We believe it’s important to have an honest discussion about expectations and limitations before we embark on a new data science adventure. We’re excited about machine learning, and believe that current approaches have much to offer for social science research. At the same time, we’re also aware of the limitations set by the machine learning models, available data, etc.</p>
-
-<p>While the advancement of artificial intelligence in popular culture often seems to be almost indistinguishable from magic - the reality is that we are a long way from a ‘general’ artificial intelligence. That means that (for now, at least) whether your research questions can be answered through the application of machine learning models depends heavily on the type of question, the quality and amount of training data, and the available resources.</p>
-
-<p>We’re more than happy to discuss what machine learning applications may be possible for your research, and what kind of questions - and answers! - you can expect.</p>
-
-<h3 id="preparing-a-model">Preparing a model</h3>
-
-<p>The success of a machine learning model depends heavily on the care and attention with which it is implemented. Data often needs to be cleaned and reshaped, variables may need to be reshaped or combined to create useful and meaningful features, and model parameters will need to be tuned for best results.</p>
-
-<p>Each of these steps relies on both technical expertise as well a deep understanding of the subject matter. As such, we believe it is important to have an ongoing conversation between BDSi data science experts and researchers throughout a data science research project.</p>
-
-<p>Depending on your needs, BDSi can act as a consultant for particularly complex models, or help you think through your entire model from design to implementation.</p>
-
-<h3 id="running-a-model">Running a model</h3>
-
-<p>BDSi has access to the high-performance computing cluster hosted by the EEMCS (EWI) faculty, allowing us to run large machine learning models on-premise. Alternatively, we can also help you run models in a virtual research environment such as the ones offered by LISA.</p>
-
-<h3 id="interpreting-model--results">Interpreting model &amp; results</h3>
-
-<p>In many cases, being able to interpret the model is as important as the accuracy of the model itself. We can help you get an intuitive understanding of the model and its’ results, and create visualizations to communicate with your audience.</p>
-
-                </div>
-            </div>
-        
-    </div>
-</div>
+<p>With <code class="language-plaintext highlighter-rouge">full</code> mode, users can change the number of respondents and/or number of measurements in addition to the value of intraclass correlation.
+&lt;iframe width=”100%” height=400px” src=”https://bdsi.shinyapps.io/linear-models-book__correlation/?mode=full”&gt; &lt;/iframe&gt;</p>
 
     </div>
     <div id="footer">
