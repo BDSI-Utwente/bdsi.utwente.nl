@@ -1,0 +1,590 @@
+Data Wrangling
+========================================================
+author: Karel Kroeze <k.a.kroeze@utwente.nl>
+date: September 21st, 2021
+width: 1920
+height: 1280
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+
+
+Overview
+========================================================
+type: toc
+
+# reading data
+# tidyverse
+# tidy data
+# mutations
+# transformations
+# imputations
+
+Reading data
+==============
+type: section
+
+Reading data - point & click
+========================================================
+
+![import data](images/data-import.gif)
+
+```{r} 
+train <- read.csv("D:/Synced/OneDrive/University of Twente/BDSI - General/Data Science Week/data/train.csv")
+```
+
+***
+
+* Simple
+* Effective
+* limited to common data types
+* Not very portable (absolute path)
+    - easy to manually tweak
+
+Reading data - code
+========================================================
+```{r}
+train <- readr::read_csv("data/train.csv")
+```
+
+***
+
+* Simple
+* Effective
+* Portable (relative path)
+* there's a package for every data type
+
+## See also:
+* [haven](https://haven.tidyverse.org/) for SPSS, Stata, and SAS data,
+* [readxl](https://readxl.tidyverse.org/) or [openxlsx](https://cran.r-project.org/web/packages/openxlsx/) for Excel spreadsheets,
+* [rvest](https://github.com/tidyverse/rvest) for web scraping,
+
+and [various other packages](https://www.tidyverse.org/packages/#import) for importing all sorts of data.
+
+
+Tidyverse
+========================================================
+type: section
+
+Tidyverse
+========================================================
+## Data is **messy**
+* different sources, different formats, units, spellings...
+* missing data
+* structured, semi-structured, unstructured
+
+## R is **messy**
+* technical debt
+* lots of packages, lots of authors
+
+***
+
+## Tidyverse is... **tidy**
+* an **opinionated** set of packages for data science
+* shared philosophy, design, grammar and data structure
+
+## Tidy data is an **opinion**
+* is it "right"?  
+        <small>_usually_</small>
+* is it useful?  
+        <small>_absolutely_</small>
+* used in University of Twente education
+* used by BDSi data scientists
+        <small>_but we're fine with messy when it's necessary!_</small>
+
+## See also
+* https://www.tidyverse.org/
+* https://r4ds.had.co.nz/
+
+Tidy Data
+===========
+type: section
+
+Tidy Data?
+=========
+type: prompt
+
+```{r}
+table1
+table2
+```
+
+***
+
+```{r}
+table3
+table4a
+table4b
+```
+
+Tidy Data
+===========
+<img src="images/tidy-data.png" style="width: 100%;" alt="rules of tidy data" />
+
+* each **column** is a **variable**
+* each **row** is an **observation**
+* each **cell** is a **value**
+
+Tidy Data?
+=========
+type: prompt
+
+```{r include=FALSE}
+library(glue)
+
+clamp <- function(x, min, max) {
+    pmax(pmin(x, max), min)
+}
+
+grade <- function(x) {
+    clamp(x, 1, 10) %>% round(1)
+}
+
+test_results <-
+    tibble(
+    student=glue("s{ID}", ID = sample(1.5e6:2.5e6, 10)),
+    res_meth_1=rnorm(10, 7, 1.5) %>% grade(),
+    res_meth_2=ifelse(res_meth_1 < 6, rnorm(10, 6.5, .5) %>% grade(), NA),
+    lin_meth_1=rnorm(10, 6.5, 1.5) %>% grade(),
+    lin_meth_2=ifelse(lin_meth_1 < 6, rnorm(10, 6.5, .5) %>% grade(), NA),
+    math_stat_1=rnorm(10, 6, 1.5) %>% grade(),
+    math_stat_2=ifelse(math_stat_1 < 6, rnorm(10, 6.5, .5) %>% grade(), NA),
+)
+```
+
+```{r}
+test_results
+```
+
+
+```{r}
+train %>% select(Id, Neighborhood, MiscFeature, MiscVal, Fence)
+```
+
+
+Tidy Data?
+===================
+type: prompt
+
+```{r}
+test_results %>% 
+    rowwise() %>%
+    transmute(
+        student,
+        res_meth = max(
+            c_across(contains("res")),
+            na.rm=TRUE),
+        lin_meth = max(
+            c_across(contains("lin")),
+            na.rm=TRUE),
+        math_stat = max(
+            c_across(contains("stat")), 
+            na.rm=TRUE)
+    )
+```
+
+***
+
+```{r}
+test_results %>%
+    rowwise() %>%
+    transmute(
+        student,
+        res_meth = max(
+            c_across(contains("res")),
+            na.rm=TRUE),
+        lin_meth = max(
+            c_across(contains("lin")),
+            na.rm=TRUE),
+        math_stat = max(
+            c_across(contains("stat")), 
+            na.rm=TRUE)
+    ) %>%
+    pivot_longer(
+        -student,
+        names_to="course",
+        values_to="grade"
+    )
+```
+
+Tidy data?
+=============
+type: prompt
+
+```{r}
+test_results %>%
+    pivot_longer(
+        -student,
+        names_to=c("course", "attempt"),
+        names_pattern="(.*)_(\\d+)",
+        values_to="result",
+        values_drop_na=TRUE
+    )
+```
+
+*** 
+
+
+```{r}
+test_results %>%
+    pivot_longer(
+        -student,
+        names_to=c("course", "attempt"),
+        names_pattern="(.*)_(\\d+)",
+        values_to="result",
+        values_drop_na=TRUE
+    ) %>% 
+    group_by(student, course) %>%
+    summarize(grade = max(result))
+```
+
+
+
+Housing Data
+============
+type: section
+
+Housing Data
+============
+
+```{r}
+train <- readr::read_csv("data/train.csv")
+train
+```
+
+
+Housing Data
+============
+type: prompt
+
+```{r}
+test <- readr::read_csv("data/test.csv")
+test
+```
+
+- one variable less in test data...
+    - can you guess which?
+
+Outcome :: Sale Price
+============
+
+```{r fig.width=16, fig.height=9, dpi=300, out.width="100%", echo=FALSE }
+library(ggplot2)
+library(patchwork)
+
+hist <- ggplot(train, aes(SalePrice)) + 
+    geom_histogram() + 
+    scale_x_continuous(labels = scales::dollar)
+box <- ggplot(train, aes(SalePrice)) + 
+    geom_boxplot() + 
+    scale_x_continuous(labels = scales::dollar)
+qq <- ggplot(train, aes(sample = SalePrice)) + 
+    stat_qq() + 
+    stat_qq_line() + 
+    labs(x = "", y = "") + 
+    scale_y_continuous(labels = scales::dollar)
+
+# patchwork magic!
+hist | qq / box
+```
+
+Strongly skewed -> Log transform?
+
+Outcome :: log(SalePrice)
+============
+```{r}
+library(magrittr) # %<>% operator
+
+train %<>% mutate(LogSalePrice = log(SalePrice))
+```
+
+
+```{r fig.width=16, fig.height=8, dpi=300, out.width="100%", echo=FALSE }
+library(ggplot2)
+library(patchwork)
+
+hist <- ggplot(train, aes(LogSalePrice)) + 
+    geom_histogram()
+box <- ggplot(train, aes(LogSalePrice)) + 
+    geom_boxplot()
+qq <- ggplot(train, aes(sample = LogSalePrice)) + 
+    stat_qq() + 
+    stat_qq_line() + 
+    labs(x = "", y = "")
+
+# patchwork magic!
+hist | qq / box
+```
+
+Much better!
+
+Inputs :: Transformations
+=============
+
+* Check distributions
+* Apply transformations where necessary
+    - centralization
+    - normalization
+    - log, square root, etc.
+* **Anna** will talk more about why in thursdays' **Modelling** workshop
+* for simplicity, I will (mostly) skip transformations
+    - that assumes everything is nicely distributed
+    - you should _never_ assume, always check
+
+Inputs :: Missing Data
+=============
+```{r}
+tibble(
+    column = colnames(train),
+    missing = train %>% map_dbl(~is.na(.) %>% mean())
+) %>% 
+    arrange(-missing) %>%
+    filter(missing > .05)
+```
+
+* Mostly related to features
+    - pool, "misc", fence, fireplace, garage
+* Alley?
+* LotFrontage is 'real' missing data?
+
+Missing Data :: Mutate
+============
+![PoolQC description](images/description-pool-quality.png)
+```{r}
+train$PoolQC %>% table()
+train$PoolArea %>% table()
+```
+
+* Very few observations
+    - can't use as linear/ordinal inputs
+    - might be enough for a dichotomous input?
+    - (still sketchy at best)
+
+```{r}
+train %<>% 
+    mutate(Pool = !is.na(PoolQC)) %>%
+    select(-PoolQC, -PoolArea)
+```
+
+***
+```{r}
+train$Pool %>% summary()
+```
+
+Still **very** unbalanced
+
+
+Missing Data :: Mutate(2)
+============
+![MiscFeature description](images/description-misc-feature.png)
+
+* It's **Other** all the way down...
+
+```{r}
+train$MiscFeature %>% table()
+```
+
+* **Shed** is probably worth picking up
+
+```{r}
+train %<>% 
+    mutate(
+        Shed = !is.na(MiscFeature) & MiscFeature == "Shed",
+        ShedArea = ifelse(Shed, MiscVal, NA)) %>%
+    select(-MiscFeature, -MiscVal)
+```
+
+***
+
+```{r}
+train %>% select(contains("Shed"))
+train$Shed %>% summary()
+```
+
+
+Missing Data :: Split Variables
+===============
+![MiscFeature description](images/description-fence-quality.png)
+```{r}
+train$Fence %>% table()
+
+train %<>% 
+    separate(
+        Fence, 
+        sep = 2, # number of characters before split 
+        into = c("FenceQuality", "FenceType"),
+        remove = FALSE) %>%
+    mutate(
+        FenceType = recode(
+            FenceType,
+            Prv = "Privacy",
+            Wo = "WoodOrWire",
+            Ww = "WoodOrWire"),
+        FenceQuality = recode(
+            FenceQuality,
+            Gd = "Good",
+            Mn = "Minimum"),
+        Fence = !is.na(Fence))
+```
+
+***
+
+```{r}
+train %>% select(starts_with("Fence"))
+train$Fence %>% summary()
+```
+
+
+
+Missing Data :: Imputation
+========================
+
+"**LotFrontage**: Linear feet of street connected to property"
+
+* probably depends on...
+    - neighborhood
+    - lot area
+* let's try to impute based on those factors
+* We need to **normalize** before fitting the model
+    - for simplicity, I'm assuming all the usual assumptions are met
+
+```{r}
+# define a helper function for normalization
+normalize <- function(x) {
+    (x - mean(x, na.rm = T)) / sd(x, na.rm = T)
+}
+
+# apply normalize across multiple columns
+train %<>% mutate(
+    across(c(LotFrontage, LotArea), normalize)
+)
+
+# fit a multilevel model
+library(lme4)
+mlm <- lmer(
+    LotFrontage ~ LotArea + (1|Neighborhood),
+    data = train)
+LotFrontage_Predictions <- predict(mlm, train)
+```
+
+***
+
+```{r}
+summary(mlm)
+
+# coalesce picks first non-missing value
+train %<>% mutate(
+    LotFrontage = coalesce( 
+        LotFrontage, 
+        LotFrontage_Predictions))
+```
+
+
+
+Missing Data :: Homework
+=========================
+type: prompt
+
+![MiscFeature description](images/description-sale-type.png)
+
+* How many different variables are combined here?
+* Do you know what all these levels mean?
+* Are there more **Frankenstein'ed** variables like this?
+
+N'Sync
+=================
+
+* Apply the same transformations to training and testing data!
+* it's probably a good idea to **merge** the data before wrangling  
+<small>(I forgot, and I'm too lazy to go back now...)</small>
+```{r include=FALSE}
+# can't merge the data now, because we already changed the type of some columns,
+# so we'll reset the training data.
+train <- readr::read_csv("data/train.csv")
+```
+
+```{r}
+data <- bind_rows(
+    train = train,
+    test = test,
+    .id = "source"
+)
+data %>% dim()
+```
+
+* apply transformations on the _complete_ data set
+
+```r 
+data %<>% mutate( ... ) # and so forth...
+```
+
+* we can then split the data again when we're ready
+
+
+```{r}
+data %>% filter(source == "train") %>% dim()
+data %>% filter(source == "test") %>% dim()
+```
+
+Next Steps
+====================
+type: section
+
+Next Steps
+======================
+# Cheat Sheets
+* incredibly helpful 
+* nothing to be ashamed of
+* built into RStudio  
+  <small>Help -> Cheat Sheets</small>
+* on my christmas wish list  
+  <small>to decorate our new office!</small>
+
+## See https://www.rstudio.com/resources/cheatsheets/
+
+
+Next Steps
+====================
+
+# Modelling
+* We've made a start preparing the data for modelling
+* Continue with...
+    - applying transformations where needed
+    - deal with missing data
+    - remove 'defective' or irrelevant columns
+    - combine columns to create new features
+
+# Join us on **thursday** for the workshop!
+* complete modelling pipeline 
+    - use **tidymodels** to simplify wrangling
+* feature selection
+* fitting and tuning models
+* assessing model performance
+
+Next Steps
+====================
+
+# Visualization
+* We already made some simple plots for distributions
+* We may want to visualize...
+    - relations between variables
+    - differences between (sub)groups (e.g. neighborhood)
+    - predicted sales price
+    - effect of various inputs 
+    - ... and much more
+
+# Join us on **friday** for the workshop!
+* More examples with **ggplot2**
+    - more layers, facets, etc.
+* Simple interactive plots with **plotly**
+* **shiny** plots - limited only by your imagination
+    - and time  
+      <small>_mostly time_</small>
+      
+Questions?
+===================
+type: section
+
