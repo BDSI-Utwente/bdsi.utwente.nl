@@ -10,13 +10,13 @@ const resolve = async name => {
     let data = localStorage.getItem(`bdsi.people.${name}`);
     if (data) {
         data = JSON.parse(data);
-        console.log({ name, data }, "resolved from cache");
+        console.debug({ name, data }, "resolved from cache");
     } else {
         const response = await fetch(`https://people.utwente.nl/peoplepagesopenapi/contacts?query=${name}`);
         data = await response.json();
         if (data.found) {
             localStorage.setItem(`bdsi.people.${name}`, JSON.stringify(data));
-            console.log({ name, data }, "resolved from people API");
+            console.debug({ name, data }, "resolved from people API");
         } else {
             console.log({ name }, "could not be resolved")
         }

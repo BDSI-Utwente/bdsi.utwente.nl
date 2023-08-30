@@ -64,7 +64,7 @@ layout: news
 ---
 ```
 
-This front matter contains metadata about the page, in the `yaml` format. By and large, the purpose of the various tags should be clear. When in doubt, checking other pages in the same category may help. Events, for example, have extra fields for `startDate`, `endDate`, `time` and list of `tags`. Most pages will have at least a `title`, `description`, list of `authors` (or a single `author`), and `image` field.
+This front matter contains metadata about the page, in the `yaml` format. By and large, the purpose of the various tags should be clear. When in doubt, checking other pages in the same category may help. Events, for example, have extra fields for `endDate`, `time` and list of `tags`. Most pages will have at least a `title`, `description`, list of `authors` (or a single `author`), and `image` field.
 
 Any authors that match _exactly_ match a team members' `title` field get special treatment, adding a profile picture and link to their name.
 
