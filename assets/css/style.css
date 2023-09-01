@@ -11026,6 +11026,7 @@ blockquote {
 }
 
 .logo {
+  flex: 276px 0 0;
   display: none;
   margin: auto 0;
   height: 90%;
