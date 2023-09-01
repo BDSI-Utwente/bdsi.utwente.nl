@@ -10553,7 +10553,7 @@ a.text-dark:hover, a.text-dark:focus {
 .project .introduction {
   position: relative;
   height: min-content;
-  max-height: 8lh;
+  max-height: 12em;
   overflow: hidden;
 }
 .project .introduction.tall::after {
@@ -10563,7 +10563,7 @@ a.text-dark:hover, a.text-dark:focus {
   right: 0;
   content: "";
   width: 100%;
-  height: 3lh;
+  height: 3em;
   background: linear-gradient(to bottom, transparent, white 120%), linear-gradient(to bottom right, transparent, white);
 }
 .project .introduction .read-more {
@@ -11239,6 +11239,7 @@ blockquote {
 }
 .main-menu > ul > li > a {
   padding: 0.5em 1em;
+  height: calc(28px + 1em);
   height: calc(1lh + 1em);
   display: inline-block;
   font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, -apple-system;
