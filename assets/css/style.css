@@ -10624,12 +10624,15 @@ a.text-dark:hover, a.text-dark:focus {
   flex-flow: column wrap;
 }
 .calendar .calendar-items .calendar-item {
+  --link-hover-filter: none;
   display: grid;
   grid-template-columns: [left] min-content [main] 1fr;
   grid-template-rows: [title] min-content [content] 1fr;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 .calendar .calendar-items .calendar-item:has(.calendar-item-image) {
-  column-gap: 1em;
+  column-gap: 0.5em;
 }
 .calendar .calendar-items .calendar-item + .calendar-item {
   margin-top: 1em;
@@ -10637,12 +10640,19 @@ a.text-dark:hover, a.text-dark:focus {
 .calendar .calendar-items .calendar-item + .calendar-item.repeat-item {
   margin-top: 0;
 }
+.calendar .calendar-items .calendar-item:hover, .calendar .calendar-items .calendar-item:active, .calendar .calendar-items .calendar-item:focus-within {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.calendar .calendar-items .calendar-item:hover .bms-lab::after, .calendar .calendar-items .calendar-item:active .bms-lab::after, .calendar .calendar-items .calendar-item:focus-within .bms-lab::after {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 40%;
+}
 .calendar .calendar-items .calendar-item-title {
-  margin-bottom: 0.1em;
   grid-row: title;
   grid-column: main;
   margin: 0;
   padding: 0;
+  padding-top: 0.2em;
 }
 .calendar .calendar-items .calendar-item-time {
   font-size: 90%;
@@ -10658,6 +10668,18 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   grid-row: 1/-1;
   grid-column: left;
+}
+.calendar .calendar-items .calendar-item-image.bms-lab::after {
+  content: "";
+  display: block;
+  width: 33%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("/assets/images/content/bmslab/logo-light.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1199.98px) {
   .calendar .calendar-items .calendar-item-title {
