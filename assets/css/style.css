@@ -10643,7 +10643,7 @@ a.text-dark:hover, a.text-dark:focus {
 .calendar .calendar-items .calendar-item:hover, .calendar .calendar-items .calendar-item:active, .calendar .calendar-items .calendar-item:focus-within {
   background-color: rgba(255, 255, 255, 0.8);
 }
-.calendar .calendar-items .calendar-item:hover .bms-lab::after, .calendar .calendar-items .calendar-item:active .bms-lab::after, .calendar .calendar-items .calendar-item:focus-within .bms-lab::after {
+.calendar .calendar-items .calendar-item:hover .external::after, .calendar .calendar-items .calendar-item:active .external::after, .calendar .calendar-items .calendar-item:focus-within .external::after {
   background-color: rgba(0, 0, 0, 0.9);
   width: 40%;
 }
@@ -10669,17 +10669,22 @@ a.text-dark:hover, a.text-dark:focus {
   grid-row: 1/-1;
   grid-column: left;
 }
-.calendar .calendar-items .calendar-item-image.bms-lab::after {
+.calendar .calendar-items .calendar-item-image.external::after {
   content: "";
   display: block;
   width: 33%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("/assets/images/content/bmslab/logo-light.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.2s ease-in-out;
+}
+.calendar .calendar-items .calendar-item-image.external.bms-lab::after {
+  background-image: url("/assets/images/content/bmslab/logo-light.svg");
+}
+.calendar .calendar-items .calendar-item-image.external.dcc::after {
+  background-image: url("/assets/images/dcc-logo-light-2.svg");
 }
 @media (max-width: 1199.98px) {
   .calendar .calendar-items .calendar-item-title {
