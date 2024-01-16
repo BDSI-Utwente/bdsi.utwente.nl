@@ -10695,6 +10695,92 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.profile-widget-list {
+  display: flex;
+  gap: 1em;
+  flex-flow: column nowrap;
+}
+.profile-widget-list-hero {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.profile-widget-list-hero .profile-widget-generic {
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  align-items: center;
+}
+.profile-widget-list-hero .profile-widget-generic .avatar {
+  width: 200px;
+  height: 200px;
+}
+.profile-widget-list-hero .profile-widget-generic .content {
+  align-items: center;
+}
+.profile-widget-list-hero .profile-widget-generic .content .description {
+  display: none;
+}
+
+.profile-widget-generic {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+}
+.profile-widget-generic .avatar {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.profile-widget-generic .avatar .avatar-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.profile-widget-generic .avatar .avatar-badge {
+  position: absolute;
+  background-color: white;
+  padding: 0.2em;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  right: -10%;
+  bottom: -10%;
+  border-radius: 50%;
+}
+.profile-widget-generic .content {
+  padding: 0.2em;
+  display: flex;
+  flex-flow: column;
+}
+.profile-widget-generic .content .title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  width: max-content;
+}
+.profile-widget-generic .content .title .name, .profile-widget-generic .content .title .prefix, .profile-widget-generic .content .title .postfix {
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 300;
+  font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+.profile-widget-generic .content .title .prefix, .profile-widget-generic .content .title .postfix {
+  color: #999999;
+  white-space: pre;
+  font-size: smaller;
+}
+.profile-widget-generic .content .title + .affiliation {
+  margin-top: -0.5em;
+}
+.profile-widget-generic .content .affiliation {
+  font-weight: 300;
+  font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+
 .text-accent {
   color: var(--accent-colour, #008eaa);
 }

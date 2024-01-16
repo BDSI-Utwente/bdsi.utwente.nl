@@ -5,7 +5,7 @@
   <title>Global Emotions during the Corona Pandemic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/images/favicon.png">
-  <link href="/assets/css/style.css?v=1705365369" rel="stylesheet">
+  <link href="/assets/css/style.css?v=1705398794" rel="stylesheet">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-svg.min.js" integrity="sha512-lod3aTRkO5OUBZDRwWaaIGYAT6+2uSyrlwnj0sg1h9a1w5wJ7NnzkaiUWy4Jv5wdf1ixGX35HK6u7fP1pjYOQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- floating toc -->
-  <!-- <link href="/assets/css/toc.css?v=1705365369" rel="stylesheet"> -->
+  <!-- <link href="/assets/css/toc.css?v=1705398794" rel="stylesheet"> -->
   <script src="/assets/js/toc.js" async defer></script>
 
   <!-- calendar parsing/generating -->
@@ -255,7 +255,7 @@
 
         <h5 class="date">October 22, 2022</h5>
         
-<div class="card mb-2 shadow mx-2">
+<div class="card mb-2 shadow mx-2" style="">
   
   <iframe src="/assets/images/blogs/global-emotions-corona/twitter_map_emo.html" width="100%" height="500px"></iframe>
   
@@ -330,7 +330,7 @@ The data set contains rich information about how online communication differs ac
 Transformer models have a good text understanding learned from filling in missing words in sentences (Masked Language Modeling). They learn enough information about text from pretraining on billions of lines of text, so that text preprocessing like stemming or stop word removal is not necessary anymore. For this project, the transformer model we chose is XLMRoberta,  a cross(X)-lingual Language Model that is particularly good at classifying text of multiple languages. In addition, models from the Roberta family (Robustly Optimized Bert pretraining Approach) are better than the Bert models, as they were trained with a more robust algorithm and much more data. XLMRoberta is trained on 2.5Tb of data from the CommonCrawl corpus and Wikipedia in 100 different languages (see Fig. 3). 
 This cross-lingual language model significantly outperforms multilingual Bert, and shows better prediction capabilities for tasks in languages other than English compared to using a Roberta model trained on English text only and translating the input (4). Another advantage is that also multilingual training data can be used. Pretrained models are freely available at Huggingface (5) (6).</p>
 
-<div class="card mb-2 shadow mx-2">
+<div class="card mb-2 shadow mx-2" style="">
   
   <img src="/assets/images/blogs/global-emotions-corona/fig3-training-data.png" alt="Training Data for XLM-Roberta encompasses many languages besides English" class="card-img-top" />
   
@@ -359,7 +359,7 @@ Once the model was trained successfully and applied to all the tweets in our dat
 <p>At BDSi we are often asked to help with visualizations of the data. Be it for data exploration or to present the final results. Once visualized, it is much easier to discover patterns in the data. Many of the visualizations we do are fully interactive. With the power of Shiny (10) hidden patterns and their connection to parameters can be brought to light. Here’s a link to our shiny apps (11).
 We used Plotly (12) for the visualizations related to this project. Plotly is a library that allows for semi-interactive plots that can be easily embedded in web-pages.</p>
 
-<div class="card mb-2 shadow mx-2">
+<div class="card mb-2 shadow mx-2" style="">
   
   <img src="/assets/images/blogs/global-emotions-corona/fig4-relative-distribution.png" alt="Relative Distribution of Emotions in March 2020 for the 15 countries with the most Tweets in our data, ordered alphabetically" class="card-img-top" />
   
@@ -370,7 +370,7 @@ We used Plotly (12) for the visualizations related to this project. Plotly is a 
   </div>
 </div>
 
-<div class="card mb-2 shadow mx-2">
+<div class="card mb-2 shadow mx-2" style="">
   
   <img src="/assets/images/blogs/global-emotions-corona/fig5-relative-distribution-of-emotions%20.png" alt="Relative Distribution of Emotions in April 2020 for the 15 countries from Fig. 4" class="card-img-top" />
   
@@ -699,6 +699,6 @@ Hallenweg 17
 <script src="/assets/js/pages/people.js"></script>
 
     
-  <script type="text/javascript" src="/assets/js/scripts.js?v=1705365369"></script>
+  <script type="text/javascript" src="/assets/js/scripts.js?v=1705398794"></script>
 </body>
 </html>
