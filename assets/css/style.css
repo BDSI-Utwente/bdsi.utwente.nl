@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 @import "./rouge-github.css";
 /*!
@@ -11719,6 +11719,10 @@ blockquote {
   #main-with-sidebar #sidebar {
     display: block;
   }
+}
+
+abbr {
+  font-weight: lighter;
 }
 
 #event-cta {
