@@ -10686,6 +10686,9 @@ a.text-dark:hover, a.text-dark:focus {
 .calendar .calendar-items .calendar-item-image.external.dcc::after {
   background-image: url("/assets/images/dcc-logo-light-2.svg");
 }
+.calendar .calendar-items .calendar-item-image.external.dsi::after {
+  background-image: url("/assets/images/dsi-logo-light.svg");
+}
 @media (max-width: 1199.98px) {
   .calendar .calendar-items .calendar-item-title {
     grid-column: left/-1;
@@ -11668,7 +11671,7 @@ blockquote {
 }
 #main-with-sidebar #main {
   padding: 2em 0;
-  margin: auto;
+  margin: 0 auto;
 }
 @media screen and (min-width: 576px) {
   #main-with-sidebar #main {
