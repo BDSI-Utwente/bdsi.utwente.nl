@@ -10703,15 +10703,34 @@ a.text-dark:hover, a.text-dark:focus {
   gap: 1em;
   flex-flow: column nowrap;
 }
+.profile-widget-list-inline {
+  flex-flow: row wrap;
+  align-items: baseline;
+  row-gap: 0;
+}
+.profile-widget-list-inline .profile-widget-generic .avatar {
+  width: 2em;
+  height: 2em;
+}
+.profile-widget-list-inline .profile-widget-generic .content .affiliation {
+  display: none;
+}
+.profile-widget-list-inline + h6 {
+  margin-top: 0;
+}
+.profile-widget-list-default .profile-widget-generic {
+  gap: 0.5em;
+}
 .profile-widget-list-hero {
   flex-flow: row wrap;
   justify-content: space-between;
 }
 .profile-widget-list-hero .profile-widget-generic {
+  gap: 1em;
   flex-flow: column nowrap;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 0;
+  flex-basis: 30%;
   align-items: center;
 }
 .profile-widget-list-hero .profile-widget-generic .avatar {
@@ -10722,18 +10741,27 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
 }
 .profile-widget-list-hero .profile-widget-generic .content .description {
+  display: block;
+  padding: 1em 0.5em;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+.profile-widget-list-hero .profile-widget-generic .content .affiliation {
   display: none;
+}
+.profile-widget-list + h6 {
+  margin-top: 0;
 }
 
 .profile-widget-generic {
   display: flex;
   flex-flow: row nowrap;
-  gap: 1em;
 }
 .profile-widget-generic .avatar {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 4em;
+  height: 4em;
   position: relative;
 }
 .profile-widget-generic .avatar .avatar-portrait {
@@ -10782,6 +10810,9 @@ a.text-dark:hover, a.text-dark:focus {
 .profile-widget-generic .content .affiliation {
   font-weight: 300;
   font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+.profile-widget-generic .content .description {
+  display: none;
 }
 
 .text-accent {
