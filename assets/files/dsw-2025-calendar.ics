@@ -1,0 +1,115 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//bdsi.bms.utwente.nl//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Brussels
+X-LIC-LOCATION:Europe/Brussels
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327236620-55467@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250303T124500
+DTEND;TZID=Europe/Brussels:20250303T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327252972-31887@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250304T124500
+DTEND;TZID=Europe/Brussels:20250304T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327252974-54591@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250305T124500
+DTEND;TZID=Europe/Brussels:20250305T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327252976-19072@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250306T124500
+DTEND;TZID=Europe/Brussels:20250306T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327252977-20030@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250307T124500
+DTEND;TZID=Europe/Brussels:20250307T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240730T081634Z
+UID:1722327277106-91020@bdsi.bms.utwente.nl
+DTSTART;TZID=Europe/Brussels:20250310T124500
+DTEND;TZID=Europe/Brussels:20250310T153000
+SUMMARY:Data Science Week
+URL:https://bdsi.bms.utwente.nl/data-science-week/
+DESCRIPTION:A week full of Data Science events: a challenging datathon\, contextual speakers\, expert lectures\, hands-on workshops\, and a networking drink.
+LOCATION:Citadel T300
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Data Science Week
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
