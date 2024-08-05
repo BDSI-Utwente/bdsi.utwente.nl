@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Data science for the behavioural sciences</title>
+  <title>Workshop Shiny for education and valorization</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/images/favicon.png">
   <link href="/assets/css/style.css?v=1722867528" rel="stylesheet">
@@ -239,45 +239,276 @@
 
 
 
-            <div class="container py-6">
-                <h1 class="hero text-white">Data science for the behavioural sciences</h1>
-                
+<div
+    class="intro mb-0"
+    style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        height: 25vw !important;
+         
+            background-image: url(/assets/images/workshops/shiny-2024.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+        ">
+    
+</div>
+<div style="margin-top: -5vw" class="strip strip-diagonal pt-4">
+    <div class="content-with-toc">
+        <div class="toc"></div>
+        <div class="content">
+            <h1>Workshop Shiny for education and valorization</h1>
+            
 <div class="author-list">
         
-<a class="author-list-item" href="/team/#a-k-machens">
-        <h6 class='text-white'><img src="/assets/images/team/Anna-thumbnail.png" alt="Anna Machens">Anna Machens</h6 class='text-white'>
+<a class="author-list-item" href="/team/#k-a-kroeze">
+        <h6><img src="/assets/images/team/Karel-thumbnail.png" alt="Karel Kroeze">Karel Kroeze</h6>
     </a>
     
 </div>
 
-                <h5 class="text-white">
-                    <!-- prettier-ignore -->November 19, 2020
-                </h5>
-                
-            </div>
-            <div class="strip strip-diagonal">
-                <div class="container"> <div style="max-width: 853px; padding-bottom: 1em;">
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe width="853" height="480" src="https://web.microsoftstream.com/embed/video/7d9d4ef6-6c5b-4950-85fc-ac3d2aead37c?autoplay=false&amp;showinfo=true&amp;st=20" allowfullscreen="" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe>
-  </div>
-</div>
+            <h5>
+                <!-- prettier-ignore -->October  3, 2024, 13:00 - 17:00
+            </h5>
+              <p>A picture says more than a thousand words. But can you have a conversation with a picture? With R and Shiny, you can!</p>
 
-<div class="card mt-2 mb-2">
-  <div class="card-body">
-    <div class="card-title">
-      <h4 data-toc-skip="true">Stream not working?</h4>
-      
-    </div>
-    
+<h2 id="overview">Overview</h2>
+<p>BDSi is organizing a workshop on creating interactive visualizations with R and Shiny. In one afternoon, we’ll quickly introduce the basic concepts, and build an interactive visualization together. You can bring your own data, or work on an example provided by BDSi. We’ll specifically focus on two example use-cases: an app letting students explore statistical concepts, and one making a predictive model available to users. At the end of the day, you will be able to create and share interactive visualizations to communicate your research, or help explain complex topics to your students yourself.</p>
+
+<h2 id="what-is-shiny">What is Shiny?</h2>
+<p>Shiny is an R package that enables R to interact with websites, allowing for interactive websites that can update when new data is available, the user interacts with the website, and much more. A large gallery of applications built on R is available on <a href="https://shiny.rstudio.com/gallery/">https://shiny.rstudio.com/gallery/</a>. BDSi has also created a number of apps - ranging from small interactive examples for education (e.g., Figure 1, a <a href="https://bookdown.org/pingapang9/linear_models_bookdown/intro.html#fig:app-normal">Normal Distribution</a> app developed for a <a href="/projects/linear-models-interactive-book">linear methods</a> textbook for Social Sciences students, or the <a href="https://bdsi.shinyapps.io/bms-visualization-tool/">BMS visualization library</a> helping choose between different visualization options for different types of data), research (e.g., Figure 2, <a href="https://bdsi.shinyapps.io/pacboard/">PACBOARD</a>, a dashboard for the exploration of meta-models of probabilistic analysis in healthcare economics).</p>
+
+<div class="card mb-2 shadow mx-2" style="">
+  
+  <iframe src="https://bdsi.shinyapps.io/linear-models-book__normal-distribution/" width="100%" height="500px" frameborder="0"></iframe>
+  
+  <div class="card-body px-2 py-1">
     <div class="card-text">
-      <p>Make sure you are signed in with a University of Twente account</p>
-
+      <h6 class="m-0 p0 m0 label-figure">A simple normal distribution for students to interact with</h6>
     </div>
-    
-    
   </div>
 </div>
 
+<p>Interactive visualizations are a great way to let your audience - whether they be students, academics, or the general public - explore and understand complex topics, datasets and analyses. Best of all, creating simple interactive visualizations is easy, and there are reliable and free options available to host the visualizations you’ve created.</p>
+
+<div class="card mb-2 shadow mx-2" style="">
+  
+  <iframe src="https://bdsi.shinyapps.io/pacboard/" width="100%" height="500px" frameborder="0"></iframe>
+  
+  <div class="card-body px-2 py-1">
+    <div class="card-text">
+      <h6 class="m-0 p0 m0 label-figure">PACBOARD: A dashboard for the systematic exploration and validation of the inputs and outputs of a probabylistic analysis obtained from a health economic model</h6>
+    </div>
+  </div>
+</div>
+
+<h2 id="workshop-details">Workshop Details</h2>
+
+<h3 id="contents">Contents</h3>
+<p>In this workshop, you will develop an interactive version of an existing visualization, analysis, or dataset (we encourage you to bring your own, but we will also have examples available), and publish it online. At the end of the day, you will be able to develop simple applications and share them with your audience.</p>
+
+<h3 id="requirements">Requirements</h3>
+<p>Basic familiarity with R and ggplot2 (or whichever plotting library you prefer). If you already have an analysis, model, dataset, etc. that you want to build a Shiny application around that’s great, but you can also participate with one of the examples we provide.</p>
+
+<p>Don’t forget to bring your laptop, and make sure you have a working and up-to-date R/RStudio installation before we start!</p>
+
+<h3 id="schedule">Schedule</h3>
+<p>The (target) schedule alternates short lectures with hands-on sessions, immediately applying what we cover in the lectures. Breaks are planned, but exact times may change based on how the day progresses. If you have limited time, feel free to join us when you can - but please let us know in advance if you’re planning to join later or leave early so that we can plan accordingly.</p>
+
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+
+<div id="calendar"></div>
+
+<style>
+  #calendar {
+    height: 400px;
+    /* position: fixed; */
+  }
+  #calendar .toastui-calendar-timegrid {
+    min-height: 0;
+    height: 100% !important;
+  }
+  #calendar .toastui-calendar-panel {
+    overflow-y: unset;
+  }
+  .event-body {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }
+</style>
+
+<script>
+  const Calendar = tui.Calendar;
+  const format_time = new Intl.DateTimeFormat('en-GB', {
+    timeStyle: "short"
+  })
+  
+  const calendar = new Calendar('#calendar', {
+    defaultView: 'day',
+    isReadOnly: true,
+    useDetailPopup: false,
+    day: {
+        hourStart: 13,
+        hourEnd: 17
+    },
+    week: {
+      startDayOfWeek: 1,
+      hourStart: 13.5,
+      hourEnd: 17.5,
+      narrowWeekend: true,
+      taskView: false,
+      eventView: ['time']
+    },
+    theme: {
+      common: {
+        dayName: { color: "#333" },
+        holiday: { color: "#9e9e9e" },
+        saturday: { color: "#9e9e9e" }
+      },
+      week: {
+        dayName: {
+          borderBottom: "none"
+        },
+        timeGrid: {
+          borderRight: "1px dashed #eee"
+        }
+      }
+    },
+    template: {
+      timegridDisplayPrimaryTime({time}) {
+        return format_time.format(time);
+      },
+      time(event) {
+        return `<span>${format_time.format(event.start)} - ${format_time.format(event.end)}</span>: <span style="color: black; font-weight: bold;">${event.title}</span><div class="event-body">${event.body}</div>`;
+      },
+      popupDetailDate({ start, end }) {
+        return `${format_time.format(start)} - ${format_time.format(end)}`;
+      }
+    },
+    calendars: [
+      {
+        id: 'lectures',
+        name: 'Lectures',
+        backgroundColor: '#03bd9e',
+      },
+      {
+        id: 'practicals',
+        name: 'Practicals',
+        backgroundColor: '#00a9ff',
+      },
+      {
+        id: 'socials',
+        name: "Social events",
+        backgroundColor: '#bb3aff'
+      }
+    ],
+    usageStatistics: false
+  });
+
+  calendar.setDate(new Date("2024-10-03 00:00:00 +0000"))
+  calendar.createEvents([
+    
+
+    {
+      calendarId: "lectures",
+      title: "What is Shiny? Under-the-hood overview.",
+      start: new Date("2024-10-03 13:00"),
+      end: new Date("2024-10-03 13:45"),
+      location: "TBA",
+      body: "Overview of what a Shiny app is, and the main components. How the user interface (UI) and server-side components interact, and the minimum required code to make a Shiny app."
+    },
+
+    
+
+    {
+      calendarId: "practicals",
+      title: "My first Shiny app",
+      start: new Date("2024-10-03 13:45"),
+      end: new Date("2024-10-03 14:15"),
+      location: "TBA",
+      body: "Guided hands-on setting up a basic Shiny app, covering file structures and creating a very basic app."
+    },
+
+    
+
+    {
+      calendarId: "socials",
+      title: "Break",
+      start: new Date("2024-10-03 14:15"),
+      end: new Date("2024-10-03 14:30"),
+      location: "TBA",
+      body: ""
+    },
+
+    
+
+    {
+      calendarId: "lectures",
+      title: "Reactive Programming",
+      start: new Date("2024-10-03 14:30"),
+      end: new Date("2024-10-03 15:00"),
+      location: "TBA",
+      body: "Overview of the reactive programming paradigm. Reactive expressions, observers, and controlling dependency flows."
+    },
+
+    
+
+    {
+      calendarId: "practicals",
+      title: "Make it yours",
+      start: new Date("2024-10-03 15:00"),
+      end: new Date("2024-10-03 15:45"),
+      location: "TBA",
+      body: "Guided hands-on creating a Shiny app for your own visualization, model, or dataset. Bring your own, or use one of the examples provided."
+    },
+
+    
+
+    {
+      calendarId: "socials",
+      title: "Break",
+      start: new Date("2024-10-03 15:45"),
+      end: new Date("2024-10-03 16:00"),
+      location: "TBA",
+      body: ""
+    },
+
+    
+
+    {
+      calendarId: "practicals",
+      title: "Make it yours (continued)",
+      start: new Date("2024-10-03 16:00"),
+      end: new Date("2024-10-03 16:30"),
+      location: "TBA",
+      body: "Guided hands-on creating a Shiny app for your own visualization, model, or dataset. Bring your own, or use one of the examples provided."
+    },
+
+    
+
+    {
+      calendarId: "lectures",
+      title: "Sharing is Caring",
+      start: new Date("2024-10-03 16:30"),
+      end: new Date("2024-10-03 17:00"),
+      location: "TBA",
+      body: "Quick overview and hands-on on how to publish your app online on shinyapps.io."
+    },
+
+    
+  ])
+</script>
+
+<h3 id="date--location">Date &amp; Location</h3>
+<p><strong>Date</strong>: October 3rd, 13:00 - 17:00<br />
+<strong>Location</strong>: TBA, on campus</p>
+
+<h2 id="registration">Registration</h2>
+<p><a class="button" href="https://www.utwente.nl/en/bms/research/bdsi/workshop-shiny-2024/" target="_blank">Register now!</a></p>
+
+<p>For questions about this workshop, please contact <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a>.</p>
 </div>
             </div>
         </div>
