@@ -38,6 +38,21 @@
   date: 2024-09-18
   endDate: 2024-09-18
   time: 10:00 - 17:30
+- title: Emerging Technologies & Societal Transformations Conference 2024
+  description: On 25 September 2024, we organize the 2nd “Emerging Technologies
+    and Societal Transformations” research theme conference. The aim of the
+    conference is to share current research related to the theme, stimulate an
+    interdisciplinary discussion about emerging technologies and how they affect
+    societies, and to strengthen ties between researchers from BMS and beyond
+    with similar research interests.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/9/1729072/emerging-technologies-societal-transformations-conference-2024
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i4827669c0102d570e603efb30d036a56f4a43417b51c0701c33a003a0080/data.jpg
+  start: 2024-09-25T09:15:00+00:00
+  end: 2024-09-25T16:30:00+00:00
+  date: 2024-09-25
+  endDate: 2024-09-25
+  time: 09:15 - 16:30
 - title: Process Science @UT Kickoff
   description: We are excited to invite you to the inaugural meetup of Process
     Science @UT, a new initiative aimed at building a dynamic community around
@@ -112,17 +127,3 @@
   date: 2024-11-28
   endDate: 2024-11-28
   time: 09:30 - 17:00
-- title: Data Science Week
-  description: The goal of the data science week is to introduce interested
-    students and staff to data science in a fun and cooperative way, and help
-    create a community of data scientists at the University of Twente, the
-    faculty of Behavioural and Management Sciences, and beyond. BDSi and DSI
-    organize various events during the week, including a datathon, contextual
-    speakers, expert lectures, hands-on workshops, and a networking drink.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/3/1686192/data-science-week
-  img_url: https://1348661504.rsc.cdn77.org/.uc/ie76b3a9601029eb4b403f844ef02ef186088f54a6c940701c33a003a0080/data.jpg
-  start: 2025-03-03T00:00:00+00:00
-  end: 2025-03-10T23:59:00+00:00
-  date: 2025-03-03
-  endDate: 2025-03-10
