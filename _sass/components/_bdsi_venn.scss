@@ -19,9 +19,18 @@
         position: absolute;
         width: 52%;
         height: 52%;
+
+        transition: border 0.2s ease-in-out;
         
-        border: 3px solid var(--accent-colour, steelblue);
+        border: 6px solid var(--accent-colour, steelblue);
         border-radius: 50%;
+
+        box-shadow: 0 0 4px var(--accent-colour, black),
+                    inset 0 0 2px var(--accent-colour, black);
+
+        &:hover {
+            border-width: 8px;
+        }
     }
 
     .circle:nth-child(1) {
