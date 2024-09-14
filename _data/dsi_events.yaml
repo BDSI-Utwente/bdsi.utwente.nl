@@ -65,12 +65,11 @@
   date: 2024-10-03
   endDate: 2024-10-03
   time: 13:00 - 17:00
-- title: DSI Meet Up
-  description: Put 15 October in your agenda to join the DSI Meet Up of this
-    month! The theme and speaker (s) of this meet up will follow later.
+- title: DSI Meet Up on Federative Data
+  description: Put 15 October in your agenda to join the DSI Meet Up of this month!
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/10/1682744/dsi-meet-up
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i0e95611001025edcaa035f81ab02ff68c37186d820c40701c33a003a0080/data.jpg
+  url: https://www.utwente.nl/en/digital-society/events/2024/10/1682744/dsi-meet-up-on-federative-data
+  img_url: https://1348661504.rsc.cdn77.org/.uc/if405721301025edcaa035f81ab02fc93ab6c74552e960701c33a003a0080/data.jpg
   start: 2024-10-15T12:00:00+00:00
   end: 2024-10-15T13:00:00+00:00
   date: 2024-10-15
@@ -91,6 +90,17 @@
   date: 2024-11-07
   endDate: 2024-11-07
   time: 00:00 - 23:59
+- title: DSI Meet Up
+  description: Put 12 November in your agenda to join the DSI Meet Up of this
+    month! The theme and speaker (s) of this meet up will follow later.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/11/1682775/dsi-meet-up
+  img_url: https://1348661504.rsc.cdn77.org/.uc/iaea612a0010247e5aa035d2ea102a75e60977dd66d910701c33a003a0080/data.jpg
+  start: 2024-11-12T12:00:00+00:00
+  end: 2024-11-12T13:00:00+00:00
+  date: 2024-11-12
+  endDate: 2024-11-12
+  time: 12:00 - 13:00
 - title: Meaningful Human Computer Interaction
   description: 16th International Conference on Intelligent Human Computer
     Interaction (IHCI-2024)
