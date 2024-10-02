@@ -1,17 +1,3 @@
-- title: Process Science @UT Kickoff
-  description: We are excited to invite you to the inaugural meetup of Process
-    Science @UT, a new initiative aimed at building a dynamic community around
-    the field of process mining at the University of Twente. Our goal is to
-    foster collaboration, share knowledge, and explore innovative use cases in
-    process science.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/10/1724576/process-science-ut-kickoff
-  img_url: https://1348661504.rsc.cdn77.org/.uc/ifaed278901023893e4030b3399026991a92032767dfb0701c3a401ee0080/data.jpg
-  start: 2024-10-01T12:00:00+00:00
-  end: 2024-10-01T13:00:00+00:00
-  date: 2024-10-01
-  endDate: 2024-10-01
-  time: 12:00 - 13:00
 - title: Workshop Shiny for education and valorization
   description: BDSi is organizing a workshop on creating interactive
     visualizations with R and Shiny. In one afternoon, we’ll quickly introduce
@@ -29,7 +15,7 @@
     Embedded AI, co-organized by the CAES and DMB groups.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/10/1683437/dsi-meet-up-seminar-series-on-embedded-ai
-  img_url: https://1348661504.rsc.cdn77.org/.uc/icfdb6b31010204d4ab031c0963030047a0c6a0991b370701c33a003a0080/data.jpg
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i239db8a0010204d4ab031c0963030047a0c6a0991b370701c3a401ee0080/data.jpg
   start: 2024-10-09T15:00:00+00:00
   end: 2024-10-09T16:00:00+00:00
   date: 2024-10-09
