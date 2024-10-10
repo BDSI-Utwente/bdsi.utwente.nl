@@ -1,14 +1,3 @@
-- title: "DSI Meet Up: Seminar Series on Embedded AI"
-  description: This Dedicated DSI Meet Up will be the second of a series on
-    Embedded AI, co-organized by the CAES and DMB groups.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/10/1683437/dsi-meet-up-seminar-series-on-embedded-ai
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i239db8a0010204d4ab031c0963030047a0c6a0991b370701c3a401ee0080/data.jpg
-  start: 2024-10-09T15:00:00+00:00
-  end: 2024-10-09T16:00:00+00:00
-  date: 2024-10-09
-  endDate: 2024-10-09
-  time: 15:00 - 16:00
 - title: DSI Meet Up on Federated Data
   description: Put 15 October in your agenda to join the DSI Meet Up of this month!
   source: dsi
@@ -28,7 +17,7 @@
     network with like-minded people.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/11/925436/risk-resilience-festival
-  img_url: https://1348661504.rsc.cdn77.org/.uc/if4fe220801025dcc5701274d4703f2f55d25a150f54d0701c33a003a0080/data.png
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i9e9fcb5e01025dcc5701274d4703f2f55d25a150f54d0701c3a401ee0080/data.png
   start: 2024-11-07T00:00:00+00:00
   end: 2024-11-07T23:59:00+00:00
   date: 2024-11-07
@@ -55,6 +44,17 @@
   end: 2024-11-16T17:00:00+00:00
   date: 2024-11-13
   endDate: 2024-11-16
+- title: "DSI Meet Up: Seminar Series on Embedded AI"
+  description: This Dedicated DSI Meet Up will be the third of a series on
+    Embedded AI, co-organized by the CAES and DMB groups.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/11/1791166/dsi-meet-up-seminar-series-on-embedded-ai
+  img_url: https://1348661504.rsc.cdn77.org/.uc/ic06e127801025f7e17048539c3010047a0c6a0991b370701c33a003a0080/data.jpg
+  start: 2024-11-25T12:00:00+00:00
+  end: 2024-11-25T13:00:00+00:00
+  date: 2024-11-25
+  endDate: 2024-11-25
+  time: 12:00 - 13:00
 - title: Unlocking the Power of LLMs
   description: Are you looking to enhance your research and teaching? Join our
     one-day workshop on Large Language Models (LLMs) to learn how to utilize
