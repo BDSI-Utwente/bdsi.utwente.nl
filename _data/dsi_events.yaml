@@ -57,6 +57,17 @@
   date: 2025-01-23
   endDate: 2025-01-23
   time: 12:00 - 13:00
+- title: DSI Meet Up on Career Investements
+  description: Please block the lunch slot of 29 January in your agenda to join
+    the DSI Meet Up of this month!
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/1/1812970/dsi-meet-up-on-career-investements
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i7c38ca88010241af2a0470201c031cdbd7eb3b8cc1a50701c33a003a0080/data.jpg
+  start: 2025-01-29T12:00:00+00:00
+  end: 2025-01-29T13:00:00+00:00
+  date: 2025-01-29
+  endDate: 2025-01-29
+  time: 12:00 - 13:00
 - title: Data Science Week
   description: The goal of the data science week is to introduce interested
     students and staff to data science in a fun and cooperative way, and help
