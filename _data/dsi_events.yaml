@@ -26,17 +26,6 @@
   date: 2024-11-12
   endDate: 2024-11-12
   time: 12:00 - 13:00
-- title: DSI Meet Up
-  description: Put 12 November in your agenda to join the DSI Meet Up of this
-    month! The theme and speaker (s) of this meet up will follow later.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/11/1682775/dsi-meet-up
-  img_url: https://1348661504.rsc.cdn77.org/.uc/iaea612a0010247e5aa035d2ea102a75e60977dd66d910701c33a003a0080/data.jpg
-  start: 2024-11-12T12:00:00+00:00
-  end: 2024-11-12T13:00:00+00:00
-  date: 2024-11-12
-  endDate: 2024-11-12
-  time: 12:00 - 13:00
 - title: Meaningful Human Computer Interaction
   description: 16th International Conference on Intelligent Human Computer
     Interaction (IHCI-2024)
@@ -59,6 +48,17 @@
   date: 2024-11-28
   endDate: 2024-11-28
   time: 09:30 - 17:00
+- title: DSI Meet Up - Digital Twinning in the Urban & Logistic Domain
+  description: Join us for this month's DSI Meet Up on December 10, focusing on
+    digital twinning in the urban and logistic domain!
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/12/1815546/dsi-meet-up-digital-twinning-in-the-urban-logistic-domain
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i78cca1fa010272d52c04176e9301494d45c302ced2990701c33a003a0080/data.jpg
+  start: 2024-12-10T12:00:00+00:00
+  end: 2024-12-10T13:30:00+00:00
+  date: 2024-12-10
+  endDate: 2024-12-10
+  time: 12:00 - 13:30
 - title: "DSI Meet Up: Seminar Series on Embedded AI"
   description: This Dedicated DSI Meet Up will be the third of a series on
     Embedded AI, co-organized by the CAES and DMB groups.
@@ -70,11 +70,12 @@
   date: 2025-01-23
   endDate: 2025-01-23
   time: 12:00 - 13:00
-- title: DSI Meet Up on Career Investements
-  description: Please block the lunch slot of 29 January in your agenda to join
-    the DSI Meet Up of this month!
+- title: DSI Meet Up - Career Investements
+  description: Join the DSI Meet Up on 29 January to explore the topic of Career
+    Investments. Learn how smart career choices can lead to new opportunities
+    and professional growth.
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/1/1812970/dsi-meet-up-on-career-investements
+  url: https://www.utwente.nl/en/digital-society/events/2025/1/1812970/dsi-meet-up-career-investements
   img_url: https://1348661504.rsc.cdn77.org/.uc/i7c38ca88010241af2a0470201c031cdbd7eb3b8cc1a50701c33a003a0080/data.jpg
   start: 2025-01-29T12:00:00+00:00
   end: 2025-01-29T13:00:00+00:00
