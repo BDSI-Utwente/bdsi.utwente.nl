@@ -1,16 +1,3 @@
-- title: DSI Meet Up - Session 2 in the AI Literacy Series
-  description: Mark 12 November in your calendar for this month's DSI Meet Up! The
-    event will once again focus on AI Literacy at UT, a pressing and relevant
-    topic across all five faculties and within supporting departments like CELT
-    and LISA.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/11/1813161/dsi-meet-up-session-2-in-the-ai-literacy-series
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i654077850102df182b04623aec011cdbd7eb3b8cc1a50701c3a401ee0080/data.jpg
-  start: 2024-11-12T12:00:00+00:00
-  end: 2024-11-12T13:00:00+00:00
-  date: 2024-11-12
-  endDate: 2024-11-12
-  time: 12:00 - 13:00
 - title: Meaningful Human Computer Interaction
   description: 16th International Conference on Intelligent Human Computer
     Interaction (IHCI-2024)
@@ -27,7 +14,7 @@
     this technology effectively.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/11/1725112/unlocking-the-power-of-llms
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i5ff2448201024dc6e203f33c1a03dbb56dfd8cd31af60701c33a003a0080/data.png
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i2949e47701024dc6e203f33c1a03dbb56dfd8cd31af60701c3a401ee0080/data.png
   start: 2024-11-28T09:30:00+00:00
   end: 2024-11-28T17:00:00+00:00
   date: 2024-11-28
@@ -67,6 +54,27 @@
   date: 2024-12-10
   endDate: 2024-12-10
   time: 12:30 - 13:30
+- title: Mini workshop AI for Dummies
+  description: The applications of AI are flying around our ears. Automatically
+    generated job ads, personalised chatbots, deepfakes; we are hardly impressed
+    anymore. At the same time, for many professionals it is quite difficult to
+    make a concrete picture of how AI will change the field of work. Especially
+    without knowledge of programming and statistics, it is not easy to recognise
+    the potential of AI in your own organisation and think about it
+    systematically with colleagues. To help you do this, this mini-workshop "AI
+    for dummies" will introduce you to the main types of AI, inspire you with
+    fascinating examples, and get you started building your own AI model.
+    Together, we will then brainstorm on application possibilities of AI in your
+    own domain and reflect on what risks AI entails. The workshop is intended
+    for all enthusiasts without technical knowledge of AI.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/12/1851202/mini-workshop-ai-for-dummies
+  img_url: https://1348661504.rsc.cdn77.org/.uc/id17a94310102b9814a04cc06e801d5d43d3d5008bddc0701c33a003a0080/data.jpg
+  start: 2024-12-13T10:00:00+00:00
+  end: 2024-12-13T12:00:00+00:00
+  date: 2024-12-13
+  endDate: 2024-12-13
+  time: 10:00 - 12:00
 - title: DSI Meet Up - Career Investements
   description: Join the DSI Meet Up on 29 January to explore the topic of Career
     Investments. Learn how smart career choices can lead to new opportunities
