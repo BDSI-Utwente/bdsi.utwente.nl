@@ -56,7 +56,12 @@ We help organize events where researchers from various domains come together to 
     {% endfor %}
   {% endunless %}
   
+  {% if item_url %}
 #### [{{item.title}}]({{item_url}})
+  {% else %} 
+#### {{item.title}}
+{% endif %}
+
 {% include author-list.html page=item header="h6" %}
 ###### {% include datetime.html page = item %}
 
