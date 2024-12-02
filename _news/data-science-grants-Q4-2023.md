@@ -6,6 +6,7 @@ authors:
 frontpage: true
 image: "/assets/images/news/UTIMG40941_00b4b.jpg"
 tags: [data science grant, data science grant 2023, winners]
+date: 2024-01-03
 ---
 
 The BDSi Data Science Grants are decided twice yearly, generally at the end of Q2 and Q4. The grants are open for all BMS faculty that are looking to include data science in their research or education. We take on a limited number of high-impact projects, often creating a proof-of-concept for further research and grant applications. 
