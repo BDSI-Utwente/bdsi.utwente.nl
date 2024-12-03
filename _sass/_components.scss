@@ -21,7 +21,7 @@ $text: $secondary; // darken($header, 30);
 }
 
 @for $i from 1 through 6 {
-  h#{$i} {
+  h#{$i}, .h#{$i} {
     text-transform: uppercase;
     font-weight: 300;
     color: $header;
@@ -39,7 +39,7 @@ $text: $secondary; // darken($header, 30);
 
     @if $i < 6 {
       @for $j from $i + 1 through 6 {
-        &+h#{$j} {
+        &+h#{$j}, &+.h#{$j} {
           margin-top: 0;
         }
       }

@@ -1,15 +1,14 @@
-<div id="footer">
+<footer id="footer">
   <div class="footer-content">
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:users-three"></span>
         Join the community
-      </h5>
+      </h2>
       <!-- todo: make this an actual form, with backing dbish thing (wait for webhare?) -->
       <a
         class="inset"
         href="{{ site.data.contact.newsletter }}"
-        title="subscribe to our newsletter"
       >
         <span
           class="iconify-inline icon"
@@ -21,7 +20,6 @@
         class="inset"
         href="https://twitter.com/BdsiUt"
         target="_blank"
-        title="follow us on twitter"
       >
         <span class="iconify-inline icon" data-icon="ph:twitter-logo"></span>
         follow us on twitter
@@ -30,12 +28,11 @@
         class="inset"
         href="https://www.linkedin.com/company/behavioural-data-science-incubator/about/"
         target="_blank"
-        title="connect with us on linkedin"
       >
         <span class="iconify-inline icon" data-icon="ph:linkedin-logo"></span>
         connect with us on linkedin
       </a>
-      <a class="inset" href="{% link community.html %}#community" title="join the team (chat)"
+      <a class="inset" href="{% link community.html %}#community" 
         ><span
           class="iconify-inline icon"
           data-icon="mdi:microsoft-teams"
@@ -45,11 +42,10 @@
       <a
         class="inset"
         href="mailto:{{ site.data.contact.email }}?subject=Dear BDSi&body=Dear BDSi,"
-        title="write us a letter"
         ><span class="iconify-inline icon" data-icon="ph:envelope"></span>
         write us a letter
       </a>
-      <h5 class="mt-2">Proud partners with</h5>
+      <h2 class="mt-2 h5">Proud partners with</h2>
       {% assign partners = site.partners | sort: "title" %}
       <div class="inset" id="partners-list">
         {% for partner in partners %}
@@ -70,10 +66,10 @@
       </div>
     </div>
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <div id="team-icon-div"></div>
         Meet the team
-      </h5>
+      </h2>
       {% assign section = "" %}
       {% assign members = site.team | sort: "title" | sort: "sortorder" %} 
       {% for profile in members %}
@@ -93,10 +89,10 @@
       {% endfor %}
     </div>
     <div class="footer-block sitemap">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:git-merge"></span>
         Sitemap
-      </h5>
+      </h2>
       <ul>
         <li>
           <a href="{% link about.html %}">About us</a>
@@ -131,17 +127,17 @@
       
     </div>
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:package"></span>
         Postal address
-      </h5>
+      </h2>
       <pre class="address-block inset">
         {{site.data.contact.address.postal}}
       </pre>
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:hand-waving"></span>
         Visiting address
-      </h5>
+      </h2>
       <pre class="address-block inset">
           {{site.data.contact.address.visiting}}
       </pre>
@@ -163,6 +159,6 @@
       >Disclaimer & Copyright</a
     >
   </div>
-</div>
+</footer>
 
 <script src="{% link assets/js/pages/people.js %}"></script>
