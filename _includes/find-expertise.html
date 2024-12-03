@@ -8,7 +8,9 @@
 <div class="card shadow">
   <div class="card-body">
     <div class="card-title">
-      <h2 data-toc-skip="true">What can we help you with?</h2>
+      <label for="expertise-selectize">
+        <h2 data-toc-skip="true">What can we help you with?</h2>
+      </label>
     </div>
     <div class="card-text">
       <select id="expertise-selectize">
@@ -18,13 +20,13 @@
         {% endfor %}
       </select>
       <div id="expertise-known">
-        <h4 class="pt-2 pb-1">We know something about <span class="expertise-topic font-weight-bold">xxx</span>...</h4>
+        <h4 class="pt-2 pb-1">We know something about <span class="expertise-topic font-weight-bold">everything</span>...</h4>
       </div>
       <div id="expertise-unknown">
-        <h4 class="pt-2">We haven't listed <span class="expertise-topic font-weight-bold">xxx</span> as an expertise...</h4>
-        <p>It's possible <span class="expertise-topic font-weight-bold">xxx</span> is something we have no experience with, or we just didn't think about listing <span class="expertise-topic font-weight-bold">xxx</span> as an expertise.</p>
+        <h4 class="pt-2">We haven't listed <span class="expertise-topic font-weight-bold">...</span> as an expertise...</h4>
+        <p>It's possible <span class="expertise-topic font-weight-bold">...</span> is something we have no experience with, or we just didn't think about listing <span class="expertise-topic font-weight-bold">xxx</span> as an expertise.</p>
         <h4>Don't worry though, we can still help you!</h4>
-        <div class="row flex-align-items-stretch text-justify">
+        <div class="row flex-align-items-stretch">
           <div class="col-md-4 d-flex flex-column">
             <p>We have members from all departments in BMS, with a wide range of experience. Chances are at least on of us can help you with your problem.</p>
             <p>You can browse our profiles and contact us on Teams, email, or just send us an old fashioned love letter.</p>
@@ -98,6 +100,7 @@
 
   $(() => {
     $("#expertise-selectize").selectize({
+
       openOnFocus: false,
       placeholder: "Find a topic...",
       create: true,
