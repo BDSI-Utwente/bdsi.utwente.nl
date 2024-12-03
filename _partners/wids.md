@@ -1,6 +1,6 @@
 ---
-title: "BMS Lab"
-website: https://bmslab.utwente.nl/
+title: "Women in Data Science worldwide"
+website: https://www.widsworldwide.org/
 logo: /assets/images/wids-logo.png
 logoLight: /assets/images/wids-logo.png
 ---
