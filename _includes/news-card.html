@@ -1,4 +1,5 @@
-<!-- prettier-ignore -->
+{% capture item_tag %}{% if item.tag %}{{item.tag}}{% elsif item.tags.size >= 1 %}{{item.tags[0]}}{% else %}{{item.collection}}{% endif %}{% endcapture %}
+
 <div
     class="mb-2 news-card"
     style="
@@ -11,7 +12,7 @@
 >
     {% if item.image %}<img
         src="{% link {{item.image}} %}"
-        alt="{{item.title}}"
+        alt="{{item.image_alt | default: ''}}"
         class="card-img-top"
         style="height: 150px; width: 100%; object-fit: cover; flex: 0 0 auto"
     />{% endif %}
@@ -24,9 +25,11 @@
             height: auto;
         "
     >
-        <div class="tag" {% if item.accentColour %}style="background: {{item.accentColour}}" {% endif %}>{% if item.tag %}{{item.tag}}{% elsif item.tags.size >= 1 %}{{item.tags[0]}}{% else %}{{item.collection}}{% endif %}</div>
+        <div class="tag" {% if item.accentColour %}style="background: {{item.accentColour}}" {% endif %}>{{item_tag}}</div>
         <div class="card-title" style="flex: 0 0 auto">
-            <h2><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></h2>
+            <a href="{{site.baseurl}}{{item.url}}">
+                <h3 id="news-title-{{item.title || slugify}}">{{item.title}}</h3>
+            </a>
             <div class="small text-muted">
                 {% if item.author -%}
                   {% assign profile = site.team | find: "title", item.author %}
@@ -55,6 +58,7 @@
             class="button center"
             href="{{site.baseurl}}{{item.url}}"
             style="position: absolute; bottom: 0.5em; left: 50%; translate: -50%;"
+            aria-labelledby="news-title-{{item.title || slugify}}"
             >read more</a
         >
     </div>
