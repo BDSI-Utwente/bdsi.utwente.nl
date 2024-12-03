@@ -78,11 +78,7 @@
         {% if event_image %}
             <div style="background-image: url('{{event_image}}');" class="calendar-item-image{% if event.source %} external {{event.source}}{% endif %}"></div>
         {% endif %}
-        {% if event_path %}
-            <h6 class="calendar-item-title">{{event.title}}</h6>
-        {% else %}
-            <h6 class="calendar-item-title">{{event.title}}</h6>
-        {% endif %}
+        <h3 class="calendar-item-title h6 font-weight-light">{{event.title}}</h6>
         <div class="calendar-item-time">
             {% include datetime.html page=event %}
         </div>
