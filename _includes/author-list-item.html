@@ -1,15 +1,15 @@
 {% assign profile = site.team | find: "title", author %}
 {% assign header = include.header | default: "h4" %}
-
+{% assign header_style = include.header_style | default: header %}
 
 {%- if profile -%}
     <a class="author-list-item" href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}">
-        <{{header}}><img src="{% link {{profile.image}} %}" alt="{{author}}">{{profile.title}}</{{header}}>
+        <{{header}}{% if header != header_style %} class="{{header_style}}"{% endif %}><img src="{% link {{profile.image}} %}" alt="">{{profile.title}}</{{header}}>
     </a>
 {%- else -%}
     {% if author contains "!external" %} 
-        <{{header}} class="author-list-item"">{{ author | remove: "!external" | strip }}</{{header}}>
+        <{{header}} class="author-list-item{% if header != header_style %} {{header_style}}{% endif %}">{{ author | remove: "!external" | strip }}</{{header}}>
     {% else %}
-        <{{header}} class="author-list-item unresolved" data-name="{{author}}">{{author}}</{{header}}>
+        <{{header}} class="author-list-item unresolved{% if header != header_style %} {{header_style}}{% endif %}" data-name="{{author}}">{{author}}</{{header}}>
     {% endif %}
 {%- endif -%}

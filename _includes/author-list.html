@@ -3,6 +3,7 @@
 {%- endif -%}
 
 {% assign header = include.header | default: "h4" %}
+{% assign header_style = include.header_style | default: header %}
 {%- assign authors = include.authors | default: page.authors -%}
 
 {%- if authors == nil -%} 
@@ -16,9 +17,9 @@
 <div class="author-list">
     {%- for author in authors -%}
         {%- if forloop.first != true -%}
-            <{{header}}>{% if forloop.length > 2 %},{%endif%}&MediumSpace;</{{header}}>
+            <span{% if header != header_style %} class="{{header_style}}"{% endif %}>{% if forloop.length > 2 %},{%endif%}&MediumSpace;</span>
             {%- if forloop.last -%}
-                <{{header}}>and&MediumSpace;</{{header}}>
+                <span{% if header != header_style %} class="{{header_style}}"{% endif %}>and&MediumSpace;</span>
             {%- endif -%}
         {% endif %}
         {% include author-list-item.html %}
