@@ -22,8 +22,6 @@ iconSize: 28
                 social science problems.
             </p>
 
-            <div class="mb-4">{% include find-expertise.html %}</div>
-
             <div id="profiles" class="container mb-6">
                 {% for section in sections %}
                 {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" | sort: "title" %}
