@@ -8,8 +8,15 @@ $text: $secondary; // darken($header, 30);
 @import "./components/calendar";
 @import "./components/profile_widget_generic";
 
+
 .text-accent {
   color: var(--accent-colour, $primary);
+}
+
+@media (prefers-contrast: more) {
+  .text-accent {
+    color: unset;
+  }
 }
 
 .text-bold {
