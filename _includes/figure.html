@@ -1,9 +1,9 @@
 {% capture url %}{{include.url | default: "https://placekitten.com/800/640"}}{% endcapture %}
 {% capture caption %}{{include.caption | default: "No caption given, please add a caption"}}{% endcapture %}
 {% capture alt %}{{include.alt | default: include.caption }}{% endcapture %}
-{% capture caption_element %}{{include.caption_element | default: "h6"}}{% endcapture %}
+{% capture caption_style %}{{include.caption_style | default: "h6"}}{% endcapture %}
 
-<div class="card mb-2{% unless include.no_shadow %} shadow{% endunless %}{% if include.bg %} bg-{{include.bg}}{% endif %} mx-2" style="{% if include.no_border %}border: none;{% endif %}">
+<figure class="card mb-2{% unless include.no_shadow %} shadow{% endunless %}{% if include.bg %} bg-{{include.bg}}{% endif %} mx-2" style="{% if include.no_border %}border: none;{% endif %}">
   {% if include.iframe %}
   <iframe src="{{include.iframe}}" width="100%" height="500px" frameborder="0"></iframe>
   {% else %}
@@ -11,7 +11,7 @@
   {% endif %}
   <div class="card-body {% if include.no_shadow %}px-1{% else %}px-2{% endif %} py-1">
     <div class="card-text">
-      <{{caption_element}} class="m-0 p0 m0{% unless include.no_label %} label-figure{% endunless %}">{{caption}}</{{caption_element}}>
+      <figcaption class="{{caption_style}} m-0 p0 m0{% unless include.no_label %} label-figure{% endunless %}">{{caption}}</figcaption>
     </div>
   </div>
-</div>
+</figure>
