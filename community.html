@@ -2,7 +2,7 @@
 title: BDSi - Behavioural Data Science incubator - Community Building
 layout: default
 bodyClass: page-list
-accentColour: "#0093b3"
+accentColour: "#00819E"
 ---
 
 
@@ -97,7 +97,7 @@ accentColour: "#0093b3"
       {% assign communities_sorted=site.communities | sort: "title" %}
       {% for community in communities_sorted %}
       <h3 class="mt-6">{{community.title}}</h3>
-      {% include author-list.html page=community header="h5" %}
+      {% include author-list.html page=community %}
       {% if community.calendar_url %}
       <a href="{{community.calendar_url}}">
         <div class="icon calendar"></div> calendar
@@ -105,7 +105,9 @@ accentColour: "#0093b3"
       {% endif %}
       <br />
 
-      <p>{{community.content}}</p>
+      <div class="community-content" data-toc-skip>
+        {{community.content}}
+      </div>
 
       {% endfor %}
 

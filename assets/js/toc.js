@@ -106,7 +106,11 @@ function create_toc(
   // generate toc
   for (const header_element of header_elements) {
     // skip opt-out headers (data-toc-skip)
-    if (header_element.dataset["tocSkip"]) {
+    if (
+      get_parent_elements(header_element).some(
+        (element) => element.dataset["tocSkip"] !== undefined
+      )
+    ) {
       continue;
     }
 
@@ -114,6 +118,25 @@ function create_toc(
     toc_entries.push(create_toc_entry(header_element, toc_list_element));
     observer.observe(header_element);
   }
+}
+
+/**
+ * Recursively get a list of element and all it's parent elements.
+ *
+ * adapted from  https://stackoverflow.com/a/8729274 and Copilot AI.
+ *
+ * @param {HTMLElement} element target element
+ * @returns List of all parent elements, including the target itself
+ */
+function get_parent_elements(element) {
+  let elements = [];
+
+  while (element) {
+    elements.push(element);
+    element = element.parentElement;
+  }
+
+  return elements;
 }
 
 /**
