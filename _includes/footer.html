@@ -49,11 +49,11 @@
       {% assign partners = site.partners | sort: "title" %}
       <div class="inset" id="partners-list">
         {% for partner in partners %}
-        <a href="{{partner.website}}" target="_blank">
+        <a href="{{partner.website}}" target="_blank" aria-label="{{partner.title}}">
           {% if partner.logo %}
           <img
             src="{% link {{partner.logoLight | default: partner.logo}} %}"
-            alt="{{partner.title}} logo"
+            alt=""
             class="logo"
           />
           {% elsif partner.short_title %}
