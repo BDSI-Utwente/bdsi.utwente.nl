@@ -53,12 +53,12 @@ html {
             display: block;
         }
 
-        &::before {
-            content: 'ON THIS PAGE';
-            position: relative;
-            font-family: Arial, sans-serif;
-            font-weight: lighter;
-        }
+        // &::before {
+        //     content: 'ON THIS PAGE';
+        //     position: relative;
+        //     font-family: Arial, sans-serif;
+        //     font-weight: lighter;
+        // }
 
         ul {
             list-style: none;
