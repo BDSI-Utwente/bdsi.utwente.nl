@@ -17,9 +17,9 @@
 <div class="author-list">
     {%- for author in authors -%}
         {%- if forloop.first != true -%}
-            <span{% if header != header_style %} class="{{header_style}}"{% endif %}>{% if forloop.length > 2 %},{%endif%}&MediumSpace;</span>
+            <span class="{{header_style}}">{% if forloop.length > 2 %},{%endif%}&MediumSpace;</span>
             {%- if forloop.last -%}
-                <span{% if header != header_style %} class="{{header_style}}"{% endif %}>and&MediumSpace;</span>
+                <span class="{{header_style}}">and&MediumSpace;</span>
             {%- endif -%}
         {% endif %}
         {% include author-list-item.html %}
