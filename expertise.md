@@ -3,7 +3,7 @@ title: Expertise Sharing
 layout: single_page
 bodyClass: page-list
 note: AI-generated
-accentColour: "#ec7908"
+accentColour: "#b4600b"
 ---
 
 BDSi is dedicated to supporting researchers in harnessing the power of data science within the realm of social sciences. Through a range of initiatives including workshops, tutorials, events, and blog posts showing our work, we strive to create an environment where knowledge sharing is fun, engaging, and tailored to meet the unique needs of the BMS research community.
@@ -20,8 +20,9 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
   {% if item_date < today %}{% continue %}{% endif %}
   
 #### [{{item.title}}]({{site.baseurl}}{{item.url}})
-{% include author-list.html page=item header="h6" %}
-###### {% include datetime.html page = item %}
+{% include author-list.html page=item header_style="h6" %}
+
+<h4 class="h6">{% include datetime.html page = item %}</h4>
 
   {% assign count = count | plus: 1 %}
   {% if count > 5 %}{% break %}{% endif %}
@@ -62,8 +63,8 @@ We help organize events where researchers from various domains come together to 
 #### {{item.title}}
 {% endif %}
 
-{% include author-list.html page=item header="h6" %}
-###### {% include datetime.html page = item %}
+  {% include author-list.html page=item header_style="h6" %}
+  <h4 class="h6">{% include datetime.html page = item %}</h4>
 
   {% assign count = count | plus: 1 %}
   {% if count > 5 %}{% break %}{% endif %}
@@ -79,8 +80,8 @@ Not all our work is translatable to hands-on events, and not everyone can make i
 {% for item in items %}
 
 #### [{{item.title}}]({{site.baseurl}}{{item.url}})
-{% include author-list.html page=item header="h6" %}
-###### {% include datetime.html page = item %}
+{% include author-list.html page=item header_style="h6" %}
+<h4 class="h6">{% include datetime.html page = item %}</h4>
 
 {% endfor %}
 
