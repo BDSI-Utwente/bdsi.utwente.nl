@@ -48,7 +48,7 @@
     }
 
     .circle:nth-child(3) {
-        --accent-colour: #ec7908;
+        --accent-colour: #ce6d0c;
 
         left: calc(cos(calc(math.$pi * 5/6)) * (50% / 2) + (50% / 2));
         top:  calc(sin(calc(math.$pi * 5/6)) * (50% / 2) + (50% / 2));
