@@ -1,15 +1,13 @@
 <div class="header {{include.headerClass}}">
     <nav class="container">
         <div class="logo">
-            <a href="{{site.baseurl}}/">
-                {% include images/logo-light.svg %}
+            <a href="{{site.baseurl}}/" aria-label="BDSi front page">
+                <img src="{% link assets/images/logo-light.svg %}" alt="">
             </a>
         </div>
         <div class="logo-mobile">
-            <a href="{{site.baseurl}}/">
-                
-                {% include images/logo-light.svg %}
-                <!-- <img src="{% link assets/images/logo-light.svg %}" alt=""> -->
+            <a href="{{site.baseurl}}/" aria-label="BDSi front page">
+                <img src="{% link assets/images/logo-light.svg %}" alt="">
             </a>
         </div>
         {% include main-menu.html %}
