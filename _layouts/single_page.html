@@ -10,28 +10,66 @@ layout: default
         {% if page.imageBackground %}background-color: {{page.imageBackground}};{% endif %}
         background-position: center;
         background-repeat: no-repeat;"></div>
-<div style="margin-top: -5vw" class="strip strip-diagonal pt-4">
+<div 
+    class="strip strip-diagonal{% if page.image %} pt-4{% endif %}"
+    {% if page.image %}style="margin-top: -5vw;"{% endif %}
+>
     <div class="content-with-toc">
         <div class="toc"></div>
         <div class="content">
-            <h1>{{page.title}}</h1>
-            {% if page.subtitle %}
-            <h4 class="subtitle">{{page.subtitle}}</h4>
-            {% endif %}
-            {% else %}
-            <div class="container py-6">
-                <h1 class="hero text-white">{{page.title}}</h1>
-                {% include author-list.html header="h6 class='text-white'" %}
-                {% if page.subtitle %}
-                <h4 class="subtitle text-white">{{page.subtitle}}</h4>
-                {% endif %}
-            </div>
-            <div class="strip strip-diagonal">
-                <div class="content-with-toc">
-                    <div class="toc"></div>
-                    <div class="content">
-                        {% endif %}
-                        {{content}}
-                    </div>
+            <header>
+                <h1>{{page.title}}</h1>
+                {% if page.subtitle or page.acronym %}
+                <div class="subtitle h4">
+                    {% if page.acronym %}<abbr>{{page.acronym}}</abbr>{% endif %}
+                    {% if page.acronym and page.subtitle %} - {% endif %}
+                    {% if page.subtitle %}{{page.subtitle}}{% endif %}
                 </div>
+                {% endif %}
+                {% unless layout.skip_author or page.skip_author %}{% include author-list.html %}{% endunless %}
+                {% unless layout.skip_date or page.skip_date %}
+                <div class="date h5">
+                    {{- page.date | date: "%B %e, %Y" -}}
+                    {%- if page.endDate -%} — {{page.endDate | date: "%B %e, %Y"}}{% endif %}
+                    {%- if page.time -%}, {{page.time}}{% endif %}
+                </div>
+                {% endunless %}
+            </header>
+            {{content}}
+        </div>
+    </div>
+</div>
+
+
+{%- else -%}
+
+<div class="container pb-6">
+    <header>
+        <h1 class="hero text-white">{{page.title}}</h1>
+        {% if page.subtitle or page.acronym %} 
+        <div class="subtitle h4 text-white">
+            {% if page.acronym %}<abbr>{{page.acronym}}</abbr>{% endif %}
+            {% if page.acronym and page.subtitle %} - {% endif %}
+            {% if page.subtitle %}{{page.subtitle}}{% endif %}
+        </div>
+        {% endif %}
+    </header>
+</div>
+<div class="strip strip-diagonal">
+    <div class="content-with-toc">
+        <div class="toc"></div>
+        <div class="content">
+            {% unless layout.skip_author or page.skip_author %}{% include author-list.html %}{% endunless %}
+            {% unless layout.skip_date or page.skip_date %}
+            <div class="date h5">
+                {{- page.date | date: "%B %e, %Y" -}}
+                {%- if page.endDate -%} — {{page.endDate | date: "%B %e, %Y"}}{% endif %}
+                {%- if page.time -%}, {{page.time}}{% endif %}
             </div>
+            {% endunless %}
+            {{content}}
+        </div>
+    </div>
+</div>
+{% endif %}
+

@@ -4,8 +4,6 @@ date: 2022-05-02
 date: 2022-05-02
 endDate: ongoing
 time: "every other monday, 16:30 - 17:30"
-layout: event
-bodyClass: page-single
 author: Anna Machens
 tags:
     - reading club

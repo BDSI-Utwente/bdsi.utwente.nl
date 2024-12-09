@@ -14,7 +14,6 @@ tags:
 image: /assets/images/content/2022-02-data-science-week/header.svg
 imageNarrow: true
 imageBackground: "#009CC3"
-layout: "event"
 date: 2022-02-14
 date: 2022-02-14
 endDate: 2022-02-28

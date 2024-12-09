@@ -20,7 +20,6 @@ image: /assets/images/workshops/dsw-2025-stamp.svg
 imageNarrow: true
 imageBackground: "#5b1d7c"
 accentColour: "#932ec8"
-layout: "event"
 date: 2025-03-03
 endDate: 2025-03-10
 frontpage: true

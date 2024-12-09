@@ -17,7 +17,6 @@ image: /assets/images/data-science-week-2023-spring.svg
 imageNarrow: true
 imageBackground: "#b95f06"
 accentColour: "#ec7a08"
-layout: "event"
 date: 2023-03-06
 date: 2023-03-06
 endDate: 2023-03-13

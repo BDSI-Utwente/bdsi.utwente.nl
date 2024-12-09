@@ -17,7 +17,6 @@ image: /assets/images/content/2022-09-data-science-week/data-science-week-people
 imageNarrow: true
 imageBackground: "#edc300"
 # accentColour: "#ddb300"
-layout: "event"
 date: 2022-09-19
 date: 2022-09-19
 endDate: 2022-09-27

@@ -18,7 +18,6 @@ image: /assets/images/wids-2color-1line.png
 imageNarrow: true
 imageBackground: white
 accentColour: "#00B140"
-layout: "event"
 date: 2023-06-08
 date: 2023-06-08
 frontpage: true

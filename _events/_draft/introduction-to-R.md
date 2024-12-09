@@ -1,7 +1,5 @@
 ---
 title: Introduction to R
-layout: event
-bodyClass: page-single
 authors:
   - Martin Schmettow
   - Stéphanie van den Berg

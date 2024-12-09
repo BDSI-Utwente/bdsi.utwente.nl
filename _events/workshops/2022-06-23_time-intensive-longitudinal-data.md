@@ -4,8 +4,6 @@ date: 2022-06-23
 date: 2022-06-23
 endDate: 2022-07-07
 time: "12:45 - 13:30"
-layout: event
-bodyClass: page-single
 author: Stéphanie van den Berg
 tags:
     - workshop

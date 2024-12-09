@@ -2,7 +2,6 @@
 title: "Data Science Drinks"
 authors: 
 introduction: Join us for an evening of connections and conversations at our Start of Year Drinks event
-layout: "event"
 date: 2023-09-25
 time: 16:00 - 18:00
 frontpage: true

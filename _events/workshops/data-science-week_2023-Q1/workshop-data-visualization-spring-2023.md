@@ -1,7 +1,5 @@
 ---
 title: Introduction to Data Visualization
-layout: event
-bodyClass: page-single
 authors:
     - Karel Kroeze
 introduction: A forty-five minute tour of creating visualizations in R.

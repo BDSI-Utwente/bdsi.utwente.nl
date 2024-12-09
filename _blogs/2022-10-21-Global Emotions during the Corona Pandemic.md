@@ -1,8 +1,6 @@
 ---
 title: "Global Emotions during the Corona Pandemic"
 author: "Anna Machens"
-layout: "blog"
-bodyClass: "page-blogs-single"
 date: 2022-10-22
 ---
 

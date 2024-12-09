@@ -9,7 +9,6 @@ date: 2021-09-28
 authors:
     - Stéphanie van den Berg
     - Martin Schmettow
-layout: news
 ---
 
 Since the start of last academic year (2020-2021), the BMS bachelor programmes are making a gradual transition from SPSS to R. In September 2020, R was introduced to the first year of the bachelor study programmes and the second and third years follow in this year 2021 and 2022, respectively. This has serious consequences for those who teach and supervise bachelor students.

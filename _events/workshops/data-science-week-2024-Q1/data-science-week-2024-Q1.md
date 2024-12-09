@@ -26,7 +26,6 @@ heroImage: assets/images/workshops/WiDS-line1-3-altered-white-cropped.svg
 imageNarrow: true
 # imageBackground: "#6d0039"
 # accentColour: "#ed007e"
-layout: "event"
 date: 2024-04-15
 endDate: 2024-04-22
 frontpage: true

@@ -1,6 +1,5 @@
 ---
-# this ensures Jekyll reads the file to be transformed into CSS later
-# its beyond stupid that we need to do this
+
 ---
 
 $strip_background_image: url("{% link /assets/images/strip-background.svg %}");
@@ -30,7 +29,3 @@ $team_icon_mask_image: url("{% link /assets/images/team-icon-rainbow.svg %}");
 // Pages
 @import "pages/home";
 @import "pages/team";
-@import "pages/projects";
-@import "pages/services";
-@import "pages/blogs";
-@import "pages/news";

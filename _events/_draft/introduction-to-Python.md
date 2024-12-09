@@ -1,7 +1,5 @@
 ---
 title: Python for Data Science
-layout: event
-bodyClass: page-single
 authors:
   - Anna Machens
   - Karel Kroeze

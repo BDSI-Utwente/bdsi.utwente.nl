@@ -2,8 +2,6 @@
 title: Workshop Shiny for education and valorization
 date: 2024-10-03
 time: "13:00 - 17:00"
-layout: event
-bodyClass: page-single
 author: Karel Kroeze
 tags:
     - workshop

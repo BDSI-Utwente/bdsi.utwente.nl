@@ -1,8 +1,6 @@
 ---
 title: Data science for the behavioural sciences
 date: 2020-11-19
-layout: event
-bodyClass: page-single
 author: Anna Machens
 introduction: Advances, advantages and challenges of using data science for the social sciences.
 ---

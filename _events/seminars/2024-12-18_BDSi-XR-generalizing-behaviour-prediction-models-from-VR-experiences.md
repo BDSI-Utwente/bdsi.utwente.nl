@@ -2,8 +2,6 @@
 title: "Generalizing Behavior Prediction Models from VR Experiences"
 date: 2024-12-18
 time: "16:00 - 17:00"
-layout: event
-bodyClass: page-single
 authors:
     - Yue Li
     - Funda Yildirim

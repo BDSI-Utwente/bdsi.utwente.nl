@@ -1,8 +1,6 @@
 ---
 title: "SEPTEMBER: Simulation-basEd Procedures To EstiMate BasE Rates"
 author: "Abhishta Abhishta"
-layout: "blog"
-bodyClass: "page-blogs-single"
 ---
 
 Covid-19 antibody tests used to identify whether an individual has been infected with SARS-CoV-2, can be employed to estimate the prevalence of this disease on a more aggregate or population level. If, for instance, such a test is taken among a number of Health Care Workers (HCW) in a well-specified region, then a sufficiently large sample suffices for a reasonably accurate estimation of the infection rate (proportion) among all HCWs in that region. The central ideas are that investigating a sample is quicker, cheaper and uses fewer scarce resources (e.g., the tests themselves) than investigating the entire population of interest. Moreover, the evolution in the rate can be monitored by taking samples distributed over time. The knowledge in the form of qualitatively sound estimates obtained may be relevant for policy decisions, for instance, in the case that a second wave is approaching, we may want to have an informed idea about the speed of the spreading of the virus as a crucial input for a second lockdown decision. Later on, we might want to have an idea about whether thresholds regarding the decline of the speed of spreading, or even the famed herd immunity, have been reached in order to end a lockdown.

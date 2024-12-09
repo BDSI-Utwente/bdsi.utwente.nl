@@ -43,36 +43,33 @@ defaults:
       path: ''
       type: news
     values:
-      layout: news
-      bodyClass: page-news-single
+      layout: single_page
+      bodyClass: page-single
   - scope:
       path: ''
       type: services
     values:
-      layout: service
-      bodyClass: page-services-single
+      layout: single_page
+      skip_date: true
+      bodyClass: page-single
   - scope:
       path: ''
       type: blogs
     values:
-      layout: blog
-      bodyClass: page-blogs-single
+      layout: single_page
+      bodyClass: page-single
   - scope:
       path: ''
       type: projects
     values:
-      layout: project
-      bodyClass: page-projects-single
+      layout: single_page
+      bodyClass: page-single
   - scope:
       path: ''
       type: events
     values:
-      layout: event
+      layout: single_page
       bodyClass: page-single
-  - scope:
-      path: images
-    values:
-      image: true
   - scope:
       path: ''
       type: communities

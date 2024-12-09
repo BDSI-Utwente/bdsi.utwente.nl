@@ -1,7 +1,5 @@
 ---
 title: Introduction to Machine Learning
-layout: event
-bodyClass: page-single
 authors:
     - Anna Machens
 introduction: A short introduction to the basics of machine learning.

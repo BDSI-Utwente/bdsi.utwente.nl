@@ -1,7 +1,5 @@
 ---
 title: Applied Statistical Learning Book Club
-layout: event
-bodyClass: page-single
 authors:
     - Karin Groothuis-Oudshoorn
     - Stéphanie van den Berg
