@@ -1,6 +1,5 @@
 ---
 title: "Advanced Statistics"
-image: "/services/stats.png"
 introduction: "Sophisticated statistical techniques, applying state of the art methods to complicated data and obtaining meaningful insights."
 ---
 

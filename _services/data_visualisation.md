@@ -1,6 +1,5 @@
 ---
 title: "Data Visualisation"
-image: "/services/noun_591323.png"
 introduction: "Communicate your findings with superior visualizations, giving information a truthful and credible visual context."
 ---
 
