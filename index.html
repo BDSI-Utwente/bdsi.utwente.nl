@@ -44,6 +44,7 @@ bodyClass: page-home
     <main id="main">
         <!-- selectize does not have a11y integration, and getting it seems to be a pain. Disable for now. -->
         <!-- % include find-expertise.html %} -->
+        <h1 class="sr-only">Behavioural Data Science incubator</h1>
          
         <h2 class="mt-2">Latest updates</h2>
         <div class="row news-items">
@@ -74,7 +75,7 @@ bodyClass: page-home
             View All Services
         </a>
     </main>
-    <aside id="sidebar">
+    <aside id="sidebar" class="calendar">
         {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
         {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
         {% assign filtered_events = '' | split: '' %}
@@ -86,9 +87,7 @@ bodyClass: page-home
         {% endfor %}
         {% assign sorted_events = filtered_events | sort_natural: "date" %}
 
-        <div class="calendar">
-            <h2>Upcoming events</h2>
-            {% include calendar.html events=sorted_events %}
-        </div>
+        <h2>Upcoming events</h2>
+        {% include calendar.html events=sorted_events %}
     </aside>
 </div>
