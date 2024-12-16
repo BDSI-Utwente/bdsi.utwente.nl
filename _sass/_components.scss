@@ -7,6 +7,7 @@ $text: $secondary; // darken($header, 30);
 @import "./components/bdsi_venn";
 @import "./components/calendar";
 @import "./components/profile_widget_generic";
+@import "./components/news_card";
 
 
 .text-accent {
@@ -652,29 +653,6 @@ $button-width: 35px;
   right: 0;
   height: 100px;
   background-image: linear-gradient(to bottom, #f5f5f500 0%, #f5f5f5 66%, #f0f0f0 100%);
-}
-
-.news-items > div+div {
-  @include media-breakpoint-up(md) {
-    border-left: 1px solid #dcddde;
-  }
-  @include media-breakpoint-only(sm) {
-    margin-top: 2em;
-  }
-}
-
-.tag {
-  position: absolute;
-  top: .8em;
-  left: .8em;
-  padding: .2em .5em 0em .5em;
-  font-size: 70%;
-  text-transform: uppercase;
-  color: white;
-
-  @include shadow($blur: 3px);
-  background: $primary;
-  border-radius: 2px;
 }
 
 .page-single, .page-list {
