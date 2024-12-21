@@ -21,6 +21,17 @@
   date: 2025-01-29
   endDate: 2025-01-29
   time: 12:00 - 13:00
+- title: DSI Meet Up - AI Literacy @ UT
+  description: "Join the DSI Meet Up on Monday 10 February on AI Literacy :
+    already the third session in this series!"
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/2/42743/dsi-meet-up-ai-literacy-ut
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ic74907410102f363200087f3a5011cdbd7eb3b8cc1a50701c33a003a0085/data.avif
+  start: 2025-02-10T12:00:00+00:00
+  end: 2025-02-10T13:00:00+00:00
+  date: 2025-02-10
+  endDate: 2025-02-10
+  time: 12:00 - 13:00
 - title: Data Science Week
   description: The goal of the data science week is to introduce interested
     students and staff to data science in a fun and cooperative way, and help
@@ -35,3 +46,13 @@
   end: 2025-03-10T23:59:00+00:00
   date: 2025-03-03
   endDate: 2025-03-10
+- title: DSI Meet Up - European Horizon Cluster 4 Call
+  description: Wednesday, 19 March, 09.00-12.00 - Carré 3B
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/3/44331/dsi-meet-up-european-horizon-cluster-4-call
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i977588ff0102415b210070e605031cdbd7eb3b8cc1a50701c33a003a0085/data.avif
+  start: 2025-03-19T09:00:00+00:00
+  end: 2025-03-19T12:00:00+00:00
+  date: 2025-03-19
+  endDate: 2025-03-19
+  time: 09:00 - 12:00
