@@ -45,7 +45,7 @@ bodyClass: page-home
     <!-- % include find-expertise.html %} -->
     <h1 class="sr-only">Behavioural Data Science incubator</h1>
         
-    <h2 class="mt-2">Latest updates</h2>
+    <h2 class="mt-6">Latest updates</h2>
     <div class="row news-items">
         {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
         {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
@@ -54,7 +54,7 @@ bodyClass: page-home
         {% endfor %}
     </div>
 
-    <h2 class="mt-2">Upcoming Events</h2>
+    <h2 class="mt-6">Upcoming Events</h2>
     <div class="row event-items">
     {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
     {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
@@ -62,7 +62,9 @@ bodyClass: page-home
     {% for event in events %}
         {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
         {% if startDate >= renderDate %}
-            {% assign filtered_events = filtered_events | push: event %}
+            {% unless event.title contains "Walk-in Hour" %}
+                {% assign filtered_events = filtered_events | push: event %}
+            {% endunless %}
         {% endif %}
     {% endfor %}
     {% assign sorted_events = filtered_events | sort_natural: "date" %}

@@ -1,0 +1,73 @@
+{% assign title_lower = event.title | downcase %}
+{% assign event_image = event.image %}
+{% if event.path %}
+    {% capture event_path %}{% link {{event.path}} %}{% endcapture %}
+{% else %}
+    {% assign event_path = false %}
+{% endif %}
+{% if event.image %}
+    {% assign event_image = event.image %}
+{% else %}
+    {% assign event_image = false %}
+{% endif %}
+
+{% unless event_path %}
+    {% if event.url %}
+        {% assign event_path = event.url %}
+    {% endif %}
+{% endunless %}
+
+{% unless event_path %}
+    {% if title_lower contains "bdsi walk-in hour" %}
+        {% capture event_path %}{% link research.html %}#walk-in-hours{% endcapture %}
+        {% assign event_image = "assets/images/open-hour-header.png" %}
+    {% endif %}
+{% endunless %}
+
+{% unless event_path %}
+    {% for community in site.communities %}
+        {% for keyword in community.keywords %}
+            {% assign keyword_lower = keyword | downcase %}
+            {% if title_lower contains keyword_lower %}
+                {% capture event_path %}{% link {{ community.path }} %}{% endcapture %}  
+                {% assign event_image = event.image | default: community.image %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endunless %}
+
+{% unless event_path %}
+    {% assign event_path = "#" %}
+{% endunless %}
+
+{% unless event_image %}
+    {% if event.img_url %}
+        {% assign event_image = event.img_url %}
+    {% elsif event.image %}
+        {% capture event_image %}{% link {{event.image}} %}{% endcapture %}
+    {% endif %}
+{% endunless %}
+
+{% unless event_image %}
+    {% assign event_image = "assets/images/calendar-blank.png" %}
+{% endunless %}
+
+
+<a href="{{event_path}}" title="{{event.title}}" class="event-item">
+    <div class="event-item-image-wrapper">
+        <img src="{{event_image}}" alt="{{event.image_alt}}" class="event-item-image">
+    </div>
+    <div class="event-item-content">
+        <div class="event-item-date-row">
+            {% if event.source %}
+            <div class="event-tags">
+                <div class="event-item-tag">{{event.source}}</div>
+            </div>
+            {% endif %}
+            <div class="event-item-date small text-muted">
+                {% include datetime.html page=event %}
+            </div>
+        </div>
+        <h3 class="event-item-title h5">{{event.title}}</h3>
+    </div>
+</a>
