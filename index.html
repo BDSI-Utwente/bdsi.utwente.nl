@@ -40,54 +40,54 @@ bodyClass: page-home
     </div>
 </div> -->
 
-<div id="main-with-sidebar">
-    <main id="main">
-        <!-- selectize does not have a11y integration, and getting it seems to be a pain. Disable for now. -->
-        <!-- % include find-expertise.html %} -->
-        <h1 class="sr-only">Behavioural Data Science incubator</h1>
-         
-        <h2 class="mt-2">Latest updates</h2>
-        <div class="row news-items">
-            {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
-            {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
-            {% for item in items limit:3 %}
-                <div class="col-12 col-md-4">{% include news-card.html %}</div>
-            {% endfor %}
-        </div>
+<main class="container">
+    <!-- selectize does not have a11y integration, and getting it seems to be a pain. Disable for now. -->
+    <!-- % include find-expertise.html %} -->
+    <h1 class="sr-only">Behavioural Data Science incubator</h1>
+        
+    <h2 class="mt-2">Latest updates</h2>
+    <div class="row news-items">
+        {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
+        {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
+        {% for item in items limit:3 %}
+            <div class="col-12 col-md-4">{% include news-card.html %}</div>
+        {% endfor %}
+    </div>
 
-        <h2 class="mt-6">Our Services</h2>
-        <div class="row">
-            {% for service in site.services %}
-            <div class="col-12 col-md-6 mb-2">
-                <div class="service service-summary">
-                    <div class="service-content">
-                        <h3>
-                            <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
-                        </h3>
-                        {{ service.introduction | markdownify }}
-                    </div>
+    <h2 class="mt-2">Upcoming Events</h2>
+    <div class="row event-items">
+    {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
+    {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
+    {% assign filtered_events = '' | split: '' %}
+    {% for event in events %}
+        {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
+        {% if startDate >= renderDate %}
+            {% assign filtered_events = filtered_events | push: event %}
+        {% endif %}
+    {% endfor %}
+    {% assign sorted_events = filtered_events | sort_natural: "date" %}
+    {% for event in sorted_events limit:8 %}
+        <div class="col-12 col-md-6">{% include event-card.html %}</div>    
+    {% endfor %}
+    </div>
+
+    <h2 class="mt-6">Our Services</h2>
+    <div class="row">
+        {% for service in site.services %}
+        <div class="col-12 col-md-6 mb-2">
+            <div class="service service-summary">
+                <div class="service-content">
+                    <h3>
+                        <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
+                    </h3>
+                    {{ service.introduction | markdownify }}
                 </div>
             </div>
-            {% endfor %}
         </div>
-        <a class="button center"
-            href="{% link about.html %}#services">
-            View All Services
-        </a>
-    </main>
-    <aside id="sidebar" class="calendar">
-        {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
-        {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
-        {% assign filtered_events = '' | split: '' %}
-        {% for event in events %}
-            {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
-            {% if startDate >= renderDate %}
-                {% assign filtered_events = filtered_events | push: event %}
-            {% endif %}
         {% endfor %}
-        {% assign sorted_events = filtered_events | sort_natural: "date" %}
-
-        <h2>Upcoming events</h2>
-        {% include calendar.html events=sorted_events %}
-    </aside>
-</div>
+    </div>
+    <a class="button center"
+        href="{% link about.html %}#services">
+        View All Services
+    </a>
+</main>
