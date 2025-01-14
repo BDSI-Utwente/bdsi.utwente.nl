@@ -32,6 +32,24 @@
   date: 2025-02-10
   endDate: 2025-02-10
   time: 12:00 - 13:00
+- title: "DSI's special Meet Up with LISA & CELT : the Launch of UT's new AI Hub"
+  description: "With a lot of effort, CELT has built in collaboration with many
+    UT-partners, an unique AI-Hub in our own Canca-environment : a platform
+    where all kinds of AI-literacy related material is shared amongst peers.
+    Think not only as AI as a topic we want to interweave in our curriculum for
+    our students as so they learn how to use this technology wise and secure.
+    But also think about AI as a tool to make your professional life as a
+    teacher easier : an instrument supporting you in designing parts of your
+    courses, saving you time in the assessments of exams, or other
+    administrative tasks your former TA's might have supported you with."
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/2/64259/dsis-special-meet-up-with-lisa-celt-the-launch-of-uts-new-ai-hub
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ibf9838340102491c0200eef4f602fe9fd365a4292f470701c33a003a0085/data.avif
+  start: 2025-02-10T15:00:00+00:00
+  end: 2025-02-10T17:00:00+00:00
+  date: 2025-02-10
+  endDate: 2025-02-10
+  time: 15:00 - 17:00
 - title: Data Science Week
   description: The goal of the data science week is to introduce interested
     students and staff to data science in a fun and cooperative way, and help
