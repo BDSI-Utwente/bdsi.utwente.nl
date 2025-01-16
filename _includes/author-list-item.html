@@ -1,4 +1,8 @@
-{% assign profile = site.team | find: "title", author %}
+{% unless include.no_links %}
+    {% assign profile = site.team | find: "title", author %}
+{% else %}
+    {% assign profile = nil %}
+{% endunless %}
 {% assign header = include.header | default: "h4" %}
 {% assign header_style = include.header_style | default: header %}
 
@@ -10,6 +14,6 @@
     {% if author contains "!external" %} 
         <{{header}} class="author-list-item{% if header != header_style %} {{header_style}}{% endif %}">{{ author | remove: "!external" | strip }}</{{header}}>
     {% else %}
-        <{{header}} class="author-list-item unresolved{% if header != header_style %} {{header_style}}{% endif %}" data-name="{{author}}">{{author}}</{{header}}>
+        <{{header}} class="author-list-item{% unless include.no_links%} unresolved{% endunless %}{% if header != header_style %} {{header_style}}{% endif %}" data-name="{{author}}">{{author}}</{{header}}>
     {% endif %}
 {%- endif -%}

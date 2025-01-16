@@ -14,7 +14,7 @@
 {%- endif -%}
 
 {% if authors != nil %}
-<div class="author-list">
+<div class="author-list">    
     {%- for author in authors -%}
         {%- if forloop.first != true -%}
             <span class="{{header_style}}">{% if forloop.length > 2 %},{%endif%}&MediumSpace;</span>
@@ -22,7 +22,7 @@
                 <span class="{{header_style}}">and&MediumSpace;</span>
             {%- endif -%}
         {% endif %}
-        {% include author-list-item.html %}
+        {% include author-list-item.html no_links=include.no_links header=include.header header_style=include.header_style %}
     {% endfor %}
 </div>
 {% endif %}

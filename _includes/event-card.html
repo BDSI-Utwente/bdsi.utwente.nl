@@ -61,10 +61,10 @@
         <div class="event-item-date-row">
             {% if event.source %}
             <div class="event-tags">
-                <div class="event-item-tag">{{event.source}}</div>
+                <div class="event-item-tag bg-primary text-white">{{event.source}}</div>
             </div>
             {% endif %}
-            <div class="event-item-date small text-muted">
+            <div class="event-item-date small text-bold">
                 {% include datetime.html page=event %}
             </div>
         </div>

@@ -46,11 +46,19 @@ bodyClass: page-home
     <h1 class="sr-only">Behavioural Data Science incubator</h1>
         
     <h2 class="mt-6">Latest updates</h2>
+    {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
+    {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
+    
     <div class="row news-items">
-        {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
-        {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
-        {% for item in items limit:3 %}
-            <div class="col-12 col-md-4">{% include news-card.html %}</div>
+        {% assign item = items[0] %}
+        <div class="col-12">{% include news-card.html class="news-item-hero" %}</div>
+    </div>
+
+
+    {% assign items = items | slice: 1, 4 %} 
+    <div class="row news-items">
+        {% for item in items %}
+            <div class="col-12 col-md-4 col-xl-3">{% include news-card.html %}</div>
         {% endfor %}
     </div>
 
@@ -68,8 +76,8 @@ bodyClass: page-home
         {% endif %}
     {% endfor %}
     {% assign sorted_events = filtered_events | sort_natural: "date" %}
-    {% for event in sorted_events limit:8 %}
-        <div class="col-12 col-md-6">{% include event-card.html %}</div>    
+    {% for event in sorted_events limit:12 %}
+        <div class="col-12 col-md-6 col-xl-4">{% include event-card.html %}</div>    
     {% endfor %}
     </div>
 

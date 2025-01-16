@@ -10,7 +10,7 @@
     {% endif %}
 {% endif %}
 
-<a href="{% link {{item.path}} %}" class="news-item">
+<a href="{% link {{item.path}} %}" class="news-item mb-3 {{include.class}}">
     {% if item.image %}
     <div class="news-item-image-wrapper">
         <img
@@ -23,26 +23,16 @@
     <div class="news-item-content">
         <div class="news-item-title">
             <h3 id="news-title-{{item.title || slugify}}">{{item.title}}</h3>
-            <div class="small text-muted">
-                {% if item.author -%}
-                    {% assign profile = site.team | find: "title", item.author %}
-                    {% assign id = profile.email | split: '@' | first | replace: '.', '-' %}
-                    <a href="/team#{{id}}">{{item.author}}</a>, 
-                {% endif -%} 
-                {{item.date | date: "%B %e, %Y"}}
-                {%- if item.endDate %}
-                    — {{item.endDate | date: "%B %e, %Y"}}
-                {%- endif %}
-            </div>
+            {% if item.author | item.authors %}
+                {% include author-list.html page=item no_links='true' header_style='h6' %}
+            {% endif %}
         </div>
         <div class="news-item-text">
-            {% if item.introduction %} {% assign paragraphs = item.introduction
-                | split: "\n" %} {% for p in paragraphs %}
-                <p class="{% unless forloop.first %}text-muted{% endunless %}">
-                    {{p}}
-                </p>
-                {% endfor %} {% else%} {{item.content | truncatewords: 50, '...'}}
-                {% endif %}
+            {% if item.introduction %}
+                {{item.introduction | markdownify | replace: '<p>', '__p__' | replace: '\n', '__p__' | strip_html | truncatewords: 100, '...' | replace: '__p__', '<p>'}}
+            {% else %}
+                {{item.content | replace: '<p>', '__p__' | strip_html | truncatewords: 100, '...' | replace: '__p__', '<p>'}}
+            {% endif %}
         </div>
     </div>
     <div class="news-item-tags">
