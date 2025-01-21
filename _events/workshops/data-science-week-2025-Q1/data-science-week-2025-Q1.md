@@ -209,9 +209,11 @@ During the lunch breaks expert data scientists will provide lectures on the most
 
 ### Datathon
 
-A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the spring 2025, we will have a new and rewarding data challenge. 
+A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the spring 2025, we will have a new and rewarding data challenge using physiological data gathered from and by participants. 
 
 ### Speakers
+
+(Almost) every lunch break (12:45 - 13:30), expert speakers from across the University of Twente and beyond will give talks on various topics surrounding digital phenotyping. From a broad overview of the roots and likely future of the field, practical applications for social research, to legal and ethical implications - there is something here for everyone to enjoy. All the talks are meant to broaden and enrich the discussion around the data science week, and can be enjoyed with or without participating in the datathon or any of the workshops.
 
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'hero'" %}
 {% include profile-widget-list-generic.html speakers=_speakers style="hero" %}
@@ -222,9 +224,9 @@ A datathon is an event in which teams collaborate and compete to create a soluti
 
 ### Lectures & Practicals
 
-Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
+In the afternoon (13:45 - 15:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, feature engineering, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
 
-After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
+After a short coffee break, the lecture will be followed by a hands-on practical session (~14:45 - 15:30). During these this time, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
 
 {% include figure.html url="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" caption="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" %}
 
@@ -245,8 +247,11 @@ The team with the best solution will receive the coveted BDSi Data Science troph
 
 ### Staff, students, family, and friends
 
-Everyone related to the University of Twente and their friends and family can join. You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts, or go at it alone.
+Everyone related to the University of Twente and their friends and family can join any of the events during the Data Science Week. The lunch talks in particular are meant to be open to everyone who has an interest in the topic. 
 
+The datathon is open to both novices and experts, and everyone in between. You can join as a team, alone, or skip it altogether and only participate in the workshops. As long as one person in the team is affiliated with the University of Twente, you're free (in fact, encouraged!) to invite friends, (external) colleagues, and/or family to join your team. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts, or go at it alone.
+
+## What is required to compete in the datathon?
 ### Some experience with R or Python
 
 {% include card.html title_element="h3" title="<span style='color: var(--accent-colour, #008eaa);'>Some programming knowledge is required!</span>" content="
@@ -261,7 +266,7 @@ Everyone related to the University of Twente and their friends and family can jo
 
 If you're confident you can participate in the datathon in another programming language, you're more than welcome to do so (we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript). Just be aware that we probably can't offer support if or when you get stuck.
 
-## What can I do to prepare?
+## What can I do to prepare for the datathon?
 
 ### Get a team
 
@@ -293,7 +298,7 @@ Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.co
 
 The spring 2025 Data Science Week takes place from March 3rd to March 10th. There will be an opening lecture and talk introducing the topic, the schedule for the week, and the technicalities of competing in the datathon. 
 
-The rest of the week, there will be lunch lectures on core data science skills, followed by practicals applying those skills to the problem in the datathon. Invited speakers will be fit into the schedule based on availability and opportunity. The data science week closes on Monday the 10th with presentations from the competing datathon teams, and a final keynote.
+The rest of the week, there will be lunch talks on topics surrounding digital phenotyping, followed by lectures on core data science skills and practicals applying those skills to the problem in the datathon. The data science week closes on Monday the 10th with presentations from the competing datathon teams, and a final keynote.
 
 Further details will be made available in the coming weeks and months. 
 
