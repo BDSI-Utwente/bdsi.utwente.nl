@@ -1,9 +1,5 @@
 ---
 title: "Data Science Week Spring 2025"
-authors:
-  - Stéphanie van den Berg
-  - Anna Machens
-  - Karel Kroeze
 introduction: An interactive, educational and fun week of data crunching and modelling, lunch workshops, inspiring speakers, and networking opportunities open to anyone affiliated with the UT interested in Data Science.
 tags:
   - Data Science Week
@@ -28,6 +24,7 @@ speakers:
     image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
     tags: 
     - "mon-practical"
+    - "mon-data"
     - "tue-practical"
     - "wed-practical"
     - "thu-practical"
@@ -36,85 +33,149 @@ speakers:
     image_url: https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg
     tags: 
     - "mon-practical"
+    - "mon-data"
     - "tue-practical"
     - "wed-practical"
-    - "thu-practical"
     - "fri-practical"
+  - name: Lucas Noldus
+    prefix: "prof. dr. "
+    tags: 
+    - "mon-talk"
+    - "hero"
+    url: https://www.ru.nl/en/people/noldus-l
+    image_url: https://portal.ru.nl/profileservice/rest/1.0/profilephoto/1829331?timestamp=1737455849&user=1829331&hash=195ce199bd8ff97956fdf8d66eea63bc&secure=false
+    affiliation: Radboud Universiteit
+    affiliation_url: https://www.ru.nl/
+    affiliation_image_url: https://www.ru.nl/themes/custom/ru/logo.svg
+    description: <p>Lucas Noldus is Professor of Behavior, Information Technology and Innovation at Donders Institute for Brain, Cognition and Behavior,  Radboud University and CEO of Noldus Information Technology.</p>
+      <p>His research is aimed at the discovery and development of new techniques for automatic behavioral recording in animals and humans. The topics are quite diverse and include generic AI models for behavior recognition in rodents and human infants, vocalizations in mice, EEG and behavior in mice, learning tasks in zebrafish, eye tracking in MS patients, and motion analysis in visually impaired people. He tries to build bridges between the  University and companies in the field of behavior and technology.</p>
+  - name: Matthijs Noordzij
+    prefix: "prof. dr. "
+    tags: ["tue-talk", "hero"]
+    url: https://people.utwente.nl/m.l.noordzij
+    image_url: https://personen.utwente.nl/.wh/ea/uc/ib1187cab0103b7c8f00187d57c0334a7637a650872de0801e3400140018041/mlnoordzij.jpg
+    description: <p>Matthijs Noordzij is Full Professor of Health Psychology and Persuasive Technology and directs the Health Dynamics & Self Management Lab at the University of Twente in The Netherlands.</p>
+      <p>His research and education focuses on exploring the scientific foundations and design principles for integrating sensor technology in (mental) healthcare and self-management.</p>
+      <p>His vision is to develop health technology that aligns with core human values such as compassion, while striving to create innovative solutions that enhance the way we interact with technology in healthcare settings.</p>
+  - name: Arlene John
+    prefix: "dr. "
+    tags: ["wed-talk", "hero"]
+    url: https://people.utwente.nl/a.john
+    image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ib355ad2901039a15f2015e1e760326ac5c0bb8f0ee7c0801e3400140018041/ajohn.jpg
+    description: <p>Arlene John is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente. She completed her PhD on data fusion frameworks for wearable health monitoring devices at University College Dublin, and has previously worked on Machine Learning Mathematics at Qualcomm and ASML.</p>
+      <p>Her current research interests include biomedical signal processing, machine learning and inference, explainable AI, and multisensor data fusion.</p>
+
+  - name: Ying Wang
+    prefix: "dr. "
+    tags: ["wed-talk", "hero"]
+    url: https://people.utwente.nl/ying.wang
+    image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i096cfb36010357a1f201a7ff7403c9e30786ad971b0d0801e3400140018041/yingwang.jpg
+    description: <p>Ying Wang is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente.</p>
+      <p>Her research is interdisciplinary, and applies and develops multi-modal model-based signal processing, sensing and physiological system modeling techniques in the healthcare field. Her main research interest is  remote continuous monitoring of individual’s physiological signs (such as, heart activty) and body movement in daily life for personalized disease prevention and management.</p>
+      <p>She is especially enthusiastic in using her expertise to tackle challenges surrounding the daily monitoring of physiological (brain and body) responses to dynamic physical activities for different healthcare purposes, such as, helping people stay in healthy and tracking patients' disease symptoms for disease management.</p>
+    
+  # - name: Stéphanie van den Berg
+  #   prefix: "Dra. "
+  #   url: https://bdsi.bms.utwente.nl/team/#st-phanie-van-den-berg
+  #   image_url: https://bdsi.bms.utwente.nl/assets/images/team/Stephanie.jpg
+  #   affiliation: Cognition, Data and Education, Behavioural Data Science incubator
+  #   description: Stéphanie is Associate Professor and chair of the Cognition, Data and Education section. She is also the founder and head of the Behavioural Data Science incubator, all-around data science sorceress, and Women in Data Science Ambassador.
+  #   tags: ["hero", "fin-keynote"]
+    
 events: 
-  - title: Opening & introduction
+  - title: "Keynote: digital phenotyping"
     type: lectures
     start: 2025-03-03 12:45
     end: 2025-03-03 13:30
     location: Citadel T300
-    description: Welcome to the data science week, general information, etc.
-  - title: Practical & Hands-on
+    description: Keynote by prof. Lucas Noldus. Abstract will follow soon.
+    tag: mon-talk
+  - title: "Datathon: kick-off"
     type: practicals
     start: 2025-03-03 13:45
-    end: 2025-03-03 15:30
+    end: 2025-03-03 14:30
     location: Citadel T300
-    description: Introduction to the datathon, finding and matching teams, using Kaggle, installing and setting up R/Python
+    description: Introduction to the datathon, finding and matching teams.
     tag: mon-practical
-  - title: Lunch lecture
+  - title: "Datathon: Gathering data"
+    type: practicals
+    start: 2025-03-03 14:45
+    end: 2025-03-03 16:30
+    location: Citadel T300
+    description: Digital phenotyping often relies on highly personalized data. What could be more personalized than working on data gathered by and from you and the other participants? We will use real physiological measurements in a simple and fun experimental design to gather data from participants, _for_ participants. 
+    tag: mon-data
+  - title: Digital phenotyping in social sciences research (working title)
     type: lectures
     start: 2025-03-04 12:45
     end: 2025-03-04 13:30
     location: Citadel T300
-  - title: Practical & Hands-on
+    description: Talk by Matthijs Noordzij. Abstract fill follow soon.
+    tag: tue-talk
+  - title: "Workshop: Data Wrangling"
     type: practicals
     start: 2025-03-04 13:45
     end: 2025-03-04 15:30
     location: Citadel T300
     tag: tue-practical
-  - title: Lunch lecture
+    description: Cleaning and combining datasets, (visually) exploring data and patterns, preparing raw data for further analysis.
+  - title: "Advancing Digital Phenotyping: From Physiological Time Series Data to Real-Life Multimodal Health Monitoring."
     type: lectures
     start: 2025-03-05 12:45
     end: 2025-03-05 13:30
     location: Citadel T300
-  - title: Practical & Hands-on
+    description: This talk explores the journey from physiological time-series data to multimodal data analysis for digital phenotyping, emphasizing the transition from controlled semi-lab environments to real-life health monitoring. The challenges and some innovations in daily-life health monitoring required to sense information unobtrusively to enable the development of personalized phenotypes for continuous health tracking is discussed. 
+      Key topics include both wireless and wearable sensing techniques, multimodal feature extraction, identifying interrelationships amongst features, and connecting these insights to individual phenotypes. 
+      <br/>
+      Additionally, we examine methods for monitoring health trends over extended periods. Practical applications discussed will include energy expenditure monitoring during daily physical activity for people with risk of obesity, cardiac function monitoring for people with long term diabetes, psychophysiological condition monitoring for people with knee osteoarthritis, recovery tracking post-colorectal surgery using patch sensors, and smartphone-based digital phenotyping for breast cancer survivors. 
+    tag: wed-talk
+  - title: "Workshop: Feature Engineering"
     type: practicals
     start: 2025-03-05 13:45
     end: 2025-03-05 15:30
     location: Citadel T300
     tag: wed-practical
-  - title: Lunch lecture
+    description: How to go from 'raw' sensor data to usable signals or 'features'. We will provide some background and context for the choices you will have to make (or that are made for you with commercial products), and implement a basic pipeline for extracting features from raw signals data in R. 
+  - title: (to be announced...)
     type: lectures
     start: 2025-03-06 12:45
     end: 2025-03-06 13:30
     location: Citadel T300
-  - title: Practical & Hands-on
+  - title: "Workshop: Modelling"
     type: practicals
     start: 2025-03-06 13:45
     end: 2025-03-06 15:30
     location: Citadel T300
     tag: thu-practical
+    description: Introduction to modelling and machine learning in R.
   - title: Posters & Drinks
     type: socials
     start: 2025-03-06 16:00
     end: 2025-03-06 18:00
     location: TBA
     description: (Social) networking with other participants, and other University of Twente students and staff interested in data science.
-  - title: Lunch lecture
+  - title: (to be announced...)
     type: lectures
     start: 2025-03-07 12:45
     end: 2025-03-07 13:30
     location: Citadel T300
-  - title: Practical & Hands-on
+  - title: "Workshop: Modelling II"
     type: practicals
     start: 2025-03-07 13:45
     end: 2025-03-07 15:30
     location: Citadel T300
     tag: fri-practical
-  - title: Submission deadline
+    description: "More in-depth continuation of modelling, implications of different modeling choices and 'fairness' in AI models. [Note: exact contents may still change]"
+  - title: "Datathon: Submission deadline"
     type: other
     start: 2025-03-09 23:59
     description: Deadline for datathon submissions on the leaderboard.
-  - title: Team presentations
+  - title: "Datathon: Team presentations"
     type: lectures
     start: 2025-03-10 12:45
     end: 2025-03-10 13:30 
     location: Citadel T300
     description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
-  - title: Prize ceremony
+  - title: "Datathon: Prize ceremony"
     type: speaker
     start: 2025-03-10 13:45
     end: 2025-03-10 14:00
@@ -135,10 +196,6 @@ events:
 <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
 
 
-<!-- {% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates are set, the room is booked, and the rough schedule is ready, but we are still hard at work filling in the blanks."%} -->
-
-{% include card.html title="Save the date!" content="Add the data science week to your calendar now, just to be sure. Download the current schedule as a calendar file, and add it to your calendar now. Don't forget to actually open the file!" cta="add to calendar" cta_link="/assets/files/dsw-2025-calendar.ics" %}
-
 ## What is the Data Science Week?
 
 The goal of the data science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi and DSI organize various events during the week, including a datathon, contextual speakers, expert lectures, hands-on workshops, and a networking drink.
@@ -147,18 +204,20 @@ During the lunch breaks expert data scientists will provide lectures on the most
 
 (Guest) speakers will be invited during the week to provide a deeper background in the topics and methods covered in the lectures and datathon, or to put these topics in a broader context. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.
 
+
+{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+
 ### Datathon
 
 A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the spring 2025, we will have a new and rewarding data challenge. 
 
 ### Speakers
 
-{% include card.html title_element="h4" shadow="false" title="Stay tuned for updates!" content="We're coordinating with speakers inside and outside the UT, and will update the website once more details are known." %}
-
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'hero'" %}
 {% include profile-widget-list-generic.html speakers=_speakers style="hero" %}
 
-{% include figure.html url="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" caption="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" %}
+{% include card.html title_element="h4" shadow="false" title="Stay tuned for updates!" content="We're coordinating with speakers inside and outside the UT, and will update the website once more details are known." %}
+
 
 
 ### Lectures & Practicals
@@ -166,6 +225,8 @@ A datathon is an event in which teams collaborate and compete to create a soluti
 Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
 
 After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
+
+{% include figure.html url="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" caption="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" %}
 
 
 ### Posters & Drinks
@@ -225,6 +286,8 @@ If you're looking for more information, a competitive edge, or just a good way t
 Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook), as well as [a long list of competitions that are approachable for beginners](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good way to spend a rainy weekend.
 
 [Sharada Kalanidhi](https://www.linkedin.com/in/sharada-kalanidhi-12430ab2/) has written an excellent deep dive into the 2023 WiDS datathon, including links to further resources for both R and Python: <https://www.widsworldwide.org/get-inspired/blog/a-data-scientists-deep-dive-into-the-wids-datathon/>.
+
+{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
 
 ## Schedule
 
@@ -343,3 +406,6 @@ Further details will be made available in the coming weeks and months.
 {{ event.description }}
 
 {% endfor %}
+
+
+{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
