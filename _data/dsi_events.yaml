@@ -1,14 +1,16 @@
-- title: "DSI Meet Up: Seminar Series on Embedded AI"
-  description: This Dedicated DSI Meet Up will be the fourth of a series on
-    Embedded AI, co-organized by the CAES and DMB groups.
+- title: "Innovation in Robotics and AI: Working together for the Future of Work"
+  description: "It’s a well-known pressing reality: many societies, including the
+    Netherlands, are facing critical labour shortages across key sectors. In
+    several areas, the lack of available workforce and challenges to job quality
+    are leading to serious socio-economic issues."
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/1/1791166/dsi-meet-up-seminar-series-on-embedded-ai
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ic51b292801025f7e17048539c3010047a0c6a0991b370701c3a401ee0085/data.avif
-  start: 2025-01-23T12:00:00+00:00
-  end: 2025-01-23T13:00:00+00:00
+  url: https://www.utwente.nl/en/digital-society/events/2025/1/1856855/innovation-in-robotics-and-ai-working-together-for-the-future-of-work
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ie0f3143d0102bbd42c0049a4f402d46d26c576753daf0701c3a401ee0085/data.avif
+  start: 2025-01-23T13:00:00+00:00
+  end: 2025-01-23T17:00:00+00:00
   date: 2025-01-23
   endDate: 2025-01-23
-  time: 12:00 - 13:00
+  time: 13:00 - 17:00
 - title: DSI Meet Up - Career Investments
   description: Join the DSI Meet Up on 29 January to explore the topic of Career
     Investments. Learn how smart career choices can lead to new opportunities
@@ -21,6 +23,28 @@
   date: 2025-01-29
   endDate: 2025-01-29
   time: 12:00 - 13:00
+- title: "Training Workshop: AWS Training on Cloud-based Geospatial Computing"
+  description: Cloud computing offers immense potential for processing and
+    analyzing geospatial data at scale, enabling faster and more efficient
+    workflows with large amounts of satellite imagery, vector data, and other
+    spatial datasets. Amazon Web Services (AWS) provides a suite of services
+    that are particularly well-suited for geospatial workflows. This training is
+    designed to introduce participants to the key AWS services used in
+    geospatial workflows, such as EC2 for scalable computing, S3 for data
+    storage, SageMaker for building and training machine learning models, and
+    the AWS Open Data Registry for accessing geospatial datasets. Through
+    practical examples and hands-on sessions, participants will learn how to
+    design, implement, and optimize geospatial workflows using AWS while
+    understanding the underlying architecture and best practices for managing
+    cloud-based resources, including pricing.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/2/71524/training-workshop-aws-training-on-cloud-based-geospatial-computing
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/iae9615ad0102f01f38000fd801038f05889ab285fd360701c33a003a0085/data.avif
+  start: 2025-02-04T09:00:00+00:00
+  end: 2025-02-04T16:00:00+00:00
+  date: 2025-02-04
+  endDate: 2025-02-04
+  time: 09:00 - 16:00
 - title: DSI Meet Up - AI Literacy @ UT
   description: "Join the DSI Meet Up on Monday 10 February on AI Literacy: already
     the third session in this series!"
@@ -32,6 +56,18 @@
   date: 2025-02-10
   endDate: 2025-02-10
   time: 12:00 - 13:00
+- title: "DSI's special Meet Up with LISA & CELT: Launching UT's New AI Hub!"
+  description: With great effort, CELT has built a unique AI hub in our Canvas
+    environment, collaborating with many UT partners: a platform where peers can
+    share all kinds of AI-literacy-related material.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/2/64259/dsis-special-meet-up-with-lisa-celt-launching-uts-new-ai-hub
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i8da3a44c01024e5a340007ffe803b49bee6d070d2f450701c33a003a0085/data.avif
+  start: 2025-02-10T15:00:00+00:00
+  end: 2025-02-10T17:00:00+00:00
+  date: 2025-02-10
+  endDate: 2025-02-10
+  time: 15:00 - 17:00
 - title: Data Science Week
   description: The goal of the data science week is to introduce interested
     students and staff to data science in a fun and cooperative way, and help
