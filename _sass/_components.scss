@@ -115,6 +115,8 @@ body {
   counter-reset: figure;
 }
 
+
+
 .label-figure::before {
   counter-increment: figure;
   content: "Figure " counter(figure)": ";

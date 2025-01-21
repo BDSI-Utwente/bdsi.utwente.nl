@@ -3,7 +3,9 @@
 {% capture alt %}{{include.alt | default: include.caption }}{% endcapture %}
 {% capture caption_style %}{{include.caption_style | default: "h6"}}{% endcapture %}
 
-<figure class="card mb-2{% unless include.no_shadow %} shadow{% endunless %}{% if include.bg %} bg-{{include.bg}}{% endif %} mx-2" style="{% if include.no_border %}border: none;{% endif %}">
+<figure 
+    class="card mb-2{% unless include.no_shadow %} shadow{% endunless %}{% if include.bg %} bg-{{include.bg}}{% endif %} mx-auto" 
+    style="width: min(90vw, 800px); max-width: 100%; {% if include.no_border %}border: none;{% endif %}">
   {% if include.iframe %}
   <iframe src="{{include.iframe}}" width="100%" height="500px" frameborder="0"></iframe>
   {% else %}

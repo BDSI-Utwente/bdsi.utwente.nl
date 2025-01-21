@@ -1,14 +1,24 @@
-<div class="bdsi-venn">
-    <a class="circle research-support" href="{% link research.html %}">
-        <h1 data-toc-skip="true">Research</h1>
-        <h2 data-toc-skip="true" class="text-secondary">Support</h2>
-    </a>
-    <a class="circle community-building" href="{% link community.html %}">
-        <h1 data-toc-skip="true">Community</h1>
-        <h2 data-toc-skip="true" class="text-secondary">Building</h2>
-    </a>
-    <a class="circle expertise-sharing" href="{% link expertise.md %}">
-        <h1 data-toc-skip="true">Expertise</h1>
-        <h2 data-toc-skip="true" class="text-secondary">Sharing</h2>
-    </a>
-</div>
+
+<figure class="card mb-2 mx-auto shadow p-1" style="width: min(90vw, 800px); max-width: 100%;">
+    <div class="bdsi-venn">
+        <a class="circle research-support" href="{% link research.html %}">
+            <h1 data-toc-skip="true">Research</h1>
+            <h2 data-toc-skip="true" class="text-secondary">Support</h2>
+        </a>
+        <a class="circle community-building" href="{% link community.html %}">
+            <h1 data-toc-skip="true">Community</h1>
+            <h2 data-toc-skip="true" class="text-secondary">Building</h2>
+        </a>
+        <a class="circle expertise-sharing" href="{% link expertise.md %}">
+            <h1 data-toc-skip="true">Expertise</h1>
+            <h2 data-toc-skip="true" class="text-secondary">Sharing</h2>
+        </a>
+    </div>
+    
+    <div class="card-body {% if include.no_shadow %}px-1{% else %}px-2{% endif %} py-1">
+      <div class="card-text">
+        <figcaption class="h6 m-0 p0 m0 label-figure">The three pillars of BDSi.</figcaption>
+      </div>
+    </div>
+  </figure>
+  
