@@ -5,14 +5,14 @@
   <title>Data Science Week Spring 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/images/favicon.png">
-  <link href="/assets/css/style.css?v=1737420254" rel="stylesheet">
+  <link href="/assets/css/style.css?v=1737470474" rel="stylesheet">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js" integrity="sha512-pF+DNRwavWMukUv/LyzDyDMn8U2uvqYQdJN0Zvilr6DDo/56xPDZdDoyPDYZRSL4aOKO/FGKXTpzDyQJ8je8Qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.min.css" integrity="sha512-bkB9w//jjNUnYbUpATZQCJu2khobZXvLP5GZ8jhltg7P/dghIrTaSJ7B/zdlBUT0W/LXGZ7FfCIqNvXjWKqCYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.bootstrap4.min.css" integrity="sha512-MMojOrCQrqLg4Iarid2YMYyZ7pzjPeXKRvhW9nZqLo6kPBBTuvNET9DBVWptAo/Q20Fy11EIHM5ig4WlIrJfQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js" integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.min.css" integrity="sha512-wCrId7bUEl7j1H60Jcn4imkkiIYRcoyq5Gcu3bpKAZYBJXHVMmkL4rhtyhelxSFuPMIoQjiVsanrHxcs2euu/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap4.min.css" integrity="sha512-ht3CSPjgWsxdbLti7wtKNEk5hLoGtP2J8C40muB5/PCWwNw9M/NMJpyvHdeko7ADC60SEOiCenU5pg+kJiG9lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   -->
   <!-- icons -->
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   
@@ -21,8 +21,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-svg.min.js" integrity="sha512-lod3aTRkO5OUBZDRwWaaIGYAT6+2uSyrlwnj0sg1h9a1w5wJ7NnzkaiUWy4Jv5wdf1ixGX35HK6u7fP1pjYOQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- floating toc -->
-  <!-- <link href="/assets/css/toc.css?v=1737420254" rel="stylesheet"> -->
+  <!-- <link href="/assets/css/toc.css?v=1737470474" rel="stylesheet"> -->
   <script src="/assets/js/toc.js" async defer></script>
+
+  <!-- a11y -->
+  <!-- dynamically fix links to common office document to include file type and size -->
+  <script src="/assets/js/a11y-fix-office-links.js" async defer></script>
 
   <!-- calendar parsing/generating -->
   <script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js" integrity="sha256-uotVKltUv5neKsIlZxrxUccba0PaptusFj6p+w8Sons=" crossorigin="anonymous"></script>
@@ -53,165 +57,22 @@
     <ul>
         <li><a href="/" class="">Home</a></li>
         <li><a href="/about" class="">About</a></li>
-        <li><a href="/research" class="">Research</a></li>
-        <li><a href="/expertise" class="">expertise</a></li>
-        <li><a href="/community" class="">community</a></li>
-        <li><a href="/events" class="current">Events</a></li>
+        <li><a href="/research" class="">Research support</a></li>
+        <li><a href="/expertise" class="">Expertise sharing</a></li>
+        <li><a href="/community" class="">Community building</a></li>
         <li><a href="/team" class="">Team</a></li>
-        <li><a href="/blogs" class="">Blog</a></li>
     </ul>
 </div>
 
-    <div class="header ">
-    <div class="container">
+  <div class="header ">
+    <nav class="container">
         <div class="logo">
-            <a href="/">
-                <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1"
-	 id="svg5" sodipodi:docname="logo-light.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 285 48"
-	 style="enable-background:new 0 0 285 48;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#008EAA;}
-</style>
-<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="2.7755576e-17" fit-margin-top="0" id="namedview7" inkscape:current-layer="text6846" inkscape:cx="264.36955" inkscape:cy="40.747028" inkscape:document-units="mm" inkscape:pagecheckerboard="true" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1377" inkscape:window-maximized="1" inkscape:window-width="2560" inkscape:window-x="1912" inkscape:window-y="32" inkscape:zoom="5.6568542" pagecolor="#ffffff" showgrid="false" units="px">
-	</sodipodi:namedview>
-<g id="layer1" transform="translate(-0.06401282,0.01494702)" inkscape:groupmode="layer" inkscape:label="Layer 1">
-	<g id="g2229" transform="matrix(0.0810205,0,0,-0.0810205,-5.3466415,18.003283)">
-		<path id="path2231" class="st0" d="M224.3,48c0-66.3-27.4-87.3-78.9-87.3c-59,0-78.6,29.4-78.6,90.4v166.5h38.8V54.1
-			c0-22.3-1.5-64.3,40.1-64.3c34.3,0,40.4,24.9,40.4,62.5v165.2h38.2V48"/>
-		<path id="path2233" class="st0" d="M1270.8-365.7l-76,218.1v-218.1h-32.6v252.4h56.9l76-218.1v218.1h35v-252.4H1270.8"/>
-		<path id="path2235" class="st0" d="M383.6-34.8l-75.9,218.1V-34.8h-32.6v252.4h57L408-0.5v218.1H443V-34.8H383.6"/>
-		<path id="path2237" class="st0" d="M501.8-34.8v252.4h39.1V-34.8H501.8"/>
-		<path id="path2239" class="st0" d="M1333.8-34.8v252.4h39.1V-34.8H1333.8"/>
-		<path id="path2241" class="st0" d="M682.4-34.8h-46l-63.8,252.4h40.7L661.2,0.9l49.7,216.7h38.1L682.4-34.8"/>
-		<path id="path2243" class="st0" d="M779.8-34.8v252.4h125v-30.2h-86.2v-77h80.6V81.3h-80.6V-4.6h88.6v-30.2H779.8"/>
-		<path id="path2245" class="st0" d="M989.6-365.7v252.4h125v-30.2h-86.2v-77h80.6v-29.2h-80.6v-85.9h88.6v-30.2H989.6"/>
-		<path id="path2247" class="st0" d="M1548.7-365.7v252.4h125v-30.2h-86.2v-77h80.6v-29.2h-80.6v-85.9h88.6v-30.2H1548.7"/>
-		<path id="path2249" class="st0" d="M1056.4,150.7c0,29.2-15.5,37.4-39.9,37.4h-26.2v-80.8h20.4
-			C1044.1,107.3,1056.4,116.1,1056.4,150.7z M1056.9-34.8c-3.5,24.2-3.6,61.4-3.8,66.1c-0.9,18.9-3.3,31-7.3,36.4
-			c-4.6,6.7-15.3,10.1-32.1,10.1h-23.4V-34.8h-39.1v252.4h72.6c41.8,0,72.2-10,72.2-63.9c0-34-13.8-54.4-41.2-61.1
-			c14.2-1.1,23.9-6.1,29.3-14.6c4.2-6.5,8-21.6,8-40.4c0-7.2,1.5-56.5,5.2-72.3L1056.9-34.8"/>
-		<path id="path2251" class="st0" d="M1285.9,28.7c0-45.3-24.8-68.1-74.4-68.1c-55.5,0-74.7,22.3-74.7,75.3v2.8h40.1V36
-			c0-30,7.7-46.4,34.6-46.4c23.1,0,34.7,12,34.7,36.1c0,21.5-13.1,31.6-24.1,38.8c-5.3,3.5-12.4,7.9-21.3,13.3
-			c-37.3,22.9-60.4,38.2-60.4,79.1c0,41.8,25.8,65.5,73.9,65.5c46.1,0,69.1-21,69.1-63v-9.1h-39.2v6.3c0,24.4-10.5,36.6-31.7,36.6
-			c-19.2,0-32.4-11-32.4-33.5c0-25.1,17.8-33.2,34.6-44c5.8-3.7,11.8-7.5,17.8-11.5C1272,78.9,1285.9,67.4,1285.9,28.7"/>
-		<path id="path2253" class="st0" d="M1502.7,187.4V-34.8h-39.1v222.2h-58.3v30.2H1561v-30.2L1502.7,187.4"/>
-		<path id="path2255" class="st0" d="M597.1-143.5v-222.2H558v222.2h-58.3v30.2h155.7v-30.2H597.1"/>
-		<path id="path2257" class="st0" d="M1458.5-143.5v-222.2h-39.1v222.2h-58.3v30.2h155.6v-30.2H1458.5"/>
-		<path id="path2259" class="st0" d="M902.2-365.7h-45.6L817.1-154l-43.6-211.8h-45.6l-53.7,252.4h41.3l37.3-211.1l43.3,211.1h45.7
-			l39.8-211.1l40.1,211.1h36.6L902.2-365.7"/>
-		<path id="path2261" class="st0" d="M1750.4-350.8c0-11.2-9.1-20.4-20.4-20.4s-20.4,9.2-20.4,20.4c0,11.3,9.1,20.5,20.4,20.5
-			C1741.3-330.3,1750.4-339.5,1750.4-350.8"/>
-		<path id="path2263" class="st0" d="M1674,61.5v-96.3h-39.1v96.3l-66.3,156.1h43.3l45.4-120.4l46.4,120.4h40.1L1674,61.5"/>
-		<path id="path2265" class="st0" d="M187.9-237.3c0,30.4-1,51.5-3.1,63.2c-4.7,24.2-17.1,36.3-37.4,36.3c-20,0-32.7-12.8-38.1-38.4
-			c-0.9-4.7-1.6-12.1-2.1-22.4c-0.5-10.2-0.7-23.5-0.7-39.8c0-15.1,0.2-27.8,0.5-38c0.3-10.2,1-18.2,1.9-23.7
-			c2.1-13.7,5.8-23.8,11.2-30.4c5.8-7.2,14.9-10.8,27.2-10.8c20.7,0,33.3,13,37.7,39.1c0.9,5.3,1.6,13.4,2.1,24.1
-			C187.7-267.4,187.9-253.8,187.9-237.3z M228.4-241.8c0-45.6-4-76.5-11.9-92.5c-11.4-24-34.8-36-70.2-36
-			c-33.8,0-56.4,11.5-67.8,34.5c-4.7,9.8-7.9,22.5-9.7,38c-1.4,11.9-2.1,30.4-2.1,55.5c0,30.5,1,52.6,3.1,66.3
-			c2.8,18.9,8.7,33.8,17.8,44.7c13.1,15.1,33,22.7,59.7,22.7c27.2,0,47.1-6.9,59.7-20.6c9.3-10,15.4-24.9,18.2-44.7
-			C227.4-187.5,228.4-210.2,228.4-241.8"/>
-		<path id="path2267" class="st0" d="M316.6-143.4v-77.5h74.7v-29.3h-74.7v-115.5h-38.8v252.4h117.7v-30L316.6-143.4"/>
-	</g>
-	<path id="path1929" class="st1" d="M158.7,47.2c-3.1-0.4-5.7-0.7-5.8-0.7c-0.1,0-0.1-2.9,0-6.3L153,34l0.2,6l0.2,6h0.5h0.5v-4.8
-		v-4.8l0.6-0.6c0.8-0.8,2.1-0.7,3.1,0.2l0.8,0.8v4.8v4.8l0.8,0.3c0.4,0.2,1,0.3,1.3,0.3h0.5l-0.2-5.1l-0.2-5.1l0.7-0.8l0.7-0.8h0.9
-		c0.5,0,1.2,0.3,1.7,0.8l0.8,0.8v5.4v5.4h1h1l0-9l0-9l-7.7-0.2l-7.7-0.2l0.3,1.1l0.3,1.1l-0.5-0.7c-0.3-0.4-0.5-1-0.5-1.3l0-0.5
-		l3.4-2.4c1.9-1.3,3.7-2.7,3.9-3.2l0.5-0.8l0,0.7l0,0.7l-3.2,2.2c-1.8,1.2-3.1,2.2-3,2.3c0.1,0.1,4.8,0.2,10.6,0.2l10.4,0l0.7-0.4
-		l0.7-0.4l-2.6-1.9l-2.6-1.9l-3.2,0l-3.2,0l1.8-0.2c1-0.1,1.8-0.4,1.8-0.6c0-0.2-0.7-4.4-1.6-9.4L164.8,5l-0.1,1.7
-		c-0.1,0.9-0.3,4.6-0.6,8.1l-0.4,6.4l0.2-7.6l0.2-7.6l-2.1,8.4c-1.2,4.6-2.1,8-2.1,7.6c0-0.4,0.9-4.9,2.1-10.1l2.1-9.3l-0.5-0.6
-		L163,1.3l0.3-0.5c0.2-0.3,0.8-0.5,1.3-0.5h1l-0.1,1.1l-0.1,1.1l2.9,10.5l2.9,10.5l3.6,2.5l3.6,2.5l-0.3,1c-0.2,0.5-0.4,4.7-0.5,9.2
-		l-0.2,8.2l-4.3,0.6C167.9,48.1,166.1,48,158.7,47.2L158.7,47.2z M170.8,46.8c0,0,0.2-0.8,0.5-1.8l0.5-1.7l0.8-0.5l0.8-0.5l0.8,0.6
-		l0.8,0.6l0,1.3l0,1.3l-0.5-1.4l-0.5-1.4l-0.8,0.2l-0.8,0.2l-0.2,1.3l-0.2,1.3h2.2h2.2l0.1-8c0.1-4.4,0.3-8.3,0.4-8.7l0.2-0.7
-		l-3.7,0.1l-3.7,0.1l-0.9,0.5l-0.9,0.5v8.6v8.6l1.4-0.3C170.1,47.1,170.7,46.9,170.8,46.8L170.8,46.8z M165.1,42.3
-		c0-2.5-0.1-5-0.3-5.4l-0.3-0.8h-1.1h-1.1l-0.3,0.8c-0.2,0.4-0.3,2.9-0.3,5.4V47h1.7h1.7L165.1,42.3z M158.2,41.9v-4.6l-0.6-0.6
-		c-0.3-0.3-1-0.6-1.4-0.6h-0.8l-0.3,0.8c-0.4,1.1-0.4,8.8,0,9.2c0.2,0.2,1,0.3,1.7,0.3h1.4L158.2,41.9z M169.1,18.9
-		c-0.7-2.4-1.3-4.3-1.4-4.2c-0.2,0.2,0.7,6.6,1.2,8.2l0.2,0.8l0.6-0.2l0.6-0.2L169.1,18.9z M161.6,24c0.7-0.1,1.4-0.5,1.6-0.8
-		l0.4-0.6l0,0.9l0,0.9l-1.6-0.1l-1.6-0.1L161.6,24z"/>
-	<g id="text6846">
-		<path id="path10567" class="st0" d="M181.2,13.2V0.3h3.7c1.2,0,2.1,0.3,2.6,0.9c0.6,0.6,0.9,1.4,0.9,2.6c0,0.6-0.2,1.1-0.5,1.6
-			c-0.3,0.5-0.7,0.8-1.2,1.1c0.6,0.2,1.1,0.5,1.4,1.1c0.3,0.5,0.5,1.2,0.5,2c0,1.2-0.3,2.1-1,2.7c-0.6,0.7-1.5,1-2.7,1L181.2,13.2z
-			 M182.8,7.2v4.6h2.2c0.6,0,1.1-0.2,1.5-0.6c0.4-0.4,0.5-1,0.5-1.7c0-1.6-0.7-2.3-2-2.3L182.8,7.2z M182.8,5.8h2.1
-			c0.6,0,1-0.2,1.4-0.6c0.3-0.4,0.5-0.9,0.5-1.5c0-0.7-0.2-1.2-0.5-1.5c-0.3-0.3-0.8-0.5-1.4-0.5h-2.1L182.8,5.8z"/>
-		<path id="path10569" class="st0" d="M197.3,7.2h-4.6v4.6h5.3v1.4h-6.9V0.3h6.8v1.4h-5.2v4.1h4.6V7.2z"/>
-		<path id="path10571" class="st0" d="M208.6,13.2h-1.6v-6h-5.2v6h-1.6V0.3h1.6v5.5h5.2V0.3h1.6V13.2z"/>
-		<path id="path10573" class="st0" d="M217.6,9.8h-4.4l-1,3.4h-1.7l4.2-12.9h1.4l4.2,12.9h-1.7L217.6,9.8z M213.6,8.4h3.5l-1.8-5.9
-			L213.6,8.4z"/>
-		<path id="path10575" class="st0" d="M224.9,10.7l3-10.4h1.8l-4,12.9h-1.4l-4-12.9h1.8L224.9,10.7z"/>
-		<path id="path10577" class="st0" d="M233.1,13.2h-1.6V0.3h1.6V13.2z"/>
-		<path id="path10579" class="st0" d="M244.3,7.9c0,1.8-0.4,3.1-1.1,4.1c-0.8,1-1.8,1.4-3.2,1.4c-1.3,0-2.4-0.5-3.2-1.4
-			c-0.8-0.9-1.2-2.2-1.2-3.9V5.6c0-1.7,0.4-3.1,1.1-4c0.8-1,1.8-1.5,3.2-1.5c1.4,0,2.4,0.5,3.2,1.4c0.8,0.9,1.2,2.3,1.2,4V7.9z
-			 M242.7,5.6c0-1.4-0.2-2.4-0.7-3c-0.4-0.7-1.1-1-2-1c-0.9,0-1.6,0.3-2,1c-0.5,0.7-0.7,1.7-0.7,3v2.3c0,1.3,0.2,2.3,0.7,3
-			c0.5,0.7,1.1,1,2.1,1c0.9,0,1.6-0.3,2-1c0.4-0.6,0.7-1.6,0.7-2.9L242.7,5.6z"/>
-		<path id="path10581" class="st0" d="M254.5,0.3v9.2c0,1.2-0.4,2.2-1.1,2.9c-0.7,0.7-1.7,1-2.9,1c-1.3,0-2.3-0.3-2.9-1
-			c-0.7-0.7-1-1.6-1-2.9V0.3h1.6v9.1c0,0.9,0.2,1.5,0.5,1.9c0.4,0.4,1,0.6,1.8,0.6c0.8,0,1.4-0.2,1.8-0.6c0.4-0.4,0.6-1.1,0.6-1.9
-			V0.3H254.5z"/>
-		<path id="path10583" class="st0" d="M260.9,8h-2.3v5.2H257V0.3h3.6c1.3,0,2.2,0.3,2.9,1c0.6,0.7,1,1.6,1,2.9
-			c0,0.8-0.2,1.5-0.5,2.1c-0.3,0.6-0.8,1-1.5,1.3l2.5,5.5v0.1h-1.7L260.9,8z M258.6,6.6h2c0.7,0,1.2-0.2,1.6-0.7
-			c0.4-0.4,0.6-1,0.6-1.8c0-1.7-0.8-2.5-2.3-2.5h-1.9L258.6,6.6z"/>
-		<path id="path10585" class="st0" d="M272.7,9.8h-4.4l-1,3.4h-1.7l4.2-12.9h1.4l4.2,12.9h-1.7L272.7,9.8z M268.7,8.4h3.5l-1.8-5.9
-			L268.7,8.4z"/>
-		<path id="path10587" class="st0" d="M278.7,11.8h5.1v1.4h-6.7V0.3h1.6V11.8z"/>
-		<path id="path10589" class="st1" d="M180.6,30.4V17.5h3.1c1.5,0,2.7,0.5,3.5,1.4c0.8,0.9,1.2,2.3,1.2,4v2.2c0,1.7-0.4,3-1.3,4
-			c-0.8,0.9-2.1,1.4-3.7,1.4L180.6,30.4z M182.2,18.9V29h1.3c1.1,0,2-0.3,2.5-1c0.5-0.7,0.8-1.6,0.8-2.9v-2.3c0-1.4-0.3-2.4-0.8-3
-			c-0.5-0.6-1.3-1-2.4-1H182.2z"/>
-		<path id="path10591" class="st1" d="M196.8,27.1h-4.4l-1,3.4h-1.7l4.2-12.9h1.4l4.2,12.9h-1.7L196.8,27.1z M192.8,25.7h3.5
-			l-1.8-5.9L192.8,25.7z"/>
-		<path id="path10593" class="st1" d="M207.6,18.9h-3.4v11.5h-1.6V18.9h-3.4v-1.4h8.4L207.6,18.9z"/>
-		<path id="path10595" class="st1" d="M214.8,27.1h-4.4l-1,3.4h-1.7l4.2-12.9h1.4l4.2,12.9h-1.7L214.8,27.1z M210.9,25.7h3.5
-			l-1.8-5.9L210.9,25.7z"/>
-		<path id="path10597" class="st1" d="M229.1,27.2c0-0.6-0.2-1.1-0.5-1.5c-0.3-0.3-1-0.7-1.9-1c-0.9-0.3-1.6-0.7-2.1-1
-			c-0.5-0.4-0.8-0.8-1.1-1.2c-0.2-0.5-0.4-1-0.4-1.6c0-1,0.3-1.9,1-2.5c0.7-0.7,1.6-1,2.7-1c0.8,0,1.4,0.2,2,0.5
-			c0.6,0.3,1,0.8,1.4,1.4c0.3,0.6,0.5,1.3,0.5,2h-1.6c0-0.8-0.2-1.4-0.6-1.9s-0.9-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.5,0.5
-			c-0.4,0.4-0.5,0.9-0.5,1.5c0,0.5,0.2,1,0.6,1.4c0.4,0.4,1,0.7,1.8,1c1.3,0.4,2.2,0.9,2.7,1.6c0.5,0.6,0.8,1.4,0.8,2.4
-			c0,1-0.3,1.9-1,2.5c-0.7,0.6-1.6,0.9-2.8,0.9c-0.8,0-1.4-0.2-2.1-0.5c-0.6-0.3-1.1-0.8-1.5-1.4c-0.4-0.6-0.5-1.3-0.5-2h1.6
-			c0,0.8,0.2,1.4,0.7,1.9c0.4,0.4,1.1,0.7,1.8,0.7c0.7,0,1.3-0.2,1.6-0.5C228.9,28.3,229.1,27.8,229.1,27.2z"/>
-		<path id="path10599" class="st1" d="M240.9,26.3c-0.1,1.4-0.5,2.4-1.2,3.2c-0.7,0.7-1.7,1.1-3,1.1c-1.3,0-2.3-0.5-3.1-1.5
-			c-0.8-1-1.1-2.3-1.1-4v-2.3c0-1.7,0.4-3,1.2-4c0.8-1,1.9-1.5,3.2-1.5c1.2,0,2.2,0.4,2.9,1.1c0.7,0.7,1.1,1.8,1.1,3.2h-1.6
-			c-0.1-1.1-0.3-1.8-0.7-2.3s-0.9-0.7-1.7-0.7c-0.9,0-1.6,0.3-2,1c-0.5,0.7-0.7,1.7-0.7,3v2.4c0,1.3,0.2,2.3,0.7,3
-			c0.4,0.7,1.1,1,1.9,1c0.8,0,1.5-0.2,1.8-0.6s0.6-1.2,0.7-2.3L240.9,26.3z"/>
-		<path id="path10601" class="st1" d="M244.8,30.4h-1.6V17.5h1.6V30.4z"/>
-		<path id="path10603" class="st1" d="M253.8,24.5h-4.6V29h5.3v1.4h-6.9V17.5h6.8v1.4h-5.2v4.1h4.6V24.5z"/>
-		<path id="path10605" class="st1" d="M265.1,30.4h-1.6l-5.2-9.9v9.9h-1.6V17.5h1.6l5.2,10v-10h1.6L265.1,30.4z"/>
-		<path id="path10607" class="st1" d="M276,26.3c-0.1,1.4-0.5,2.4-1.2,3.2c-0.7,0.7-1.7,1.1-3,1.1c-1.3,0-2.3-0.5-3.1-1.5
-			c-0.8-1-1.1-2.3-1.1-4v-2.3c0-1.7,0.4-3,1.2-4c0.8-1,1.9-1.5,3.2-1.5c1.2,0,2.2,0.4,2.9,1.1c0.7,0.7,1.1,1.8,1.1,3.2h-1.6
-			c-0.1-1.1-0.3-1.8-0.7-2.3s-0.9-0.7-1.7-0.7c-0.9,0-1.6,0.3-2,1c-0.5,0.7-0.7,1.7-0.7,3v2.4c0,1.3,0.2,2.3,0.7,3
-			c0.4,0.7,1.1,1,1.9,1c0.8,0,1.5-0.2,1.8-0.6c0.4-0.4,0.6-1.2,0.7-2.3L276,26.3z"/>
-		<path id="path10609" class="st1" d="M284.4,24.5h-4.6V29h5.3v1.4h-6.9V17.5h6.8v1.4h-5.2v4.1h4.6L284.4,24.5z"/>
-		<path id="path10611" class="st0" d="M182.3,47.7h-1.6V34.8h1.6V47.7z"/>
-		<path id="path10613" class="st0" d="M193.6,47.7h-1.6l-5.2-9.9v9.9h-1.6V34.8h1.6l5.2,10v-10h1.6L193.6,47.7z"/>
-		<path id="path10615" class="st0" d="M204.5,43.6c-0.1,1.4-0.5,2.4-1.2,3.2c-0.7,0.7-1.7,1.1-3,1.1c-1.3,0-2.3-0.5-3.1-1.5
-			c-0.8-1-1.1-2.3-1.1-4V40c0-1.7,0.4-3,1.2-4c0.8-1,1.9-1.5,3.2-1.5c1.2,0,2.2,0.4,2.9,1.1c0.7,0.7,1.1,1.8,1.1,3.2h-1.6
-			c-0.1-1.1-0.3-1.8-0.7-2.3c-0.4-0.4-0.9-0.7-1.7-0.7c-0.9,0-1.6,0.3-2,1c-0.5,0.7-0.7,1.7-0.7,3v2.4c0,1.3,0.2,2.3,0.7,3
-			c0.4,0.7,1.1,1,1.9,1c0.8,0,1.5-0.2,1.8-0.6c0.4-0.4,0.6-1.2,0.7-2.3L204.5,43.6z"/>
-		<path id="path10617" class="st0" d="M214.3,34.8v9.2c0,1.2-0.4,2.2-1.1,2.9c-0.7,0.7-1.7,1-2.9,1c-1.3,0-2.3-0.3-2.9-1
-			c-0.7-0.7-1-1.6-1-2.9v-9.2h1.6v9.1c0,0.9,0.2,1.5,0.5,1.9c0.4,0.4,1,0.6,1.8,0.6c0.8,0,1.4-0.2,1.8-0.6c0.4-0.4,0.6-1.1,0.6-1.9
-			v-9.1H214.3z"/>
-		<path id="path10619" class="st0" d="M216.8,47.7V34.8h3.7c1.2,0,2.1,0.3,2.6,0.9c0.6,0.6,0.9,1.4,0.9,2.6c0,0.6-0.2,1.1-0.5,1.6
-			c-0.3,0.5-0.7,0.8-1.2,1.1c0.6,0.2,1.1,0.5,1.4,1.1c0.3,0.5,0.5,1.2,0.5,2c0,1.2-0.3,2.1-1,2.7c-0.6,0.7-1.5,1-2.7,1H216.8z
-			 M218.5,41.6v4.6h2.2c0.6,0,1.1-0.2,1.5-0.6c0.4-0.4,0.5-1,0.5-1.7c0-1.6-0.7-2.3-2-2.3L218.5,41.6z M218.5,40.3h2.1
-			c0.6,0,1-0.2,1.4-0.6c0.3-0.4,0.5-0.9,0.5-1.5c0-0.7-0.2-1.2-0.5-1.5c-0.3-0.3-0.8-0.5-1.4-0.5h-2.1L218.5,40.3z"/>
-		<path id="path10621" class="st0" d="M232.8,44.3h-4.4l-1,3.4h-1.7l4.2-12.9h1.4l4.2,12.9h-1.7L232.8,44.3z M228.8,42.9h3.5
-			l-1.8-5.9L228.8,42.9z"/>
-		<path id="path10623" class="st0" d="M243.6,36.2h-3.4v11.5h-1.6V36.2h-3.4v-1.4h8.4V36.2z"/>
-		<path id="path10625" class="st0" d="M253.6,42.4c0,1.8-0.4,3.1-1.1,4.1c-0.8,1-1.8,1.4-3.2,1.4c-1.3,0-2.4-0.5-3.2-1.4
-			c-0.8-0.9-1.2-2.2-1.2-3.9v-2.4c0-1.7,0.4-3.1,1.1-4c0.8-1,1.8-1.5,3.2-1.5c1.4,0,2.4,0.5,3.2,1.4c0.8,0.9,1.2,2.3,1.2,4
-			L253.6,42.4z M252,40.1c0-1.4-0.2-2.4-0.7-3c-0.4-0.7-1.1-1-2-1c-0.9,0-1.6,0.3-2,1c-0.5,0.7-0.7,1.7-0.7,3v2.3
-			c0,1.3,0.2,2.3,0.7,3c0.5,0.7,1.1,1,2.1,1s1.6-0.3,2-1c0.4-0.6,0.7-1.6,0.7-2.9L252,40.1z"/>
-		<path id="path10627" class="st0" d="M260,42.5h-2.3v5.2h-1.6V34.8h3.6c1.3,0,2.2,0.3,2.9,1c0.6,0.7,1,1.6,1,2.9
-			c0,0.8-0.2,1.5-0.5,2.1c-0.3,0.6-0.8,1-1.5,1.3l2.5,5.5v0.1h-1.7L260,42.5z M257.8,41.1h2c0.7,0,1.2-0.2,1.6-0.7
-			c0.4-0.4,0.6-1,0.6-1.8c0-1.7-0.8-2.5-2.3-2.5h-1.9L257.8,41.1z"/>
-	</g>
-</g>
-<g id="layer2" transform="translate(-0.06401282,0.01494702)" inkscape:groupmode="layer" inkscape:label="Layer 2">
-</g>
-</svg>
-
+            <a href="/" aria-label="BDSi front page">
+                <img src="/assets/images/logo-light.svg" alt="">
             </a>
         </div>
         <div class="logo-mobile">
-            <a href="/">
+            <a href="/" aria-label="BDSi front page">
                 <img src="/assets/images/logo-light.svg" alt="">
             </a>
         </div>
@@ -236,107 +97,43 @@
     </ul>
 </div>
 
-        <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+        <div id="toggle-main-menu-mobile" class="hamburger hamburger--slider">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
-</button>
-    </div>
+</div>
+    </nav>
 </div>
 
-    <div id="content">
-      
-
-
-
-<div
-    class="intro mb-0"
-    style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  <div id="content">
+    
+<div class="intro mb-0" style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
         height: 25vw !important;
-        
-        background-color: #5b1d7c;">
-    
-    <div class="container" style="
-        height: 100%;
-        background-image: url(/assets/images/workshops/dsw-2025.svg);
+        background-image: url(/assets/images/workshops/dsw-2025-stamp.svg);
         background-size: contain;
+        background-color: #5b1d7c;
         background-position: center;
-        background-repeat: no-repeat;">
-    </div>
-    
-</div>
-<div style="margin-top: -5vw" class="strip strip-diagonal pt-4">
+        background-repeat: no-repeat;"></div>
+<div 
+    class="strip strip-diagonal pt-4"
+    style="margin-top: -5vw;"
+>
     <div class="content-with-toc">
         <div class="toc"></div>
         <div class="content">
-            <h1>Data Science Week Spring 2025</h1>
-            
-<div class="author-list">
-        
-<a class="author-list-item" href="/team/#stephanie-vandenberg">
-        <h6><img src="/assets/images/team/Stephanie-thumbnail.png" alt="Stéphanie van den Berg">Stéphanie van den Berg</h6>
-    </a>
-    <h6>,&MediumSpace;</h6>
-        
-<a class="author-list-item" href="/team/#a-k-machens">
-        <h6><img src="/assets/images/team/Anna-thumbnail.png" alt="Anna Machens">Anna Machens</h6>
-    </a>
-    <h6>,&MediumSpace;</h6><h6>and&MediumSpace;</h6>
-        
-<a class="author-list-item" href="/team/#k-a-kroeze">
-        <h6><img src="/assets/images/team/Karel-thumbnail.png" alt="Karel Kroeze">Karel Kroeze</h6>
-    </a>
-    
-</div>
+            <header>
+                <h1>Data Science Week Spring 2025</h1>
+                
+                
 
-            <h5>
-                <!-- prettier-ignore -->March  3, 2025— March 10, 2025
-            </h5>
-              <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+                
+                <div class="date h5">March  3, 2025— March 10, 2025
+                </div>
+                
+            </header>
+            <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
 
 <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
-
-<!-- 
-
-
-
-
-
-<div
-  class="card mt-2 mb-2">
-  <div class="card-body">
-    <div class="card-title">
-      <h4  data-toc-skip="true">This page is a work in progress</h4>
-      
-    </div>
-    
-    <div class="card-text">
-      <p>The dates are set, the room is booked, and the rough schedule is ready, but we are still hard at work filling in the blanks.</p>
-
-    </div>
-    
-    
-  </div>
-</div>
- -->
-
-<div class="card mt-2 mb-2 shadow">
-  <div class="card-body">
-    <div class="card-title">
-      <h2 data-toc-skip="true">Save the date!</h2>
-      
-    </div>
-    
-    <div class="card-text">
-      <p>Add the data science week to your calendar now, just to be sure. Download the current schedule as a calendar file, and add it to your calendar now. Don’t forget to actually open the file!</p>
-
-    </div>
-    
-    
-    <a class="button lg mt-2" href="/assets/files/dsw-2025-calendar.ics">add to calendar</a>
-    
-  </div>
-</div>
 
 <h2 id="what-is-the-data-science-week">What is the Data Science Week?</h2>
 
@@ -346,11 +143,139 @@
 
 <p>(Guest) speakers will be invited during the week to provide a deeper background in the topics and methods covered in the lectures and datathon, or to put these topics in a broader context. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.</p>
 
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Signups are now open!</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/">Sign up now</a>
+    
+  </div>
+</div>
+
 <h3 id="datathon">Datathon</h3>
 
 <p>A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the spring 2025, we will have a new and rewarding data challenge.</p>
 
 <h3 id="speakers">Speakers</h3>
+
+<div class="profile-widget-list profile-widget-list-hero">
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://portal.ru.nl/profileservice/rest/1.0/profilephoto/1829331?timestamp=1737455849&amp;user=1829331&amp;hash=195ce199bd8ff97956fdf8d66eea63bc&amp;secure=false" alt="Lucas Noldus" />
+    <img class="avatar-badge" src="https://www.ru.nl/themes/custom/ru/logo.svg" alt="Radboud Universiteit" />
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">prof. dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://www.ru.nl/en/people/noldus-l" alt="Lucas Noldus">Lucas Noldus</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="affiliation">
+        
+        <a href="https://www.ru.nl/" alt="Radboud Universiteit">Radboud Universiteit</a>
+        
+    </div>
+    
+    <div class="description"><p>Lucas Noldus is Professor of Behavior, Information Technology and Innovation at Donders Institute for Brain, Cognition and Behavior,  Radboud University and CEO of Noldus Information Technology.</p> <p>His research is aimed at the discovery and development of new techniques for automatic behavioral recording in animals and humans. The topics are quite diverse and include generic AI models for behavior recognition in rodents and human infants, vocalizations in mice, EEG and behavior in mice, learning tasks in zebrafish, eye tracking in MS patients, and motion analysis in visually impaired people. He tries to build bridges between the  University and companies in the field of behavior and technology.</p></div>
+  </div>
+</div>
+
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://personen.utwente.nl/.wh/ea/uc/ib1187cab0103b7c8f00187d57c0334a7637a650872de0801e3400140018041/mlnoordzij.jpg" alt="Matthijs Noordzij" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">prof. dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/m.l.noordzij" alt="Matthijs Noordzij">Matthijs Noordzij</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Matthijs Noordzij is Full Professor of Health Psychology and Persuasive Technology and directs the Health Dynamics &amp; Self Management Lab at the University of Twente in The Netherlands.</p> <p>His research and education focuses on exploring the scientific foundations and design principles for integrating sensor technology in (mental) healthcare and self-management.</p> <p>His vision is to develop health technology that aligns with core human values such as compassion, while striving to create innovative solutions that enhance the way we interact with technology in healthcare settings.</p></div>
+  </div>
+</div>
+
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.wh/ea/uc/ib355ad2901039a15f2015e1e760326ac5c0bb8f0ee7c0801e3400140018041/ajohn.jpg" alt="Arlene John" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/a.john" alt="Arlene John">Arlene John</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Arlene John is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente. She completed her PhD on data fusion frameworks for wearable health monitoring devices at University College Dublin, and has previously worked on Machine Learning Mathematics at Qualcomm and ASML.</p> <p>Her current research interests include biomedical signal processing, machine learning and inference, explainable AI, and multisensor data fusion.</p></div>
+  </div>
+</div>
+
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.wh/ea/uc/i096cfb36010357a1f201a7ff7403c9e30786ad971b0d0801e3400140018041/yingwang.jpg" alt="Ying Wang" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/ying.wang" alt="Ying Wang">Ying Wang</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Ying Wang is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente.</p> <p>Her research is interdisciplinary, and applies and develops multi-modal model-based signal processing, sensing and physiological system modeling techniques in the healthcare field. Her main research interest is  remote continuous monitoring of individual’s physiological signs (such as, heart activty) and body movement in daily life for personalized disease prevention and management.</p> <p>She is especially enthusiastic in using her expertise to tackle challenges surrounding the daily monitoring of physiological (brain and body) responses to dynamic physical activities for different healthcare purposes, such as, helping people stay in healthy and tracking patients' disease symptoms for disease management.</p></div>
+  </div>
+</div>
+
+    
+</div>
 
 <div class="card mt-2 mb-2">
   <div class="card-body">
@@ -368,41 +293,37 @@
   </div>
 </div>
 
-<div class="profile-widget-list profile-widget-list-hero">
-    
-</div>
-
-<div class="card mb-2 shadow mx-2" style="">
-  
-  <img src="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" alt="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" class="card-img-top" />
-  
-  <div class="card-body px-2 py-1">
-    <div class="card-text">
-      <h6 class="m-0 p0 m0 label-figure">Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024</h6>
-    </div>
-  </div>
-</div>
-
 <h3 id="lectures--practicals">Lectures &amp; Practicals</h3>
 
 <p>Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists’ toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.</p>
 
 <p>After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days’ lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days’ lecture, the datathon, or data science in general.</p>
 
+<figure class="card mb-2 shadow mx-auto" style="width: min(90vw, 800px); max-width: 100%; ">
+  
+  <img src="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" alt="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" class="card-img-top" />
+  
+  <div class="card-body px-2 py-1">
+    <div class="card-text">
+      <figcaption class="h6 m-0 p0 m0 label-figure">Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024</figcaption>
+    </div>
+  </div>
+</figure>
+
 <h3 id="posters--drinks">Posters &amp; Drinks</h3>
 
 <p>On thursday afternoon, we invite all data science week participants as well as anyone interested in data science at the University of Twente to join us for a poster presentation and drinks. This is a great opportunity to mingle with the other teams, and create lasting connections with peers and data science experts!</p>
 
-<div class="card mb-2 shadow mx-2" style="">
+<figure class="card mb-2 shadow mx-auto" style="width: min(90vw, 800px); max-width: 100%; ">
   
   <iframe src="https://universiteittwente.sharepoint.com/sites/WomeninDataScienceWeek2/_layouts/15/embed.aspx?UniqueId=1ecc7d6a-e004-4788-89c3-f6b275d41092&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create" width="100%" height="500px" frameborder="0"></iframe>
   
   <div class="card-body px-2 py-1">
     <div class="card-text">
-      <h6 class="m-0 p0 m0 label-figure">Women in Data Science Drinks &amp; Poster Presentations 2024</h6>
+      <figcaption class="h6 m-0 p0 m0 label-figure">Women in Data Science Drinks &amp; Poster Presentations 2024</figcaption>
     </div>
   </div>
-</div>
+</figure>
 
 <h3 id="competition">Competition</h3>
 
@@ -465,6 +386,24 @@
 <p>Kaggle.com provides resources to <a href="https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook">get started with Kaggle</a>, as well as <a href="https://www.kaggle.com/competitions?hostSegmentIdFilter=5">a long list of competitions that are approachable for beginners</a> - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good way to spend a rainy weekend.</p>
 
 <p><a href="https://www.linkedin.com/in/sharada-kalanidhi-12430ab2/">Sharada Kalanidhi</a> has written an excellent deep dive into the 2023 WiDS datathon, including links to further resources for both R and Python: <a href="https://www.widsworldwide.org/get-inspired/blog/a-data-scientists-deep-dive-into-the-wids-datathon/">https://www.widsworldwide.org/get-inspired/blog/a-data-scientists-deep-dive-into-the-wids-datathon/</a>.</p>
+
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Signups are now open!</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/">Sign up now</a>
+    
+  </div>
+</div>
 
 <h2 id="schedule">Schedule</h2>
 
@@ -550,67 +489,77 @@
 
     {
       calendarId: "lectures",
-      title: "Opening & introduction",
+      title: "Keynote: digital phenotyping",
       start: new Date("2025-03-03 12:45"),
       end: new Date("2025-03-03 13:30"),
-      description: "Location: Citadel T300\n\nWelcome to the data science week, general information, etc."
+      description: "Location: Citadel T300\n\nKeynote by prof. Lucas Noldus. Abstract will follow soon."
     },
 
     
 
     {
       calendarId: "practicals",
-      title: "Practical & Hands-on",
+      title: "Datathon: kick-off",
       start: new Date("2025-03-03 13:45"),
-      end: new Date("2025-03-03 15:30"),
-      description: "Location: Citadel T300\n\nIntroduction to the datathon, finding and matching teams, using Kaggle, installing and setting up R/Python"
+      end: new Date("2025-03-03 14:30"),
+      description: "Location: Citadel T300\n\nIntroduction to the datathon, finding and matching teams."
+    },
+
+    
+
+    {
+      calendarId: "practicals",
+      title: "Datathon: Gathering data",
+      start: new Date("2025-03-03 14:45"),
+      end: new Date("2025-03-03 16:30"),
+      description: "Location: Citadel T300\n\nDigital phenotyping often relies on highly personalized data. What could be more personalized than working on data gathered by and from you and the other participants? We will use real physiological measurements in a simple and fun experimental design to gather data from participants, _for_ participants."
     },
 
     
 
     {
       calendarId: "lectures",
-      title: "Lunch lecture",
+      title: "Digital phenotyping in social sciences research (working title)",
       start: new Date("2025-03-04 12:45"),
       end: new Date("2025-03-04 13:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nTalk by Matthijs Noordzij. Abstract fill follow soon."
     },
 
     
 
     {
       calendarId: "practicals",
-      title: "Practical & Hands-on",
+      title: "Workshop: Data Wrangling",
       start: new Date("2025-03-04 13:45"),
       end: new Date("2025-03-04 15:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nCleaning and combining datasets, (visually) exploring data and patterns, preparing raw data for further analysis."
     },
 
     
 
     {
       calendarId: "lectures",
-      title: "Lunch lecture",
+      title: "Advancing Digital Phenotyping: From Physiological Time Series Data to Real-Life Multimodal Health Monitoring.",
       start: new Date("2025-03-05 12:45"),
       end: new Date("2025-03-05 13:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nThis talk explores the journey from physiological time-series data to multimodal data analysis for digital phenotyping, emphasizing the transition from controlled semi-lab environments to real-life health monitoring. The challenges and some innovations in daily-life health monitoring required to sense information unobtrusively to enable the development of personalized phenotypes for continuous health tracking is discussed. Key topics include both wireless and wearable sensing techniques, multimodal feature extraction, identifying interrelationships amongst features, and connecting these insights to individual phenotypes. <br/> Additionally, we examine methods for monitoring health trends over extended periods. Practical applications discussed will include energy expenditure monitoring during daily physical activity for people with risk of obesity, cardiac function monitoring for people with long term diabetes, psychophysiological condition monitoring for people with knee osteoarthritis, recovery tracking post-colorectal surgery using patch sensors, and smartphone-based digital phenotyping for breast cancer survivors."
     },
 
     
 
     {
       calendarId: "practicals",
-      title: "Practical & Hands-on",
+      title: "Workshop: Feature Engineering",
       start: new Date("2025-03-05 13:45"),
       end: new Date("2025-03-05 15:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nHow to go from 'raw' sensor data to usable signals or 'features'. We will provide some background and context for the choices you will have to make (or that are made for you with commercial products), and implement a basic pipeline for extracting features from raw signals data in R."
     },
 
     
 
     {
       calendarId: "lectures",
-      title: "Lunch lecture",
+      title: "(to be announced...)",
       start: new Date("2025-03-06 12:45"),
       end: new Date("2025-03-06 13:30"),
       description: "Location: Citadel T300\n\n"
@@ -620,10 +569,10 @@
 
     {
       calendarId: "practicals",
-      title: "Practical & Hands-on",
+      title: "Workshop: Modelling",
       start: new Date("2025-03-06 13:45"),
       end: new Date("2025-03-06 15:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nIntroduction to modelling and machine learning in R."
     },
 
     
@@ -640,7 +589,7 @@
 
     {
       calendarId: "lectures",
-      title: "Lunch lecture",
+      title: "(to be announced...)",
       start: new Date("2025-03-07 12:45"),
       end: new Date("2025-03-07 13:30"),
       description: "Location: Citadel T300\n\n"
@@ -650,17 +599,17 @@
 
     {
       calendarId: "practicals",
-      title: "Practical & Hands-on",
+      title: "Workshop: Modelling II",
       start: new Date("2025-03-07 13:45"),
       end: new Date("2025-03-07 15:30"),
-      description: "Location: Citadel T300\n\n"
+      description: "Location: Citadel T300\n\nMore in-depth continuation of modelling, implications of different modeling choices and 'fairness' in AI models. [Note: exact contents may still change]"
     },
 
     
 
     {
       calendarId: "other",
-      title: "Submission deadline",
+      title: "Datathon: Submission deadline",
       start: new Date("2025-03-09 23:59"),
       end: new Date(""),
       description: "Location: \n\nDeadline for datathon submissions on the leaderboard."
@@ -670,7 +619,7 @@
 
     {
       calendarId: "lectures",
-      title: "Team presentations",
+      title: "Datathon: Team presentations",
       start: new Date("2025-03-10 12:45"),
       end: new Date("2025-03-10 13:30"),
       description: "Location: Citadel T300\n\nPresentations by the datathon participants. Solutions, challenges, and lessons learned."
@@ -680,7 +629,7 @@
 
     {
       calendarId: "speaker",
-      title: "Prize ceremony",
+      title: "Datathon: Prize ceremony",
       start: new Date("2025-03-10 13:45"),
       end: new Date("2025-03-10 14:00"),
       description: "Location: Citadel T300\n\nPrizes for the best and most innovative teams."
@@ -703,16 +652,194 @@
 <h3 id="monday">Monday</h3>
 <h6 id="march--3">March  3</h6>
 
-<h5 id="opening--introduction">Opening &amp; introduction</h5>
+<h5 id="keynote-digital-phenotyping">Keynote: digital phenotyping</h5>
 <h6 id="1245---1330-location-citadel-t300">12:45 - 13:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
     
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://portal.ru.nl/profileservice/rest/1.0/profilephoto/1829331?timestamp=1737455849&amp;user=1829331&amp;hash=195ce199bd8ff97956fdf8d66eea63bc&amp;secure=false" alt="Lucas Noldus" />
+    <img class="avatar-badge" src="https://www.ru.nl/themes/custom/ru/logo.svg" alt="Radboud Universiteit" />
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">prof. dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://www.ru.nl/en/people/noldus-l" alt="Lucas Noldus">Lucas Noldus</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="affiliation">
+        
+        <a href="https://www.ru.nl/" alt="Radboud Universiteit">Radboud Universiteit</a>
+        
+    </div>
+    
+    <div class="description"><p>Lucas Noldus is Professor of Behavior, Information Technology and Innovation at Donders Institute for Brain, Cognition and Behavior,  Radboud University and CEO of Noldus Information Technology.</p> <p>His research is aimed at the discovery and development of new techniques for automatic behavioral recording in animals and humans. The topics are quite diverse and include generic AI models for behavior recognition in rodents and human infants, vocalizations in mice, EEG and behavior in mice, learning tasks in zebrafish, eye tracking in MS patients, and motion analysis in visually impaired people. He tries to build bridges between the  University and companies in the field of behavior and technology.</p></div>
+  </div>
 </div>
 
-<p>Welcome to the data science week, general information, etc.</p>
+    
+</div>
 
-<h5 id="practical--hands-on">Practical &amp; Hands-on</h5>
+<p>Keynote by prof. Lucas Noldus. Abstract will follow soon.</p>
+
+<h5 id="datathon-kick-off">Datathon: kick-off</h5>
+<h6 id="1345---1430-location-citadel-t300">13:45 - 14:30, Location: Citadel T300</h6>
+
+<div class="profile-widget-list profile-widget-list-inline">
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png" alt="Anna Machens" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+      <span class="name">
+        
+          Anna Machens
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"></div>
+  </div>
+</div>
+
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg" alt="Karel Kroeze" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+      <span class="name">
+        
+          Karel Kroeze
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"></div>
+  </div>
+</div>
+
+    
+</div>
+
+<p>Introduction to the datathon, finding and matching teams.</p>
+
+<h5 id="datathon-gathering-data">Datathon: Gathering data</h5>
+<h6 id="1445---1630-location-citadel-t300">14:45 - 16:30, Location: Citadel T300</h6>
+
+<div class="profile-widget-list profile-widget-list-inline">
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png" alt="Anna Machens" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+      <span class="name">
+        
+          Anna Machens
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"></div>
+  </div>
+</div>
+
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg" alt="Karel Kroeze" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+      <span class="name">
+        
+          Karel Kroeze
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"></div>
+  </div>
+</div>
+
+    
+</div>
+
+<p>Digital phenotyping often relies on highly personalized data. What could be more personalized than working on data gathered by and from you and the other participants? We will use real physiological measurements in a simple and fun experimental design to gather data from participants, <em>for</em> participants.</p>
+
+<h3 id="tuesday">Tuesday</h3>
+<h6 id="march--4">March  4</h6>
+
+<h5 id="digital-phenotyping-in-social-sciences-research-working-title">Digital phenotyping in social sciences research (working title)</h5>
+<h6 id="1245---1330-location-citadel-t300-1">12:45 - 13:30, Location: Citadel T300</h6>
+
+<div class="profile-widget-list profile-widget-list-default">
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://personen.utwente.nl/.wh/ea/uc/ib1187cab0103b7c8f00187d57c0334a7637a650872de0801e3400140018041/mlnoordzij.jpg" alt="Matthijs Noordzij" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">prof. dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/m.l.noordzij" alt="Matthijs Noordzij">Matthijs Noordzij</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Matthijs Noordzij is Full Professor of Health Psychology and Persuasive Technology and directs the Health Dynamics &amp; Self Management Lab at the University of Twente in The Netherlands.</p> <p>His research and education focuses on exploring the scientific foundations and design principles for integrating sensor technology in (mental) healthcare and self-management.</p> <p>His vision is to develop health technology that aligns with core human values such as compassion, while striving to create innovative solutions that enhance the way we interact with technology in healthcare settings.</p></div>
+  </div>
+</div>
+
+    
+</div>
+
+<p>Talk by Matthijs Noordzij. Abstract fill follow soon.</p>
+
+<h5 id="workshop-data-wrangling">Workshop: Data Wrangling</h5>
 <h6 id="1345---1530-location-citadel-t300">13:45 - 15:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-inline">
@@ -765,19 +892,71 @@
     
 </div>
 
-<p>Introduction to the datathon, finding and matching teams, using Kaggle, installing and setting up R/Python</p>
+<p>Cleaning and combining datasets, (visually) exploring data and patterns, preparing raw data for further analysis.</p>
 
-<h3 id="tuesday">Tuesday</h3>
-<h6 id="march--4">March  4</h6>
+<h3 id="wednesday">Wednesday</h3>
+<h6 id="march--5">March  5</h6>
 
-<h5 id="lunch-lecture">Lunch lecture</h5>
-<h6 id="1245---1330-location-citadel-t300-1">12:45 - 13:30, Location: Citadel T300</h6>
+<h5 id="advancing-digital-phenotyping-from-physiological-time-series-data-to-real-life-multimodal-health-monitoring">Advancing Digital Phenotyping: From Physiological Time Series Data to Real-Life Multimodal Health Monitoring.</h5>
+<h6 id="1245---1330-location-citadel-t300-2">12:45 - 13:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
     
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.wh/ea/uc/ib355ad2901039a15f2015e1e760326ac5c0bb8f0ee7c0801e3400140018041/ajohn.jpg" alt="Arlene John" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/a.john" alt="Arlene John">Arlene John</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Arlene John is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente. She completed her PhD on data fusion frameworks for wearable health monitoring devices at University College Dublin, and has previously worked on Machine Learning Mathematics at Qualcomm and ASML.</p> <p>Her current research interests include biomedical signal processing, machine learning and inference, explainable AI, and multisensor data fusion.</p></div>
+  </div>
 </div>
 
-<h5 id="practical--hands-on-1">Practical &amp; Hands-on</h5>
+    
+        
+
+<div class="profile-widget-generic">
+  <div class="avatar">
+    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.wh/ea/uc/i096cfb36010357a1f201a7ff7403c9e30786ad971b0d0801e3400140018041/yingwang.jpg" alt="Ying Wang" />
+    
+  </div>
+  <div class="content">
+    <div class="title">
+      
+        <span class="prefix">dr. </span>
+      
+      <span class="name">
+        
+          <a href="https://people.utwente.nl/ying.wang" alt="Ying Wang">Ying Wang</a>
+        
+      </span>
+      
+    </div>
+    
+    <div class="description"><p>Ying Wang is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente.</p> <p>Her research is interdisciplinary, and applies and develops multi-modal model-based signal processing, sensing and physiological system modeling techniques in the healthcare field. Her main research interest is  remote continuous monitoring of individual’s physiological signs (such as, heart activty) and body movement in daily life for personalized disease prevention and management.</p> <p>She is especially enthusiastic in using her expertise to tackle challenges surrounding the daily monitoring of physiological (brain and body) responses to dynamic physical activities for different healthcare purposes, such as, helping people stay in healthy and tracking patients' disease symptoms for disease management.</p></div>
+  </div>
+</div>
+
+    
+</div>
+
+<p>This talk explores the journey from physiological time-series data to multimodal data analysis for digital phenotyping, emphasizing the transition from controlled semi-lab environments to real-life health monitoring. The challenges and some innovations in daily-life health monitoring required to sense information unobtrusively to enable the development of personalized phenotypes for continuous health tracking is discussed. Key topics include both wireless and wearable sensing techniques, multimodal feature extraction, identifying interrelationships amongst features, and connecting these insights to individual phenotypes. <br /> Additionally, we examine methods for monitoring health trends over extended periods. Practical applications discussed will include energy expenditure monitoring during daily physical activity for people with risk of obesity, cardiac function monitoring for people with long term diabetes, psychophysiological condition monitoring for people with knee osteoarthritis, recovery tracking post-colorectal surgery using patch sensors, and smartphone-based digital phenotyping for breast cancer survivors.</p>
+
+<h5 id="workshop-feature-engineering">Workshop: Feature Engineering</h5>
 <h6 id="1345---1530-location-citadel-t300-1">13:45 - 15:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-inline">
@@ -830,17 +1009,19 @@
     
 </div>
 
-<h3 id="wednesday">Wednesday</h3>
-<h6 id="march--5">March  5</h6>
+<p>How to go from ‘raw’ sensor data to usable signals or ‘features’. We will provide some background and context for the choices you will have to make (or that are made for you with commercial products), and implement a basic pipeline for extracting features from raw signals data in R.</p>
 
-<h5 id="lunch-lecture-1">Lunch lecture</h5>
-<h6 id="1245---1330-location-citadel-t300-2">12:45 - 13:30, Location: Citadel T300</h6>
+<h3 id="thursday">Thursday</h3>
+<h6 id="march--6">March  6</h6>
+
+<h5 id="to-be-announced">(to be announced…)</h5>
+<h6 id="1245---1330-location-citadel-t300-3">12:45 - 13:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
     
 </div>
 
-<h5 id="practical--hands-on-2">Practical &amp; Hands-on</h5>
+<h5 id="workshop-modelling">Workshop: Modelling</h5>
 <h6 id="1345---1530-location-citadel-t300-2">13:45 - 15:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-inline">
@@ -868,42 +1049,30 @@
 </div>
 
     
-        
-
-<div class="profile-widget-generic">
-  <div class="avatar">
-    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg" alt="Karel Kroeze" />
-    
-  </div>
-  <div class="content">
-    <div class="title">
-      
-      <span class="name">
-        
-          Karel Kroeze
-        
-      </span>
-      
-    </div>
-    
-    <div class="description"></div>
-  </div>
 </div>
 
-    
-</div>
+<p>Introduction to modelling and machine learning in R.</p>
 
-<h3 id="thursday">Thursday</h3>
-<h6 id="march--6">March  6</h6>
-
-<h5 id="lunch-lecture-2">Lunch lecture</h5>
-<h6 id="1245---1330-location-citadel-t300-3">12:45 - 13:30, Location: Citadel T300</h6>
+<h5 id="posters--drinks-1">Posters &amp; Drinks</h5>
+<h6 id="1600---1800-location-tba">16:00 - 18:00, Location: TBA</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
     
 </div>
 
-<h5 id="practical--hands-on-3">Practical &amp; Hands-on</h5>
+<p>(Social) networking with other participants, and other University of Twente students and staff interested in data science.</p>
+
+<h3 id="friday">Friday</h3>
+<h6 id="march--7">March  7</h6>
+
+<h5 id="to-be-announced-1">(to be announced…)</h5>
+<h6 id="1245---1330-location-citadel-t300-4">12:45 - 13:30, Location: Citadel T300</h6>
+
+<div class="profile-widget-list profile-widget-list-default">
+    
+</div>
+
+<h5 id="workshop-modelling-ii">Workshop: Modelling II</h5>
 <h6 id="1345---1530-location-citadel-t300-3">13:45 - 15:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-inline">
@@ -956,82 +1125,12 @@
     
 </div>
 
-<h5 id="posters--drinks-1">Posters &amp; Drinks</h5>
-<h6 id="1600---1800-location-tba">16:00 - 18:00, Location: TBA</h6>
-
-<div class="profile-widget-list profile-widget-list-default">
-    
-</div>
-
-<p>(Social) networking with other participants, and other University of Twente students and staff interested in data science.</p>
-
-<h3 id="friday">Friday</h3>
-<h6 id="march--7">March  7</h6>
-
-<h5 id="lunch-lecture-3">Lunch lecture</h5>
-<h6 id="1245---1330-location-citadel-t300-4">12:45 - 13:30, Location: Citadel T300</h6>
-
-<div class="profile-widget-list profile-widget-list-default">
-    
-</div>
-
-<h5 id="practical--hands-on-4">Practical &amp; Hands-on</h5>
-<h6 id="1345---1530-location-citadel-t300-4">13:45 - 15:30, Location: Citadel T300</h6>
-
-<div class="profile-widget-list profile-widget-list-inline">
-    
-        
-
-<div class="profile-widget-generic">
-  <div class="avatar">
-    <img class="avatar-portrait" src="https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png" alt="Anna Machens" />
-    
-  </div>
-  <div class="content">
-    <div class="title">
-      
-      <span class="name">
-        
-          Anna Machens
-        
-      </span>
-      
-    </div>
-    
-    <div class="description"></div>
-  </div>
-</div>
-
-    
-        
-
-<div class="profile-widget-generic">
-  <div class="avatar">
-    <img class="avatar-portrait" src="https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg" alt="Karel Kroeze" />
-    
-  </div>
-  <div class="content">
-    <div class="title">
-      
-      <span class="name">
-        
-          Karel Kroeze
-        
-      </span>
-      
-    </div>
-    
-    <div class="description"></div>
-  </div>
-</div>
-
-    
-</div>
+<p>More in-depth continuation of modelling, implications of different modeling choices and ‘fairness’ in AI models. [Note: exact contents may still change]</p>
 
 <h3 id="sunday">Sunday</h3>
 <h6 id="march--9">March  9</h6>
 
-<h5 id="submission-deadline">Submission deadline</h5>
+<h5 id="datathon-submission-deadline">Datathon: Submission deadline</h5>
 <h6 id="2359----location">23:59 - , Location:</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
@@ -1043,7 +1142,7 @@
 <h3 id="monday-1">Monday</h3>
 <h6 id="march-10">March 10</h6>
 
-<h5 id="team-presentations">Team presentations</h5>
+<h5 id="datathon-team-presentations">Datathon: Team presentations</h5>
 <h6 id="1245---1330-location-citadel-t300-5">12:45 - 13:30, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
@@ -1052,7 +1151,7 @@
 
 <p>Presentations by the datathon participants. Solutions, challenges, and lessons learned.</p>
 
-<h5 id="prize-ceremony">Prize ceremony</h5>
+<h5 id="datathon-prize-ceremony">Datathon: Prize ceremony</h5>
 <h6 id="1345---1400-location-citadel-t300">13:45 - 14:00, Location: Citadel T300</h6>
 
 <div class="profile-widget-list profile-widget-list-default">
@@ -1070,25 +1169,41 @@
 
 <p>Final keynote speech and official closing of the Data Science Week.</p>
 
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Signups are now open!</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/">Sign up now</a>
+    
+  </div>
 </div>
-            </div>
+
         </div>
     </div>
 </div>
 
-    </div>
-    <div id="footer">
+
+  </div>
+  <footer id="footer">
   <div class="footer-content">
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:users-three"></span>
         Join the community
-      </h5>
+      </h2>
       <!-- todo: make this an actual form, with backing dbish thing (wait for webhare?) -->
       <a
         class="inset"
         href="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter"
-        title="subscribe to our newsletter"
       >
         <span
           class="iconify-inline icon"
@@ -1099,8 +1214,7 @@
       <a
         class="inset"
         href="https://twitter.com/BdsiUt"
-        target="_blank"
-        title="follow us on twitter"
+       
       >
         <span class="iconify-inline icon" data-icon="ph:twitter-logo"></span>
         follow us on twitter
@@ -1108,13 +1222,12 @@
       <a
         class="inset"
         href="https://www.linkedin.com/company/behavioural-data-science-incubator/about/"
-        target="_blank"
-        title="connect with us on linkedin"
+       
       >
         <span class="iconify-inline icon" data-icon="ph:linkedin-logo"></span>
         connect with us on linkedin
       </a>
-      <a class="inset" href="/community/#community" title="join the team (chat)"
+      <a class="inset" href="/community/#community" 
         ><span
           class="iconify-inline icon"
           data-icon="mdi:microsoft-teams"
@@ -1124,41 +1237,40 @@
       <a
         class="inset"
         href="mailto:bdsi@utwente.nl?subject=Dear BDSi&body=Dear BDSi,"
-        title="write us a letter"
         ><span class="iconify-inline icon" data-icon="ph:envelope"></span>
         write us a letter
       </a>
-      <h5 class="mt-2">Proud partners with</h5>
+      <h2 class="mt-2 h5">Proud partners with</h2>
       
       <div class="inset" id="partners-list">
         
-        <a href="https://bmslab.utwente.nl/" target="_blank">
+        <a href="https://bmslab.utwente.nl/" aria-label="BMS Lab">
           
           <img
             src="/assets/images/content/bmslab/logo-light.svg"
-            alt="BMS Lab logo"
+            alt=""
             class="logo"
           />
           
         </a>
         
-        <a href="https://www.utwente.nl/en/dcc/" target="_blank">
+        <a href="https://www.utwente.nl/en/dcc/" aria-label="Digital Competence Center">
           
           Digital Competence Center
           
         </a>
         
-        <a href="https://hpc.wiki.utwente.nl/eemcs-hpc" target="_blank">
+        <a href="https://hpc.wiki.utwente.nl/eemcs-hpc" aria-label="EEMCS High Performance Computing">
           
           EEMCS High Performance Computing
           
         </a>
         
-        <a href="https://www.widsworldwide.org/" target="_blank">
+        <a href="https://www.widsworldwide.org/" aria-label="Women in Data Science worldwide">
           
           <img
             src="/assets/images/wids-logo.png"
-            alt="Women in Data Science worldwide logo"
+            alt=""
             class="logo"
           />
           
@@ -1167,10 +1279,10 @@
       </div>
     </div>
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <div id="team-icon-div"></div>
         Meet the team
-      </h5>
+      </h2>
       
        
       
@@ -1224,7 +1336,7 @@
           src="/assets/images/team/Abhishta-thumbnail.png"
           alt=""
           class="profile-image"
-        />Abhishta Abhishta <span class="text-muted">HBE</span></a
+        />Abhishta Abhishta <span class="tiny-header">HBE</span></a
       >
       
       
@@ -1235,7 +1347,7 @@
           src="/assets/images/team/Karin-thumbnail.png"
           alt=""
           class="profile-image"
-        />Karin Groothuis-Oudshoorn <span class="text-muted">TPS</span></a
+        />Karin Groothuis-Oudshoorn <span class="tiny-header">TPS</span></a
       >
       
       
@@ -1246,7 +1358,7 @@
           src="/assets/images/team/Martin-thumbnail.png"
           alt=""
           class="profile-image"
-        />Martin Schmettow <span class="text-muted">LDT</span></a
+        />Martin Schmettow <span class="tiny-header">LDT</span></a
       >
       
       
@@ -1257,15 +1369,15 @@
           src="/assets/images/team/Peter-thumbnail.png"
           alt=""
           class="profile-image"
-        />Peter ten Klooster <span class="text-muted">HIB</span></a
+        />Peter ten Klooster <span class="tiny-header">HIB</span></a
       >
       
     </div>
     <div class="footer-block sitemap">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:git-merge"></span>
         Sitemap
-      </h5>
+      </h2>
       <ul>
         <li>
           <a href="/about/">About us</a>
@@ -1300,10 +1412,10 @@
       
     </div>
     <div class="footer-block">
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:package"></span>
         Postal address
-      </h5>
+      </h2>
       <pre class="address-block inset">
         Behavioural Data Science incubator
 Faculty of Behavioural and Management Sciences
@@ -1311,10 +1423,10 @@ University of Twente
 PO BOX 217
 7500 AE Enschede, The Netherlands
       </pre>
-      <h5 class="mt-2">
+      <h2 class="mt-2 h5">
         <span class="iconify-inline" data-icon="ph:hand-waving"></span>
         Visiting address
-      </h5>
+      </h2>
       <pre class="address-block inset">
           Langezijds 1514
 Hallenweg 6
@@ -1328,21 +1440,21 @@ Hallenweg 6
     </div>
     <a
       class="ml-auto"
-      target="_blank"
+     
       href="https://www.utwente.nl/en/about-our-website/"
       >Privacy & Cookies</a
     >
     <a
-      target="_blank"
+     
       href="https://www.utwente.nl/en/about-our-website/disclaimer/"
       >Disclaimer & Copyright</a
     >
   </div>
-</div>
+</footer>
 
 <script src="/assets/js/pages/people.js"></script>
 
     
-  <script type="text/javascript" src="/assets/js/scripts.js?v=1737420254"></script>
+  <script type="text/javascript" src="/assets/js/scripts.js?v=1737470474"></script>
 </body>
 </html>
