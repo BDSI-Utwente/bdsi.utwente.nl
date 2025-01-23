@@ -11,18 +11,6 @@
   date: 2025-01-23
   endDate: 2025-01-23
   time: 13:00 - 17:00
-- title: DSI Meet Up - Career Investments
-  description: Join the DSI Meet Up on 29 January to explore the topic of Career
-    Investments. Learn how smart career choices can lead to new opportunities
-    and professional growth.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/1/1812970/dsi-meet-up-career-investments
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i1fd1d6cf010241af2a0470201c031cdbd7eb3b8cc1a50701c3a401ee0085/data.avif
-  start: 2025-01-29T12:00:00+00:00
-  end: 2025-01-29T13:00:00+00:00
-  date: 2025-01-29
-  endDate: 2025-01-29
-  time: 12:00 - 13:00
 - title: "Training Workshop: AWS Training on Cloud-based Geospatial Computing"
   description: Cloud computing offers immense potential for processing and
     analyzing geospatial data at scale, enabling faster and more efficient
@@ -39,7 +27,7 @@
     cloud-based resources, including pricing.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/2/71524/training-workshop-aws-training-on-cloud-based-geospatial-computing
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/iae9615ad0102f01f38000fd801038f05889ab285fd360701c33a003a0085/data.avif
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i2aa812eb0102f01f38000fd801038f05889ab285fd360701c3a401ee0085/data.avif
   start: 2025-02-04T09:00:00+00:00
   end: 2025-02-04T16:00:00+00:00
   date: 2025-02-04
