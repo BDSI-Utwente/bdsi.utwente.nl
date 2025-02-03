@@ -64,7 +64,6 @@ speakers:
     image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ib355ad2901039a15f2015e1e760326ac5c0bb8f0ee7c0801e3400140018041/ajohn.jpg
     description: <p>Arlene John is an Assistant Professor at the Biomedical Signals and Systems (BSS) group at the University of Twente. She completed her PhD on data fusion frameworks for wearable health monitoring devices at University College Dublin, and has previously worked on Machine Learning Mathematics at Qualcomm and ASML.</p>
       <p>Her current research interests include biomedical signal processing, machine learning and inference, explainable AI, and multisensor data fusion.</p>
-
   - name: Ying Wang
     prefix: "dr. "
     tags: ["wed-talk", "hero"]
@@ -83,7 +82,7 @@ speakers:
   #   tags: ["hero", "fin-keynote"]
     
 events: 
-  - title: "Keynote: digital phenotyping"
+  - title: "Digital phenotyping: of mice and men, babies and business"
     type: lectures
     start: 2025-03-03 12:45
     end: 2025-03-03 13:30
@@ -104,12 +103,12 @@ events:
     location: Citadel T300
     description: Digital phenotyping often relies on highly personalized data. What could be more personalized than working on data gathered by and from you and the other participants? We will use real physiological measurements in a simple and fun experimental design to gather data from participants, _for_ participants. 
     tag: mon-data
-  - title: Digital phenotyping in social sciences research (working title)
+  - title: "From Signals to Insights: Validity and Applications of Ambulatory Physiological Monitoring"
     type: lectures
     start: 2025-03-04 12:45
     end: 2025-03-04 13:30
     location: Citadel T300
-    description: Talk by Matthijs Noordzij. Abstract fill follow soon.
+    description: Advances in wearable technology have made it possible to continuously track physiological signals such as heart rate variability, skin conductance, and respiration in everyday life. This form of passive sensing provides valuable insights into stress, emotion regulation, and mental health, moving beyond the limitations of laboratory studies. In this talk, I will introduce the principles of ambulatory physiological monitoring, discuss the validity of current measurement techniques, and explore their potential applications in research and clinical practice. While these methods offer exciting opportunities, challenges remain in ensuring data quality, interpreting physiological signals in context, and addressing ethical concerns. By critically examining both the promise and limitations of these tools, we can better understand how to integrate them into studies and applications in a meaningful and responsible way.
     tag: tue-talk
   - title: "Workshop: Data Wrangling"
     type: practicals
