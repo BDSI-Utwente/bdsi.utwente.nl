@@ -85,14 +85,17 @@ speakers:
     tags: ["thu-talk", "hero"]
     url: https://people.utwente.nl/a.witteveen
     image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i0baf5903010385daf20121f78b0349fb5cf970c13fa50801e3400140018041/awitteveen.jpg
-    description: <p>Annemieke Witteveen is Associate Professor at the Biomedical Signals and Systems (BSS) group and the Personalized eHealth Technology (PeHT) research program. Her research line focusses on building dynamic patient-level models for personalized prediction, monitoring and optimization to support clinical decision making in oncology.</p>
+    description: <p>Annemieke Witteveen is Associate Professor at the Biomedical Signals and Systems (BSS) group and the Personalized eHealth Technology (PeHT) research program.</p>
+      <p>Her research line focusses on building dynamic patient-level models for personalized prediction, monitoring and optimization to support clinical decision making in oncology.</p>
       <p>As PI, Annemieke coordinates several large projects on self-management and decision support for oncology, such as the KWF PARTNR project for optimal cancer-related fatigue treatment and the €6.32M 4TU research program RECENTRE on lifestyle and risk-based monitoring.</p>
   - name: Jorge Piano Simoes
     prefix: "dr. "
     tags: ["thu-talk", "hero"]
     url: https://people.utwente.nl/j.pianosimoes
     image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/if68ec8620103cb12f201470d760354eb2c68deba85380801e3400140018041/jpianosimoes.jpg
-    description: <p>Jorge Piano Simoes is an Assistant Professor at Psychology, Health & Technology and the TechMed Centre at the University of Twente.</p>
+    description: <p>Jorge Piano Simões is an Assistant Professor in the Psychology, Health, and Technology (PHT) section.</p>
+      <p>His research sits at the intersection of psychology, eHealth, and machine learning, focusing on the development and evaluation of app-based Just-in-Time Adaptive Interventions (JITAIs) to personalize mental health care for individuals with mood disorders.</p>
+      <p>To enhance digital interventions, he integrates tools such as ecological momentary assessment, biosignal monitoring via smartwatches, and smartphone-based digital phenotyping to capture behavioral patterns and inform adaptive treatment strategies.</p>
     
 events: 
   - title: "Digital phenotyping: of mice and men, babies and business"
@@ -147,11 +150,12 @@ events:
     location: Citadel T300
     tag: wed-practical
     description: How to go from 'raw' sensor data to usable signals or 'features'. We will provide some background and context for the choices you will have to make (or that are made for you with commercial products), and implement a basic pipeline for extracting features from raw signals data in R. 
-  - title: (to be announced...)
+  - title: "Hands-on workshop digital phenotyping: fitting a framework and opportunities and challenges"
     type: lectures
     start: 2025-03-06 12:45
     end: 2025-03-06 13:30
     location: Citadel T300
+    description: In this workshop, participants will be introduced to key concepts related to digital phenotyping, including definitions, existing frameworks linking behavior, emotions, and physical states and digital traces, as well as clinical opportunities and barriers for implementing this tool. During the workshop, participants will also have the opportunity to critically evaluate how digital traces can be translated into clinical applications with a hands-on assignment. Lastly, participants will be presented to the state-of-the-art overview of how machine learning methods are being leveraged with digital phenotyping to improve and personalize care.
     tag: thu-talk
   - title: "Workshop: Modelling"
     type: practicals
