@@ -259,7 +259,7 @@ The datathon is open to both novices and experts, and everyone in between. You c
 <p>While we will do our best to introduce data science topics in the various workshops without relying on code, a basic understanding of R and/or Python will make it much easier to follow along.</p>
 " %}
 
-<p>If you have some experience with other programming languages, you should be able to follow along with a little preparation. More information on installing and using R can be found in the <a href='#what-can-i-do-to-prepare'>What can I do to prepare?</a> section.</p>
+<p>If you have some experience with other programming languages, you should be able to follow along with a little preparation. More information on installing and using R can be found in the <a href='#what-can-i-do-to-prepare-for-the-datathon'>What can I do to prepare for the datathon?</a> section.</p>
 
 <p>If you're new to programming in general or would like a deeper understanding of R, and would rather learn from one of our colleagues, the <a href='https://www.utwente.nl/en/bms/code/'>Cognition, Data and Education (CoDE)</a> section provides <a href='https://canvas.utwente.nl/courses/4715'>courses and materials aimed at teaching staff</a> and <a href='https://people.utwente.nl/j.steinrucke'>Johannes Steinrücke</a> teaches half-day <a href='https://www.utwente.nl/en/ctd/courses/1897203/introduction-to-r-workshop/'>introduction to R</a> and <a href='https://www.utwente.nl/en/ctd/courses/1897245/data-visualization-using-r-workshop/'>data visualization in R</a> workshops for PhD's (and EngD's).</p>
 
