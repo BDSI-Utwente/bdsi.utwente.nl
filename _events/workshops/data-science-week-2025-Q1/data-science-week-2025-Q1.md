@@ -80,6 +80,19 @@ speakers:
   #   affiliation: Cognition, Data and Education, Behavioural Data Science incubator
   #   description: Stéphanie is Associate Professor and chair of the Cognition, Data and Education section. She is also the founder and head of the Behavioural Data Science incubator, all-around data science sorceress, and Women in Data Science Ambassador.
   #   tags: ["hero", "fin-keynote"]
+  - name: Annemieke Witteveen
+    postfix: ", PhD"
+    tags: ["thu-talk", "hero"]
+    url: https://people.utwente.nl/a.witteveen
+    image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i0baf5903010385daf20121f78b0349fb5cf970c13fa50801e3400140018041/awitteveen.jpg
+    description: <p>Annemieke Witteveen is Associate Professor at the Biomedical Signals and Systems (BSS) group and the Personalized eHealth Technology (PeHT) research program. Her research line focusses on building dynamic patient-level models for personalized prediction, monitoring and optimization to support clinical decision making in oncology.</p>
+      <p>As PI, Annemieke coordinates several large projects on self-management and decision support for oncology, such as the KWF PARTNR project for optimal cancer-related fatigue treatment and the €6.32M 4TU research program RECENTRE on lifestyle and risk-based monitoring.</p>
+  - name: Jorge Piano Simoes
+    prefix: "dr. "
+    tags: ["thu-talk", "hero"]
+    url: https://people.utwente.nl/j.pianosimoes
+    image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/if68ec8620103cb12f201470d760354eb2c68deba85380801e3400140018041/jpianosimoes.jpg
+    description: <p>Jorge Piano Simoes is an Assistant Professor at Psychology, Health & Technology and the TechMed Centre at the University of Twente.</p>
     
 events: 
   - title: "Digital phenotyping: of mice and men, babies and business"
@@ -139,6 +152,7 @@ events:
     start: 2025-03-06 12:45
     end: 2025-03-06 13:30
     location: Citadel T300
+    tag: thu-talk
   - title: "Workshop: Modelling"
     type: practicals
     start: 2025-03-06 13:45
@@ -157,6 +171,7 @@ events:
     start: 2025-03-07 12:45
     end: 2025-03-07 13:30
     location: Citadel T300
+    tag: fri-talk
   - title: "Workshop: Modelling II"
     type: practicals
     start: 2025-03-07 13:45
