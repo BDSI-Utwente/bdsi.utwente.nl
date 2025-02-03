@@ -410,11 +410,14 @@ Further details will be made available in the coming weeks and months.
 {% assign day = event.start | date: "%A" %}
 {% if previous_day != day %}
   {% assign previous_day = day %}
-### {{ day }}
-###### {{ event.start | date: "%B %e" }}
+
+<h3 class="mt-6">{{ day }}</h3>
+<h4 class="h6">{{ event.start | date: "%B %e" }}</h4>
+
 {% endif %}
-##### {{ event.title }}
-###### {{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}, Location: {{ event.location }}
+<h4 class="mt-4">{{ event.title }}</h4>
+<h5 class="h6">{{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}, Location: {{ event.location }}</h5>
+
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains event.tag" %}
 {% if event.type == "practicals" %}
   {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
