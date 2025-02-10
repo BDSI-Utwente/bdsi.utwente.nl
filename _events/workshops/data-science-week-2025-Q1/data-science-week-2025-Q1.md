@@ -96,7 +96,11 @@ speakers:
     description: <p>Jorge Piano Simões is an Assistant Professor in the Psychology, Health, and Technology (PHT) section.</p>
       <p>His research sits at the intersection of psychology, eHealth, and machine learning, focusing on the development and evaluation of app-based Just-in-Time Adaptive Interventions (JITAIs) to personalize mental health care for individuals with mood disorders.</p>
       <p>To enhance digital interventions, he integrates tools such as ecological momentary assessment, biosignal monitoring via smartwatches, and smartphone-based digital phenotyping to capture behavioral patterns and inform adaptive treatment strategies.</p>
-    
+  - name: Peter Slijkhuis
+    tags: ["fin-talk", "hero"]
+    image_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ia9a6960b0103618ef101a6487003373d2281198341df0801e3400140018041/pjhslijkhuis.jpg
+    description: <p>Peter Slijkhuis is a psychologist who focuses on human behavior and technology, with a special interest in how people use and interact with technology (Usability Testing and UX Research). He is the educational coordinator at BMS-Lab, responsible for creating course materials explaining and using the equipment that BMS-Lab provides.</p>
+      <p>He has extensive experience with eye-tracking, virtual and augmented reality, facial and body motion tracking, wearables and more.</p>
 events: 
   - title: "Digital phenotyping: of mice and men, babies and business"
     type: lectures
@@ -187,23 +191,30 @@ events:
     type: other
     start: 2025-03-09 23:59
     description: Deadline for datathon submissions on the leaderboard.
+  - title: "Practical wearables: overview and demonstration of equipment available at BMS-Lab"
+    type: speaker
+    start: 2025-03-10 12:45
+    end: 2025-03-10 13:30
+    location: Citadel T300
+    description: "Peter Slijkhuis will give an overview of equipment available at BMS-Lab, and how it can be useful for social science. [Note: exact contents may still change]"
+    tag: fin-talk
   - title: "Datathon: Team presentations"
     type: lectures
-    start: 2025-03-10 12:45
-    end: 2025-03-10 13:30 
+    start: 2025-03-10 13:45
+    end: 2025-03-10 14:30 
     location: Citadel T300
     description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
   - title: "Datathon: Prize ceremony"
     type: speaker
-    start: 2025-03-10 13:45
-    end: 2025-03-10 14:00
+    start: 2025-03-10 14:45
+    end: 2025-03-10 15:00
     location: Citadel T300
     description: Prizes for the best and most innovative teams.
     tag: fin-prizes
   - title: Final keynote
     type: speaker
-    start: 2025-03-10 14:00
-    end: 2025-03-10 14:30
+    start: 2025-03-10 15:00
+    end: 2025-03-10 15:30
     location: Citadel T300
     description: Final keynote speech and official closing of the Data Science Week.
     tag: fin-keynote
