@@ -267,6 +267,9 @@ On thursday afternoon, we invite all data science week participants as well as a
 
 {% include figure.html iframe="https://universiteittwente.sharepoint.com/sites/WomeninDataScienceWeek2/_layouts/15/embed.aspx?UniqueId=1ecc7d6a-e004-4788-89c3-f6b275d41092&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" caption="Women in Data Science Drinks & Poster Presentations 2024" %}
 
+### Certificates & TGS credits
+
+All participants in the Datathon will get a signed certicifate of participation, listing the lectures and workshops they attended. PhD candidates (and of course PdEng, etc.) who attend the lectures and workshops and participated in the datathon receive a Twente Graduate School (TGS) certificate for 0.5 ECTS. 
 
 ### Competition
 
