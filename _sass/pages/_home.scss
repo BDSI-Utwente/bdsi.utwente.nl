@@ -14,24 +14,34 @@
 }
 
 // side-by-side for larger screen spaces
-@media (min-width: map.get($grid-breakpoints, "lg")) {
-  .main-with-sidebar {
-    display: grid;
-    grid-template-columns: [left-margin] minmax(2em, 3fr) [main] minmax(calc(map.get($grid-breakpoints, "lg") - 400px - 4em), 1280px) [right-margin] minmax(1em, 1fr) [aside] minmax(300px, 400px);
-    grid-template-rows: [main] auto;
-  
-    main {
-      grid-column: main;
-      grid-row: main;
-    }
-  
-    aside {
-      grid-column: aside;
-      grid-row: main;
+$calendar-width: 350px;
 
-      padding-left: 1em;
-      background-color: #f5f5f5;
-      box-shadow: -3px 0 6px rgba(0,0,0,.2);
+.main-with-sidebar {
+  @each $breakpoint, $width in $grid-breakpoints {
+    $container-max-width: map-get($container-max-widths, $breakpoint);
+    @if $container-max-width != null and $width >= map-get($grid-breakpoints, "lg") {
+      @media screen and (min-width: $width) {
+        $ml-width: calc((100% - $container-max-width) / 2);
+        $content-width: min(calc(100% - $calendar-width - $ml-width - 2em), $container-max-width);
+        $mr-width: calc(100% - $ml-width - $content-width - $calendar-width);
+        
+        display: grid;
+        grid-template-columns: $ml-width $content-width $mr-width $calendar-width ;
+        grid-template-areas: "ml content mr calendar";
+
+        main {
+          grid-area: content;
+          padding: 0 10px;
+        }
+
+        aside {
+          grid-area: calendar;
+
+          padding-left: 1em;
+          background-color: #f5f5f5;
+          box-shadow: -3px 0 6px rgba(0,0,0,.2);
+        }
+      }
     }
-  }
+  }  
 }
