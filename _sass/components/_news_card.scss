@@ -2,15 +2,15 @@
 @use "sass:map";
 
 // remove additional item for breakpoints where it would create an additional row. 
-@media (min-width: map.get($container-max-widths, "md")) and (max-width: map.get($container-max-widths, "xl")) {
+@media (min-width: map.get($grid-breakpoints, "xl")) and (max-width: map.get($grid-breakpoints, "xxl")) {
     .news-items {
-        .col-md-4:nth-child(4) {
+        .col-xl-4:nth-child(4) {
             display: none;
         }
     }
 }
 
-@media (min-width: map.get($container-max-widths, "md")) {
+@media (min-width: map.get($grid-breakpoints, "md")) {
     a.news-item.news-item-hero {
         display: grid; 
         grid-template-columns: 1fr 1fr;

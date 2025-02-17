@@ -39,8 +39,32 @@ bodyClass: page-home
         </div>
     </div>
 </div> -->
+<div class="main-with-sidebar">
+<aside class="calendar">
+    <h2 class="mt-6">Upcoming Events</h2>
+    {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
+    {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
+    {% assign filtered_events = '' | split: '' %}
+    {% for event in events %}
+        {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
+        {% if startDate >= renderDate %}
+            {% unless event.title contains "Walk-in Hour" %}
+                {% assign filtered_events = filtered_events | push: event %}
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+    {% assign sorted_events = filtered_events | sort_natural: "date" %}
+    <div class="event-items row">
+    {% for event in sorted_events limit:12 %}
+        <!-- two columns ONLY on md-lg screens, where the calendar takes full width -->
+        <div class="col-12 col-md-6 col-lg-12">
+        {% include event-card.html %}
+        </div>
+    {% endfor %}
+    </div>
+</aside>
 
-<main class="container">
+<main class="main">
     <!-- selectize does not have a11y integration, and getting it seems to be a pain. Disable for now. -->
     <!-- % include find-expertise.html %} -->
     <h1 class="sr-only">Behavioural Data Science incubator</h1>
@@ -58,27 +82,8 @@ bodyClass: page-home
     {% assign items = items | slice: 1, 4 %} 
     <div class="row news-items">
         {% for item in items %}
-            <div class="col-12 col-md-4 col-xl-3">{% include news-card.html %}</div>
+            <div class="col-12 col-md-6 col-xl-4 col-xxl-3">{% include news-card.html %}</div>
         {% endfor %}
-    </div>
-
-    <h2 class="mt-6">Upcoming Events</h2>
-    <div class="row event-items">
-    {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
-    {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
-    {% assign filtered_events = '' | split: '' %}
-    {% for event in events %}
-        {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
-        {% if startDate >= renderDate %}
-            {% unless event.title contains "Walk-in Hour" %}
-                {% assign filtered_events = filtered_events | push: event %}
-            {% endunless %}
-        {% endif %}
-    {% endfor %}
-    {% assign sorted_events = filtered_events | sort_natural: "date" %}
-    {% for event in sorted_events limit:12 %}
-        <div class="col-12 col-md-6 col-xl-4">{% include event-card.html %}</div>    
-    {% endfor %}
     </div>
 
     <h2 class="mt-6">Our Services</h2>
@@ -101,3 +106,4 @@ bodyClass: page-home
         View All Services
     </a>
 </main>
+</div>

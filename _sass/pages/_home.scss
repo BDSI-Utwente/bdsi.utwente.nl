@@ -1,47 +1,37 @@
-.page-home {
-  .intro {
-    background-image: url("/assets//images/bdsi-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+@use "../variables";
+@use "sass:map";
 
-  .call {
-    position: relative;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
-      0 5px 15px rgba(0, 0, 0, 0.07);
+// vertical layout for small screen spaces
+@media (max-width: map.get($grid-breakpoints, "lg")) {
+  .main-with-sidebar {
     width: 100%;
-    color: $secondary;
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    @include media-breakpoint-up(sm) {
-      align-items: center;
-      flex-direction: row;
-      width: 90%;
+    flex-flow: column nowrap;
+    padding: 0 2em;
+  }
+}
+
+// side-by-side for larger screen spaces
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .main-with-sidebar {
+    display: grid;
+    grid-template-columns: [left-margin] minmax(2em, 3fr) [main] minmax(calc(map.get($grid-breakpoints, "lg") - 400px - 4em), 1280px) [right-margin] minmax(1em, 1fr) [aside] minmax(300px, 400px);
+    grid-template-rows: [main] auto;
+  
+    main {
+      grid-column: main;
+      grid-row: main;
     }
-    @include media-breakpoint-up(md) {
-      width: 70%;
-    }
-    @include media-breakpoint-up(lg) {
-      width: 50%;
-    }
-    .call-box-top {
-      flex: 1 0 auto;
-      padding: 20px;
-    }
-    .call-box-bottom {
-      flex: 0 0 auto;
-      padding: 0 20px 20px 20px;
-      @include media-breakpoint-up(sm) {
-        padding: 20px;
-      }
-    }
-    .call-name {
-      font-size: 1.1rem;
-      font-weight: bold;
+  
+    aside {
+      grid-column: aside;
+      grid-row: main;
+
+      padding-left: 1em;
+      background-color: #f5f5f5;
+      box-shadow: -3px 0 6px rgba(0,0,0,.2);
     }
   }
 }
