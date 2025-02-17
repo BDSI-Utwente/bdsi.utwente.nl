@@ -49,11 +49,16 @@ function create_toc(
   toc_element.role = "navigation";
   toc_element.ariaLabel = "Table of contents";
 
-  // create ToC header
-  const toc_header_element = document.createElement("h2");
-  toc_header_element.classList.add("toc-header", "h6");
-  toc_header_element.innerText = "On this page";
-  toc_element.append(toc_header_element);
+  // create ToC header, if not existing
+  let toc_header_element = toc_element.querySelector("h2.toc-header");
+  if (!toc_header_element) {
+    console.log({ toc_header_element });
+
+    toc_header_element = document.createElement("h2");
+    toc_header_element.classList.add("toc-header", "h6");
+    toc_header_element.innerText = "On this page";
+    toc_element.append(toc_header_element);
+  }
 
   // create ToC main list
   const toc_list_element = document.createElement("ul");
