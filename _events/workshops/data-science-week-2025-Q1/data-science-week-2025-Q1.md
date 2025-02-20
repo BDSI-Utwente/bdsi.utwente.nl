@@ -233,7 +233,10 @@ During the lunch breaks expert data scientists will provide lectures on the most
 (Guest) speakers will be invited during the week to provide a deeper background in the topics and methods covered in the lectures and datathon, or to put these topics in a broader context. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.
 
 
-{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+{% include card.html title="Lunch talks, data science workshops, and datathon" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+
+{% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/" %}
+
 
 ### Datathon
 
@@ -323,7 +326,10 @@ Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.co
 
 [Sharada Kalanidhi](https://www.linkedin.com/in/sharada-kalanidhi-12430ab2/) has written an excellent deep dive into the 2023 WiDS datathon, including links to further resources for both R and Python: <https://www.widsworldwide.org/get-inspired/blog/a-data-scientists-deep-dive-into-the-wids-datathon/>.
 
-{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+{% include card.html title="Lunch talks, data science workshops, and datathon" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+
+{% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/" %}
+
 
 ## Schedule
 
@@ -447,4 +453,7 @@ Further details will be made available in the coming weeks and months.
 {% endfor %}
 
 
-{% include card.html title="Signups are now open!" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+{% include card.html title="Lunch talks, data science workshops, and datathon" content="You can now sign up for the various lunch talks, the datathon, and the workshops. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2025/" %}
+
+{% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/" %}
+
