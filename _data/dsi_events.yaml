@@ -23,6 +23,19 @@
   end: 2025-03-10T23:59:00+00:00
   date: 2025-03-03
   endDate: 2025-03-10
+- title: "Digital behavioral phenotyping: of mice and men, babies and business"
+  description: 'Prof. dr. Lucas Noldus from the Donders Institute for Brain,
+    Cognition and Behavior at Radboud University will give a lunch talk entitled
+    "Digital behavioral phenotyping: of mice and men, babies and business"
+    during the Data Science Week.'
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/3/146161/digital-behavioral-phenotyping-of-mice-and-men-babies-and-business
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i4e735e0c0102c88c60006a762a039dd0b4c8656473f50701c33a003a0085/data.avif
+  start: 2025-03-03T12:45:00+00:00
+  end: 2025-03-03T13:30:00+00:00
+  date: 2025-03-03
+  endDate: 2025-03-03
+  time: 12:45 - 13:30
 - title: "From Signals to Insights: Validity and Applications of Ambulatory
     Physiological Monitoring"
   description: 'Matthijs Noordzij will give a lunch talk for Data Science Week
@@ -75,6 +88,22 @@
   date: 2025-03-06
   endDate: 2025-03-06
   time: 12:45 - 13:30
+- title: Data Science Drinks & Poster Session
+  description: We invite everyone who uses digital phenotyping in specific, or any
+    data science in general in their research or education to come join us for
+    the Data Science Drinks. The drinks bring together (social) scientists, data
+    scientists, and anyone else with a common interest in the intersection of
+    social science and data science. This is a great opportunity to mingle with
+    other data scientists and data science enthusiasts, keep up to date with
+    ongoing and new research, broaden your network, or just have a social drink.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/3/146495/data-science-drinks-poster-session
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i9fc5e7f401026cbf60009d9c6d0362fbe11fb7940f610701c33a003a0085/data.avif
+  start: 2025-03-06T16:00:00+00:00
+  end: 2025-03-06T18:00:00+00:00
+  date: 2025-03-06
+  endDate: 2025-03-06
+  time: 16:00 - 18:00
 - title: "Training Workshop: Introduction to Geospatial Raster and Vector Data
     with Python"
   description: Python is one of the most popular programming languages for data
