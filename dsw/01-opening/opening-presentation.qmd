@@ -1,0 +1,27 @@
+---
+title: "Welcome to the \n  **Data Science Week**!"
+author: "Karel Kroeze"
+format: 
+  revealjs:
+    logo: ../00-common/logo-light.svg
+    theme: [dark, ../00-common/theme.scss]
+    smaller: true
+    # scrollable: true
+    # toc: true
+    # toc-depth: 1
+    toc-title: Overview
+embed-resources: true
+---
+
+
+## 
+
+![](assets/bdsi-splash.png)
+
+##
+
+![](assets/Artboard 1.png)
+
+## 
+
+![](assets/drinks.png)
