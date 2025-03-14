@@ -1,36 +1,13 @@
-- title: "Training Workshop: Introduction to Geospatial Raster and Vector Data
-    with Python"
-  description: Python is one of the most popular programming languages for data
-    science and analytics, with a large and steadily growing community. In this
-    workshop, we will help participants with a working knowledge of Python to
-    familiarize with the world of geospatial raster and vector data. We will
-    introduce a set of tools from the Python ecosystem and show how these can be
-    used to carry out practical geospatial data analysis tasks. In particular,
-    we will consider satellite images and public geo-datasets and demonstrate
-    how these can be opened, explored, manipulated, combined, and visualized
-    using Python.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/3/116335/training-workshop-introduction-to-geospatial-raster-and-vector-data-with-python
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/idb58e61a010208195300ee09f301d3f9b30e02d57d640701c3a401ee0085/data.avif
-  start: 2025-03-12T09:00:00+00:00
-  end: 2025-03-13T12:00:00+00:00
-  date: 2025-03-12
-  endDate: 2025-03-13
 - title: DSI Meet Up - European Horizon Cluster 4 Call
-  description: >-
-    Horizon Cluster 4 Call Event - Workshop Setting. During this morning
-    program, both a team from the RVO, and a team from the UT Grants Support
-    Office, will explain the new set-up of the European Horizon Cluster 4
-    Program on Digital, Industry and Space. We will highlight the
-    specificalities, such as the fact that the domains are written as
-    "Destinations", thereby leaving room for multiple disciplines within one and
-    the same Destination.
-
-
-    The following destinations will be touched upon, and during the second half of the morning, there will be amble time to discuss possible ways forward per destination, thus per table.
+  description: Join us for a morning session on the European Horizon Cluster 4
+    Program (Digital, Industry, and Space)! During this session, a team from the
+    RVO and the UT Grants Support Office will explain the new structure of this
+    EU funding program. We will highlight key aspects, such as the organisation
+    of research topics into broad "Destinations," allowing for interdisciplinary
+    collaboration within each theme.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/3/44331/dsi-meet-up-european-horizon-cluster-4-call
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i844e09150102415b210070e60503e9981024752fd6ee0701c3a401ee0085/data.avif
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i8a94909a0102415b210070e6050320c1aa75fadb30e70701c3a401ee0085/data.avif
   start: 2025-03-19T09:00:00+00:00
   end: 2025-03-19T12:00:00+00:00
   date: 2025-03-19
@@ -38,11 +15,11 @@
   time: 09:00 - 12:00
 - title: "Talk: Like, Share, Struggle? Helping Youth Navigate the Digital Society"
   description: DSI welcomes you to this talk from prof. dr. Jessica Taylor
-    Piotrowski from the Amsterdam School of Communication Research (ASCoR) at
+    Piotrowski from the Amsterdam School of Communication Research (ASCoR) at
     the University of Amsterdam (UvA) taking place Thursday 20th of March.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/3/125292/talk-like-share-struggle-helping-youth-navigate-the-digital-society
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i1a33007901029b5b56008b9566027e88f9e3d502fae60701c33a003a0085/data.avif
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i77956b2201029b5b56008b9566027e88f9e3d502fae60701c3a401ee0085/data.avif
   start: 2025-03-20T14:00:00+00:00
   end: 2025-03-20T15:00:00+00:00
   date: 2025-03-20
@@ -59,3 +36,16 @@
   date: 2025-03-28
   endDate: 2025-03-28
   time: 13:00 - 14:00
+- title: AID-E meeting on AI literacy
+  description: Are you involved in education and want engage in a discussion on AI
+    literacy? Feel welcome to join this AI and Data in Education network meeting
+    organized by Ilona Friso-van den Bos and Maarten Renkema on AI literacy for
+    teachers and University students.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/4/197369/aid-e-meeting-on-ai-literacy
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/ibf9838340102491c0200eef4f602fe9fd365a4292f470701c33a003a0085/data.avif
+  start: 2025-04-01T09:00:00+00:00
+  end: 2025-04-01T11:00:00+00:00
+  date: 2025-04-01
+  endDate: 2025-04-01
+  time: 09:00 - 11:00
