@@ -48,9 +48,7 @@ bodyClass: page-home
     {% for event in events %}
         {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
         {% if startDate >= renderDate %}
-            {% unless event.title contains "Walk-in Hour" %}
-                {% assign filtered_events = filtered_events | push: event %}
-            {% endunless %}
+            {% assign filtered_events = filtered_events | push: event %}
         {% endif %}
     {% endfor %}
     {% assign sorted_events = filtered_events | sort_natural: "date" %}
