@@ -1,12 +1,5 @@
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-04-07T15:00:00+00:00
-  end: 2025-04-07T16:00:00+00:00
-  date: 2025-04-07
-  endDate: 2025-04-07
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Langezijds 1514
   start: 2025-04-14T15:00:00+00:00
   end: 2025-04-14T16:00:00+00:00
   date: 2025-04-14
@@ -25,6 +18,13 @@
   end: 2025-04-28T16:00:00+00:00
   date: 2025-04-28
   endDate: 2025-04-28
+  time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Langezijds 1514
+  start: 2025-05-05T15:00:00+00:00
+  end: 2025-05-05T16:00:00+00:00
+  date: 2025-05-05
+  endDate: 2025-05-05
   time: 15:00 - 16:00
 - title: Causal Community Meeting
   location: Microsoft Teams Meeting
