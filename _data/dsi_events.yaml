@@ -1,19 +1,3 @@
-- title: "Training: Introduction to Docker"
-  description: This workshop, organized by the Center of Expertise in Big Geodata
-    Science (CRIB), aims to introduce the use of Docker containers with the goal
-    of using them for modern, scalable computational workflows. Such workflows
-    are useful for ensuring reproducible research outputs. The participants will
-    learn the fundamentals of containers, practice essential Docker commands,
-    and gain hands-on experience in building and managing Docker images and
-    containers.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/5/254287/training-introduction-to-docker
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i41d39f9e01027879a101d2a2ba01333679b92d0938b00701c3a401ee0085/data.avif
-  start: 2025-05-14T09:15:00+00:00
-  end: 2025-05-14T16:45:00+00:00
-  date: 2025-05-14
-  endDate: 2025-05-14
-  time: 09:15 - 16:45
 - title: "DSI Meet Up: Process Mining in Healthcare"
   description: Hospitals are increasingly adopting process mining to optimise
     patient care. This data-driven technique uses event logs to reveal how
@@ -27,6 +11,20 @@
   date: 2025-06-12
   endDate: 2025-06-12
   time: 12:45 - 13:30
+- title: Online Meet Up Safety and Security domain EU funding and UT support
+  description: DSI and SBD will be organising an online meeting for UT colleagues
+    to gear up for EU funding for the Safety and Security domain. During this
+    meeting you will receive an overview of the different EU funding
+    oppurtunities for Safety and Security domain. You will also learn more about
+    the UT support from Grants Office, Impact Development and DSI.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/6/310782/online-meet-up-safety-and-security-domain-eu-funding-and-ut-support
+  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/id1b9c9260102d4a3e00227a07b02f6a2c27986a9b0f70701c3a401ee0085/data.avif
+  start: 2025-06-25T14:00:00+00:00
+  end: 2025-06-25T15:00:00+00:00
+  date: 2025-06-25
+  endDate: 2025-06-25
+  time: 14:00 - 15:00
 - title: Philosophy of Computing and AI Conference at UT in July 2025
   description: Over three days, 1-3 July 2025, two highly-regarded AI societies
     will join with the Philosophy Section to host a Philosophy of Computing and
