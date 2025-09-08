@@ -1,16 +1,1 @@
-- title: "Training: Introduction to Docker"
-  description: This workshop, organized by the Center of Expertise in Big Geodata
-    Science (CRIB), aims to introduce the use of Docker containers with the goal
-    of using them for modern, scalable computational workflows. Such workflows
-    are useful for ensuring reproducible research outputs. The participants will
-    learn the fundamentals of containers, practice essential Docker commands,
-    and gain hands-on experience in building and managing Docker images and
-    containers.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/5/254287/training-introduction-to-docker
-  img_url: https://1348661504.rsc.cdn77.org/.wh/ea/uc/i41d39f9e01027879a101d2a2ba01333679b92d0938b00701c3a401ee0085/data.avif
-  start: 2025-05-14T09:15:00+00:00
-  end: 2025-05-14T16:45:00+00:00
-  date: 2025-05-14
-  endDate: 2025-05-14
-  time: 09:15 - 16:45
+[]

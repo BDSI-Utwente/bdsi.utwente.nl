@@ -1,35 +1,28 @@
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-04-21T15:00:00+00:00
-  end: 2025-04-21T16:00:00+00:00
-  date: 2025-04-21
-  endDate: 2025-04-21
+  start: 2025-09-08T15:00:00+00:00
+  end: 2025-09-08T16:00:00+00:00
+  date: 2025-09-08
+  endDate: 2025-09-08
   time: 15:00 - 16:00
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-04-28T15:00:00+00:00
-  end: 2025-04-28T16:00:00+00:00
-  date: 2025-04-28
-  endDate: 2025-04-28
+  start: 2025-09-15T15:00:00+00:00
+  end: 2025-09-15T16:00:00+00:00
+  date: 2025-09-15
+  endDate: 2025-09-15
   time: 15:00 - 16:00
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-05-05T15:00:00+00:00
-  end: 2025-05-05T16:00:00+00:00
-  date: 2025-05-05
-  endDate: 2025-05-05
+  start: 2025-09-22T15:00:00+00:00
+  end: 2025-09-22T16:00:00+00:00
+  date: 2025-09-22
+  endDate: 2025-09-22
   time: 15:00 - 16:00
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-05-12T15:00:00+00:00
-  end: 2025-05-12T16:00:00+00:00
-  date: 2025-05-12
-  endDate: 2025-05-12
+  start: 2025-09-29T15:00:00+00:00
+  end: 2025-09-29T16:00:00+00:00
+  date: 2025-09-29
+  endDate: 2025-09-29
   time: 15:00 - 16:00
-- title: text analysis community
-  location: Microsoft Teams Meeting
-  start: 2025-04-15T16:00:00+00:00
-  end: 2025-04-15T17:00:00+00:00
-  date: 2025-04-15
-  endDate: 2025-04-15
-  time: 16:00 - 17:00

@@ -11,22 +11,29 @@ BDSi is dedicated to supporting researchers in harnessing the power of data scie
 ## Workshops and Tutorials
 Our hands-on workshops and tutorials offer an interactive learning experience that goes beyond traditional teaching methods. We understand that each researcher has their own style of absorbing information, which is why we design our sessions to cater to diverse skill levels and backgrounds. By creating an environment where you can actively engage with peers and experts, ask burning questions, and receive personalized guidance, we ensure that the knowledge shared is not only relevant but also readily applicable to real-world scenarios in the social sciences.
 
+{% assign events_future = site.events | sort: "date" | where_exp: "item", "item.date >= site.time" %}
+{% assign events_past = site.events | sort: "date" | reverse | where_exp: "item", "item.date < site.time" %}
+
+{% if events_future.size > 0 %}
 ### Upcoming workshops
-{% assign count = 0 %}
-{% assign today = site.time | date: '%Y-%m-%d' %}
-{% assign items = site.events | sort: "date" %}
-{% for item in items %}
-  {% assign item_date = item.date | date: '%Y-%m-%d' %}
-  {% if item_date < today %}{% continue %}{% endif %}
-  
+{% for item in events_future %}
 #### [{{item.title}}]({{site.baseurl}}{{item.url}})
 {% include author-list.html page=item header_style="h6" %}
 
 <h4 class="h6">{% include datetime.html page = item %}</h4>
-
-  {% assign count = count | plus: 1 %}
-  {% if count > 5 %}{% break %}{% endif %}
 {% endfor %}
+{% endif %}
+
+
+{% if events_past.size > 0 %}
+### Previous workshops
+{% for item in events_past limit:5 %}
+#### [{{item.title}}]({{site.baseurl}}{{item.url}})
+{% include author-list.html page=item header_style="h6" %}
+
+<h4 class="h6">{% include datetime.html page = item %}</h4>
+{% endfor %}
+{% endif %}
 
 
 <a href="{% link events.html %}" class="button center mb-6">All BDSi events</a>
@@ -34,17 +41,25 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
 ## Community Events
 We help organize events where researchers from various domains come together to discuss shared research interests. These community events provide a platform for networking, sharing ideas, and gaining valuable insights from experienced individuals who have made their mark in the field. We emphasize a diverse range of discussions that are meant to challenge conventions and inspire new research.
 
-### Upcoming events
-{% assign count = 0 %}
-{% assign today = site.time | date: '%Y-%m-%d' %}
-{% assign items = site.data.calendar | sort: "date" %}
-{% for item in items %}
-  {% assign item_date = item.date | date: '%Y-%m-%d' %}
-  {% if item_date < today %}{% continue %}{% endif %}
+{% assign community_future_raw = site.data.calendar | where_exp: "item", "item.end >= site.time" | sort: "date" %}
+{% assign community_past = site.data.calendar | where_exp: "item", "item.end < site.time" | sort: "date" | reverse %}
+
+{% assign community_future = "" | split: "" %}
+
+
+{% for item in community_future_raw %}
   {% assign title_lower = item.title | downcase %}
+  
   {% if title_lower contains "bdsi open hour" %}{% continue %}{% endif %}
   {% if title_lower contains "bdsi walk-in hour" %}{% continue %}{% endif %}
-  
+  {% assign community_future = community_future | append: item %}
+
+{% endfor %}
+
+{% if community_future.length > 0 %}
+
+### Upcoming events
+{% for item in community_future %}
   {% assign item_url = item.url %}
   {% unless item_url %}
     {% for community in site.communities %}
@@ -69,6 +84,7 @@ We help organize events where researchers from various domains come together to 
   {% assign count = count | plus: 1 %}
   {% if count > 5 %}{% break %}{% endif %}
 {% endfor %}
+{% endif %}
 
 <a href="{% link community.html %}" class="button center mb-6">Data Science communities</a>
 
@@ -77,7 +93,7 @@ Not all our work is translatable to hands-on events, and not everyone can make i
 
 ### Latest posts
 {% assign items = site.blogs | sort: "date" | reverse %}
-{% for item in items %}
+{% for item in items limit:5 %}
 
 #### [{{item.title}}]({{site.baseurl}}{{item.url}})
 {% include author-list.html page=item header_style="h6" %}
