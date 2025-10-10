@@ -23,3 +23,58 @@
   date: 2025-10-23
   endDate: 2025-10-23
   time: 15:30 - 16:30
+- title: "Algorithms for All: Education and AI"
+  description: How do algorithms shape our daily lives, and how can we shape these
+    technologies ourselves?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/11/617806/algorithms-for-all-education-and-ai
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i38395a9a01026de1df032ea6b10298a15ac1caa942bc0701c33a003a0085/data.avif
+  start: 2025-11-04T12:30:00+00:00
+  end: 2025-11-04T14:00:00+00:00
+  date: 2025-11-04
+  endDate: 2025-11-04
+  time: 12:30 - 14:00
+- title: "Algorithms for All: Climate and AI"
+  description: How do algorithms shape our daily lives, and how can we shape these
+    technologies ourselves?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/11/621158/algorithms-for-all-climate-and-ai
+  img_url: https://utwente.becdn.net/.wh/ea/uc/idbaa180101023e8be2030e6a650247e8819a94a2cebf0701c33a003a0085/data.avif
+  start: 2025-11-11T12:30:00+00:00
+  end: 2025-11-11T14:00:00+00:00
+  date: 2025-11-11
+  endDate: 2025-11-11
+  time: 12:30 - 14:00
+- title: "Algorithms for All: Work and AI"
+  description: How do algorithms shape our daily lives, and how can we shape these
+    technologies ourselves?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/11/621186/algorithms-for-all-work-and-ai
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i6e5db9600102298ee2039136780224f5703c8af75c7a0701c33a003a0085/data.avif
+  start: 2025-11-18T12:30:00+00:00
+  end: 2025-11-18T14:00:00+00:00
+  date: 2025-11-18
+  endDate: 2025-11-18
+  time: 12:30 - 14:00
+- title: "Algorithms for All: Health and AI"
+  description: How do algorithms shape our daily lives, and how can we shape these
+    technologies ourselves?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/11/621205/algorithms-for-all-health-and-ai
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i65a7fce501024391e203abf37d021c643273f12fee9f0701c33a003a0085/data.avif
+  start: 2025-11-25T12:30:00+00:00
+  end: 2025-11-25T14:00:00+00:00
+  date: 2025-11-25
+  endDate: 2025-11-25
+  time: 12:30 - 14:00
+- title: "Algorithms for All: Safety and AI"
+  description: How do algorithms shape our daily lives, and how can we shape these
+    technologies ourselves?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/12/621402/algorithms-for-all-safety-and-ai
+  img_url: https://utwente.becdn.net/.wh/ea/uc/ie3361205010215b9e203ce5ba00288d178c0d3d2cc5e0701c33a003a0085/data.avif
+  start: 2025-12-02T12:30:00+00:00
+  end: 2025-12-02T14:00:00+00:00
+  date: 2025-12-02
+  endDate: 2025-12-02
+  time: 12:30 - 14:00
