@@ -1,16 +1,3 @@
-- title: "DSI Meet Up: Process Mining meets Machine Learning and AI"
-  description: Process mining and artificial intelligence are increasingly coming
-    together in the study of business processes. Machine learning techniques
-    play an important role in process mining, for example, in prediction,
-    anomaly detection and decision support.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/10/607275/dsi-meet-up-process-mining-meets-machine-learning-and-ai
-  img_url: https://utwente.becdn.net/.wh/ea/uc/iabe65c340102b786d703b9b30302d4c8c71f1fa42e890701c3a401ee0085/data.avif
-  start: 2025-10-15T15:00:00+00:00
-  end: 2025-10-15T16:00:00+00:00
-  date: 2025-10-15
-  endDate: 2025-10-15
-  time: 15:00 - 16:00
 - title: "DSI Meet Up: Seminar Series on Computer Vision"
   description: This Dedicated DSI Meet Up will be the first of a series on
     Computer vision, co-organised by members of the DMB group and collaborating
@@ -24,11 +11,14 @@
   endDate: 2025-10-23
   time: 15:30 - 16:30
 - title: "Algorithms for All: Education and AI"
-  description: How do algorithms shape our daily lives, and how can we shape these
-    technologies ourselves?
+  description: Artificial intelligence is an integral part of our daily lives,
+    including how we teach and learn. With Algorithms for All, the University of
+    Twente invites everyone to take part in the conversation. This session
+    explores how AI is transforming education and how we can continue to learn
+    in creative, personal, and truly human ways.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/11/617806/algorithms-for-all-education-and-ai
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i38395a9a01026de1df032ea6b10298a15ac1caa942bc0701c33a003a0085/data.avif
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i7c2ebfda01026de1df032ea6b10298a15ac1caa942bc0701c3a401ee0085/data.avif
   start: 2025-11-04T12:30:00+00:00
   end: 2025-11-04T14:00:00+00:00
   date: 2025-11-04
