@@ -1,12 +1,5 @@
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2025-10-20T15:00:00+00:00
-  end: 2025-10-20T16:00:00+00:00
-  date: 2025-10-20
-  endDate: 2025-10-20
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Langezijds 1514
   start: 2025-10-27T15:00:00+00:00
   end: 2025-10-27T16:00:00+00:00
   date: 2025-10-27
@@ -26,12 +19,33 @@
   date: 2025-11-10
   endDate: 2025-11-10
   time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Langezijds 1514
+  start: 2025-11-17T15:00:00+00:00
+  end: 2025-11-17T16:00:00+00:00
+  date: 2025-11-17
+  endDate: 2025-11-17
+  time: 15:00 - 16:00
 - title: Causal Community Meeting
   location: LA2518
   start: 2025-10-28T15:00:00+00:00
   end: 2025-10-28T16:00:00+00:00
   date: 2025-10-28
   endDate: 2025-10-28
+  time: 15:00 - 16:00
+- title: XR meeting
+  location: Capitool Room 307
+  start: 2025-10-29T16:00:00+00:00
+  end: 2025-10-29T17:00:00+00:00
+  date: 2025-10-29
+  endDate: 2025-10-29
+  time: 16:00 - 17:00
+- title: LLM & Text Analysis Community
+  location: LA2518
+  start: 2025-10-30T15:00:00+00:00
+  end: 2025-10-30T16:00:00+00:00
+  date: 2025-10-30
+  endDate: 2025-10-30
   time: 15:00 - 16:00
 - title: LLM & Text Analysis Community
   location: LA2518
