@@ -209,7 +209,7 @@ The WiDS datathons are hosted on [Kaggle.com](https://kaggle.com). Kaggle.com is
 
 If you're new to data science, you'll want to set up a working environment. We recommend working in R or Python, depending on your experience. 
 
-Install R and RStudio, and prepare a working environment - Our colleague Johannes Steinrücke has written a good [guide on how to set up R and RStudio for your projects](https://www.utwente.nl/en/bms/m-store/faq/1-faq-start-with-r/), including some practical advice not covered in many other sources. The guide was written for students starting with coursework with R, but is equally applicable for other data science projects.
+Install R and RStudio, and prepare a working environment - Our colleague Johannes Steinrücke has written a good [guide on how to set up R and RStudio for your projects](https://www.utwente.nl/en/bms/m-store/working-with-r.html), including some practical advice not covered in many other sources. The guide was written for students starting with coursework with R, but is equally applicable for other data science projects.
 
 Install Python - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures: <https://github.com/keikokamei/WiDS_Datathon_Tutorials>.
 
