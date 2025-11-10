@@ -21,4 +21,4 @@ We plan to host regular gatherings and on-site visits where community members wi
 
 Our core objective is to use these data-driven activities to advance our understanding of XR technology and contribute to solutions that address societal, cognitive, and environmental challenges using XR applications.
 
-To become part of the BDSI XR Community and receive new about the events, please fill out the [registration form](https://ut.onl/bbg5jae).
+To become part of the BDSI XR Community and receive new about the events, please fill out the [registration form](https://www.utwente.nl/en/bms/research/bdsi/XR%20community/).
