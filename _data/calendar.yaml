@@ -1,12 +1,5 @@
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2026-01-05T15:00:00+00:00
-  end: 2026-01-05T16:00:00+00:00
-  date: 2026-01-05
-  endDate: 2026-01-05
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Langezijds 1514
   start: 2026-01-12T15:00:00+00:00
   end: 2026-01-12T16:00:00+00:00
   date: 2026-01-12
@@ -25,6 +18,13 @@
   end: 2026-01-26T16:00:00+00:00
   date: 2026-01-26
   endDate: 2026-01-26
+  time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Langezijds 1514
+  start: 2026-02-02T15:00:00+00:00
+  end: 2026-02-02T16:00:00+00:00
+  date: 2026-02-02
+  endDate: 2026-02-02
   time: 15:00 - 16:00
 - title: LLM & Text Analysis Community
   location: LA2518
