@@ -1,46 +1,25 @@
-- title: "DSI Meet Up: Seminar Series on Computer Vision"
-  description: This Dedicated DSI Meet Up will be the first of a series on
-    Computer vision, co-organised by members of the DMB group and collaborating
-    colleagues across the University of Twente.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/10/615938/dsi-meet-up-seminar-series-on-computer-vision
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i7b22cc760102491c0200eef4f602fe9fd365a4292f470701c3a401ee0085/data.avif
-  start: 2025-10-23T15:30:00+00:00
-  end: 2025-10-23T16:30:00+00:00
-  date: 2025-10-23
-  endDate: 2025-10-23
-  time: 15:30 - 16:30
-- title: "Algorithms for All: Education and AI"
-  description: Artificial intelligence is an integral part of our daily lives,
-    including how we teach and learn. With Algorithms for All, the University of
-    Twente invites everyone to take part in the conversation. This session
-    explores how AI is transforming education and how we can continue to learn
-    in creative, personal, and truly human ways.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2025/11/617806/algorithms-for-all-education-and-ai
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i7c2ebfda01026de1df032ea6b10298a15ac1caa942bc0701c3a401ee0085/data.avif
-  start: 2025-11-04T12:30:00+00:00
-  end: 2025-11-04T14:00:00+00:00
-  date: 2025-11-04
-  endDate: 2025-11-04
-  time: 12:30 - 14:00
 - title: "Algorithms for All: Climate and AI"
-  description: How do algorithms shape our daily lives, and how can we shape these
-    technologies ourselves?
+  description: Artificial intelligence plays a growing role in tackling climate
+    change — from data-driven insights to sustainable decision-making. With
+    Algorithms for All, the University of Twente invites everyone to discuss how
+    we can use AI responsibly for the planet. This session focuses on the
+    connection between technology, sustainability and justice.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/11/621158/algorithms-for-all-climate-and-ai
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i4398c18101023e8be2030e6a650224f5703c8af75c7a0701c33a003a0085/data.avif
+  img_url: https://utwente.becdn.net/.wh/ea/uc/ib7a8aaac01023e8be2030e6a650224f5703c8af75c7a0701c3a401ee0085/data.avif
   start: 2025-11-11T12:30:00+00:00
   end: 2025-11-11T14:00:00+00:00
   date: 2025-11-11
   endDate: 2025-11-11
   time: 12:30 - 14:00
 - title: "Algorithms for All: Work and AI"
-  description: How do algorithms shape our daily lives, and how can we shape these
-    technologies ourselves?
+  description: AI is changing how we work, collaborate and create value. With
+    Algorithms for All, the University of Twente invites everyone to explore how
+    technology can support diversity, inclusion and well-being at work. This
+    session looks at the future of meaningful, human-centred work.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2025/11/621186/algorithms-for-all-work-and-ai
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i6e5db9600102298ee2039136780224f5703c8af75c7a0701c33a003a0085/data.avif
+  img_url: https://utwente.becdn.net/.wh/ea/uc/idf607a360102298ee2039136780224f5703c8af75c7a0701c3a401ee0085/data.avif
   start: 2025-11-18T12:30:00+00:00
   end: 2025-11-18T14:00:00+00:00
   date: 2025-11-18
@@ -58,6 +37,16 @@
   date: 2025-11-19
   endDate: 2025-11-19
   time: 08:45 - 13:30
+- title: "DSI Meet-up: AI Chatbots in Education"
+  description: Exploring how conversational AI can support learning
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/11/650379/dsi-meet-up-ai-chatbots-in-education
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i7bd363f10102f49bf903ba5963044725116ece6f80d00701c33a003a0085/data.avif
+  start: 2025-11-24T12:00:00+00:00
+  end: 2025-11-24T13:00:00+00:00
+  date: 2025-11-24
+  endDate: 2025-11-24
+  time: 12:00 - 13:00
 - title: "Algorithms for All: Health and AI"
   description: How do algorithms shape our daily lives, and how can we shape these
     technologies ourselves?
@@ -80,3 +69,13 @@
   date: 2025-12-02
   endDate: 2025-12-02
   time: 12:30 - 14:00
+- title: "Open Talks: Societal transition, human mobility and digitalisation"
+  description: A space for reflection, dialogue and open exchange of ideas
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2025/12/650378/open-talks-societal-transition-human-mobility-and-digitalisation
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i2fa144f60102819bf903ba1d5604334e8118c96493b20701c33a003a0085/data.avif
+  start: 2025-12-05T13:30:00+00:00
+  end: 2025-12-05T15:00:00+00:00
+  date: 2025-12-05
+  endDate: 2025-12-05
+  time: 13:30 - 15:00
