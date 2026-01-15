@@ -1,7 +1,7 @@
 ---
 title: Data Science Grant - Call for Proposals
 subtitle: June 2025
-frontpage: true
+frontpage: false
 subtitle: Sparking Data Science Innovation across BMS
 image: /assets/images/content/call-for-proposals-2023/header.png
 introduction: |
