@@ -1,0 +1,19 @@
+---
+title: "The Corona app – no, thanks?"
+subtitle: "Citizens’ perspectives on individual freedom, governmental control and civic solidarity in times of a global pandemic"
+date: 2021-09-15
+authors:
+  - "Giedo Jansen"
+  - "Peter de Vries"
+  - "Dominika Proszowska"
+  - "Stéphanie van den Berg"
+  - "Anna Machens"
+  - "Robert Marinescu Muster"
+---
+
+The COVID-19 pandemic has affected the public health, business activity, and life of individuals on an unprecedented scale. In March 2020, the Dutch government introduced a number of measures in order to contain and control the virus spread. Their success relied to a great extent on citizens’ collective mindset and willingness to adhere to the new rules and standards. As the government currently explores new public health surveillance technology, such as through so-called “corona apps”, it is important to understand the limits of citizens’ willingness to accept governmental interference in their daily life for the reward of the common good. Solutions that require sharing sensitive health data touch upon not only the issues of political trust and trade-offs between individual freedom and governmental authority, but also upon people’s perceptions of technology (e.g., trust in technology, transparency of data usage, privacy considerations, effectiveness, etc.). This study maps people’s attitudes in all these key areas. This way it gives an insight into people’s willingness to share potentially sensitive data with the government and private companies for the sake of the health and wellbeing of vulnerable groups in society. In particular, it helps to understand which personal and background characteristics, which type of health data, and which conditions affect this willingness.
+Extending the previous survey, we suggest to identify factors that determine whether people are willing to share personal information with the government for the benefit of collective public health using a Big Data approach. With an eye on policy makers considering ideas for new health surveillance technology, we aim to explore people’s perceptions of data sharing, in relation to their perceptions (e.g., trust) of relevant factors, such as the government, politicians, experts, technology, and the media.
+
+We expect that the decision to share personal information depends on a number of factors. One of these is the perception towards the technology used: will it be able to safeguard users’ privacy? Will it be resilient against hackers? An additional factor may be people’s trust in the government, pertaining to questions as: Will personal information be handled correctly? Will it be used for the specified purposes only? Etc. These perceptions are to a large extent based on what people learn from various sources, such as newspaper articles, public figures, and experts, but also “important others”, e.g., friends, neighbours, and vocal lay persons. The impact of information from most of these sources on individuals and groups within society, in turn, greatly depends on their perceptions of the channels through which this information became available to them – the media. Interestingly, for some “the media” represent merely a range of information channels, whereas for others they form an institution in and of itself that often warrants distrust (MSM; “main-stream media”).
+
+With the help of the BMS’ Behavioural Data Science Incubator (BDSI), we will develop a big-data approach to analyse the influence of these and other factors on the willingness to share personal information. Publicly available responses of people on Internet forums or social media such as Twitter will be mined, categorized, and labeled. Subsequently, each labeled response will be subjected to valence analyses (i.e., to assess how postivepositive or negative these responses are) and sentiment analyses (to what extent these responses reveal emotions such as anger).
