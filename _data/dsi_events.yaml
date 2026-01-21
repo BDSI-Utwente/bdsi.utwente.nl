@@ -44,6 +44,18 @@
   date: 2026-01-27
   endDate: 2026-01-27
   time: 14:30 - 16:00
+- title: "DSI and SBD Meet up : Information Session"
+  description: DSI and SBD invite UT researchers to an information session on the
+    newly published Horizon Europe Cluster 4 Work Programme 2026-2027 on
+    Digital, Industry & Space.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2026/2/761826/dsi-and-sbd-meet-up-information-session
+  img_url: https://utwente.becdn.net/.wh/ea/uc/ibf9838340102491c0200eef4f602fe9fd365a4292f470701c33a003a0085/data.avif
+  start: 2026-02-10T13:00:00+00:00
+  end: 2026-02-10T14:00:00+00:00
+  date: 2026-02-10
+  endDate: 2026-02-10
+  time: 13:00 - 14:00
 - title: Human-in-the-loop simulation Oost Region
   description: On 12 February 2026, the University of Twente organises a kick-off
     afternoon focusing on building a regional network around human-in-the-loop
