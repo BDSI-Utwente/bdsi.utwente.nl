@@ -1,15 +1,3 @@
-- title: "DSI Meet Up: Seminar Series on Computer Vision"
-  description: This Dedicated DSI Meet Up will be the first one of 2026 on
-    Computer vision, co-organised by members of the DMB group and collaborating
-    colleagues across the University of Twente.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2026/1/750077/dsi-meet-up-seminar-series-on-computer-vision
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i7cd790b80102f8b74404b6f01f02e0cd8b5eb4f619550701c3a401ee0085/data.avif
-  start: 2026-01-22T15:00:00+00:00
-  end: 2026-01-22T16:00:00+00:00
-  date: 2026-01-22
-  endDate: 2026-01-22
-  time: 15:00 - 16:00
 - title: "DSI Meet Up:  Process Mining in Education"
   description: On January 23, we’re hosting an inspiring Process Mining in
     Education session, under the umbrella of the Process Mining Community
@@ -26,19 +14,19 @@
   description: "AI as a Research Assistant: How Do You Work With It?"
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2026/1/721468/dsi-meet-up-ai-as-a-research-assistant-how-do-you-work-with-it
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i726e613b010241cc2b04312230027efe69336007218d0701c33a003a0085/data.avif
+  img_url: https://utwente.becdn.net/.wh/ea/uc/ia654404c010241cc2b04312230027efe69336007218d0701c3a401ee0085/data.avif
   start: 2026-01-27T14:30:00+00:00
   end: 2026-01-27T16:00:00+00:00
   date: 2026-01-27
   endDate: 2026-01-27
   time: 14:30 - 16:00
-- title: "DSI and SBD Meet up : Information Session"
-  description: DSI and SBD invite UT researchers to an information session on the
-    newly published Horizon Europe Cluster 4 Work Programme 2026-2027 on
-    Digital, Industry & Space.
+- title: "DSI and SBD Meet-up: Horizon Europe Cluster 4 Information Session"
+  description: DSI and SBD organise an information session for UT researchers on
+    the newly published Horizon Europe Cluster 4 Work Programme 2026–2027
+    (Digital, Industry & Space).
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2026/2/761826/dsi-and-sbd-meet-up-information-session
-  img_url: https://utwente.becdn.net/.wh/ea/uc/ibf9838340102491c0200eef4f602fe9fd365a4292f470701c33a003a0085/data.avif
+  url: https://www.utwente.nl/en/digital-society/events/2026/2/761826/dsi-and-sbd-meet-up-horizon-europe-cluster-4-information-session
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i4da46e010102b69450041ce400039d81c2040126f7fd0701c33a003a0085/data.avif
   start: 2026-02-10T13:00:00+00:00
   end: 2026-02-10T14:00:00+00:00
   date: 2026-02-10
@@ -72,3 +60,31 @@
   date: 2026-03-04
   endDate: 2026-03-04
   time: 10:30 - 12:30
+- title: "Open Talks: AI ethics - current issues and perspectives"
+  description: Open Talks offers an open and non-judgmental space for reflection
+    and discussion on key social transformations of our time. Each session
+    invites researchers, students, and citizens to think together about how
+    digitalisation, mobility, and technology are reshaping our societies and
+    daily lives.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2026/5/767373/open-talks-ai-ethics-current-issues-and-perspectives
+  img_url: https://utwente.becdn.net/.wh/ea/uc/ib30833370102d2aa50040f963a020e5d0f9cb9feb5180701c33a003a0085/data.avif
+  start: 2026-05-13T09:00:00+00:00
+  end: 2026-05-13T17:00:00+00:00
+  date: 2026-05-13
+  endDate: 2026-05-13
+  time: 09:00 - 17:00
+- title: "Open Talks: Psychology, Environment & Justice"
+  description: Open Talks offers an open and non-judgmental space for reflection
+    and discussion on key social transformations of our time. Each session
+    invites researchers, students, and citizens to think together about how
+    digitalisation, mobility, and technology are reshaping our societies and
+    daily lives.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2026/6/767403/open-talks-psychology-environment-justice
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i29f16dce0102d6ab5004d09632020fafcef52a595f2e0701c33a003a0085/data.avif
+  start: 2026-06-09T09:00:00+00:00
+  end: 2026-06-09T17:00:00+00:00
+  date: 2026-06-09
+  endDate: 2026-06-09
+  time: 09:00 - 17:00
