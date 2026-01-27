@@ -34,6 +34,18 @@
   date: 2026-02-12
   endDate: 2026-02-12
   time: 12:00 - 17:30
+- title: "DSI Meet Up: Seminar Series on Computer Vision"
+  description: This Dedicated DSI Meet Up will be the fourth one of 2026
+    on Computer vision, co-organised by members of the DMB group and
+    collaborating colleagues across the University of Twente.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2026/2/771487/dsi-meet-up-seminar-series-on-computer-vision
+  img_url: https://utwente.becdn.net/.wh/ea/uc/i40f311bd0102b0185304637e0003929f457c3e4bb27e0701c33a003a0085/data.avif
+  start: 2026-02-18T15:00:00+00:00
+  end: 2026-02-18T16:00:00+00:00
+  date: 2026-02-18
+  endDate: 2026-02-18
+  time: 15:00 - 16:00
 - title: "Open Talks: The threat to democracy and radicalisation"
   description: Open Talks offers an open and non-judgmental space for reflection
     and discussion on key social transformations of our time. Each session
