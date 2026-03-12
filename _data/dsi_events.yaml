@@ -38,3 +38,16 @@
   date: 2026-06-09
   endDate: 2026-06-09
   time: 09:00 - 17:00
+- title: AI Day 2026
+  description: On 30 June 2026, the University of Twente hosts AI Day 2026, a full
+    day event that brings together companies, public organisations and
+    researchers to explore how artificial intelligence can be applied in
+    practice.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2026/6/842824/ai-day-2026
+  img_url: https://utwente.becdn.net/.wh/ea/uc/id206962601025c3b88047c1f0702b410000352ea436e0701c33a003a0085/data.avif
+  start: 2026-06-30T09:00:00+00:00
+  end: 2026-06-30T17:15:00+00:00
+  date: 2026-06-30
+  endDate: 2026-06-30
+  time: 09:00 - 17:15
