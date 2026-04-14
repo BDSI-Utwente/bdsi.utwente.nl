@@ -18,7 +18,7 @@ tags:
 heroImage: /assets/images/workshops/dsw-2026.svg
 image: /assets/images/workshops/dsw-2026-stamp.svg
 imageNarrow: true
-imageBackground: "#809200"
+imageBackground: "#abc300"
 accentColour: "#809200"
 date: 2026-06-15
 endDate: 2026-06-22
@@ -133,7 +133,7 @@ Expert (guest) speakers will be hosting lunch talks during the week to provide a
 
 {% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
 
-<!-- {% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/" %} -->
+{% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2026-drinks/" %}
 
 
 ### Datathon
@@ -224,7 +224,7 @@ Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.co
 
 {% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
 
-<!-- {% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/" %} -->
+{% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2026-drinks/" %}
 
 
 ## Schedule
@@ -346,4 +346,5 @@ Further details will be made available in the coming weeks and months.
 
 {% endfor %}
 
-{% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
+
+<!-- {% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %} -->
