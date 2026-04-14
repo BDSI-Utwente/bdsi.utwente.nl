@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Data Science Week 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/assets/images/favicon.png">
+  <link href="/assets/css/style.css?v=1776160853" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js" integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.min.css" integrity="sha512-wCrId7bUEl7j1H60Jcn4imkkiIYRcoyq5Gcu3bpKAZYBJXHVMmkL4rhtyhelxSFuPMIoQjiVsanrHxcs2euu/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap4.min.css" integrity="sha512-ht3CSPjgWsxdbLti7wtKNEk5hLoGtP2J8C40muB5/PCWwNw9M/NMJpyvHdeko7ADC60SEOiCenU5pg+kJiG9lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   -->
+  <!-- icons -->
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  
+  <!-- mathjax -->
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}};</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-svg.min.js" integrity="sha512-lod3aTRkO5OUBZDRwWaaIGYAT6+2uSyrlwnj0sg1h9a1w5wJ7NnzkaiUWy4Jv5wdf1ixGX35HK6u7fP1pjYOQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- floating toc -->
+  <!-- <link href="/assets/css/toc.css?v=1776160853" rel="stylesheet"> -->
+  <script src="/assets/js/toc.js" async defer></script>
+
+  <!-- a11y -->
+  <!-- dynamically fix links to common office document to include file type and size -->
+  <script src="/assets/js/a11y-fix-office-links.js" async defer></script>
+
+  <!-- calendar parsing/generating -->
+  <script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js" integrity="sha256-uotVKltUv5neKsIlZxrxUccba0PaptusFj6p+w8Sons=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+
+  <!-- logo slider -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick-theme.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script> -->
+  
+  
+  <style>
+    :root {
+      --accent-colour: #809200;
+      
+        --link-filter: brightness(80%);
+        --link-hover-filter: brightness(100%);
+      
+    }
+  </style>
+  
+
+</head>
+
+  <body class='page page-single' style="background-color: #809200; background-image: unset;">
+
+  <div class="main-menu-mobile" id="main-menu-mobile">
+    <ul>
+        <li><a href="/" class="">Home</a></li>
+        <li><a href="/about" class="">About</a></li>
+        <li><a href="/research" class="">Research support</a></li>
+        <li><a href="/expertise" class="">Expertise sharing</a></li>
+        <li><a href="/community" class="">Community building</a></li>
+        <li><a href="/team" class="">Team</a></li>
+    </ul>
+</div>
+
+  <div class="header ">
+    <nav class="container">
+        <div class="logo">
+            <a href="/" aria-label="BDSi front page">
+                <img src="/assets/images/logo-light.svg" alt="">
+            </a>
+        </div>
+        <div class="logo-mobile">
+            <a href="/" aria-label="BDSi front page">
+                <img src="/assets/images/logo-light.svg" alt="">
+            </a>
+        </div>
+        <div class="main-menu" id="main-menu">
+    <ul>
+        <li><a href="/about" class="">About</a></li>
+        <li><a href="/research" class="">
+            Research
+            <div class="rollover">Support</div>
+        </a></li>
+        <li><a href="/expertise" class="">
+            Expertise
+            <div class="rollover">Sharing</div>
+        </a></li>
+        <li><a href="/community" class="">
+            Community
+            <div class="rollover">Building</div>
+        </a></li>
+        <!-- <li><a href="/events" class="current">Events</a></li> -->
+        <li><a href="/team" class="">Team</a></li>
+        <!-- <li><a href="/blogs" class="">Blog</a></li> -->
+    </ul>
+</div>
+
+        <div id="toggle-main-menu-mobile" class="hamburger hamburger--slider">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</div>
+    </nav>
+</div>
+
+  <div id="content">
+    
+<div class="intro mb-0" style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        height: 25vw !important;
+        background-image: url(/assets/images/workshops/dsw-2026-stamp.svg);
+        background-size: contain;
+        background-color: #809200;
+        background-position: center;
+        background-repeat: no-repeat;"></div>
+<div 
+    class="strip strip-diagonal pt-4"
+    style="margin-top: -5vw;"
+>
+    <div class="content-with-toc">
+        <div class="toc"></div>
+        <div class="content">
+            <header>
+                <h1>Data Science Week 2026</h1>
+                
+                
+
+                
+                <div class="date h5">June 15, 2026— June 22, 2026
+                </div>
+                
+            </header>
+            <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+
+<h2 id="what-is-the-data-science-week">What is the Data Science Week?</h2>
+
+<p>The goal of the data science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi and DSI organize various events during the week, including a datathon, contextual speakers, expert lectures, hands-on workshops, and a networking drink.</p>
+
+<p>Experienced research data scientists will provide lectures on the most important tools in a data scientists’ toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself. The lectures are followed by a hands-on practical session in which the lunch lecturerer - supported by a team of motivated coaches - will guide participants in applying the lecture materials to their datathon submissions.</p>
+
+<p>Expert (guest) speakers will be hosting lunch talks during the week to provide a deeper background and give context to the topics and methods covered in the lectures and datathon. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.</p>
+
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Early sign up</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/">Sign up</a>
+    
+  </div>
+</div>
+
+<!-- 
+
+
+
+
+
+<div
+  class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2  data-toc-skip="true">Data Science Drinks & Poster Session</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/">Sign up</a>
+    
+  </div>
+</div>
+ -->
+
+<h3 id="datathon">Datathon</h3>
+
+<p>A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the 2026 datathon, we have prepared a dataset of academic papers and citations, and will cover complex systems, network science, and the determinants of academic success.</p>
+
+<h3 id="speakers">Speakers</h3>
+
+<p>(Almost) every lunch break (12:45 - 13:30), expert speakers from across the University of Twente and beyond will give talks on various topics surrounding complex systems, network science, author networks, citation indices, and academic success. From a broad overview of the roots and likely future of the field, practical applications for social research, to legal and ethical implications - there is something here for everyone to enjoy. All the talks are meant to broaden and enrich the discussion around the data science week, and can be enjoyed with or without participating in the datathon or any of the workshops.</p>
+
+<div class="profile-widget-list profile-widget-list-hero">
+    
+</div>
+
+<div class="card mt-2 mb-2">
+  <div class="card-body">
+    <div class="card-title">
+      <h4 data-toc-skip="true">Stay tuned for updates!</h4>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>We’re coordinating with speakers inside and outside the UT, and will update the website once more details are known.</p>
+
+    </div>
+    
+    
+  </div>
+</div>
+
+<h3 id="lectures--practicals">Lectures &amp; Practicals</h3>
+
+<p>In the afternoon (13:45 - 15:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists’ toolbox; data wrangling, feature engineering, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.</p>
+
+<p>After a short coffee break, the lecture will be followed by a hands-on practical session (~14:45 - 15:30). During these this time, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days’ lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days’ lecture, the datathon, or data science in general.</p>
+
+<figure class="card mb-2 shadow mx-auto" style="width: min(90vw, 800px); max-width: 100%; ">
+  
+  <img src="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" alt="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" class="card-img-top" />
+  
+  <div class="card-body px-2 py-1">
+    <div class="card-text">
+      <figcaption class="h6 m-0 p0 m0 label-figure">Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024</figcaption>
+    </div>
+  </div>
+</figure>
+
+<h3 id="posters--drinks">Posters &amp; Drinks</h3>
+
+<p>On thursday afternoon, we invite all data science week participants as well as anyone interested in data science at the University of Twente to join us for a poster presentation and drinks. This is a great opportunity to mingle with the other teams, and create lasting connections with peers and data science experts!</p>
+
+<figure class="card mb-2 shadow mx-auto" style="width: min(90vw, 800px); max-width: 100%; ">
+  
+  <iframe src="https://universiteittwente.sharepoint.com/sites/WomeninDataScienceWeek2/_layouts/15/embed.aspx?UniqueId=1ecc7d6a-e004-4788-89c3-f6b275d41092&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create" width="100%" height="500px" frameborder="0"></iframe>
+  
+  <div class="card-body px-2 py-1">
+    <div class="card-text">
+      <figcaption class="h6 m-0 p0 m0 label-figure">Women in Data Science Drinks &amp; Poster Presentations 2024</figcaption>
+    </div>
+  </div>
+</figure>
+
+<h3 id="certificates--tgs-credits">Certificates &amp; TGS credits</h3>
+
+<p>All participants in the Datathon will get a signed certicifate of participation, listing the lectures and workshops they attended. PhD candidates (and of course PdEng, etc.) who attend the lectures and workshops and participated in the datathon receive a Twente Graduate School (TGS) certificate for 0.5 ECTS.</p>
+
+<h3 id="competition">Competition</h3>
+
+<p>The team with the best solution will receive the coveted BDSi Data Science trophy. All teams will also be asked to share their solutions, problems, and learning experience during the final presentations.</p>
+
+<h2 id="who-can-join">Who can join?</h2>
+
+<h3 id="staff-students-family-and-friends">Staff, students, family, and friends</h3>
+
+<p>Everyone related to the University of Twente and their friends and family can join any of the events during the Data Science Week. The lunch talks in particular are meant to be open to everyone who has an interest in the topic.</p>
+
+<p>The datathon is open to both novices and experts, and everyone in between. You can join as a team, alone, or skip it altogether and only participate in the workshops. As long as one person in the team is affiliated with the University of Twente, you’re free (in fact, encouraged!) to invite friends, (external) colleagues, and/or family to join your team. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts, or go at it alone.</p>
+
+<h2 id="what-is-required-to-compete-in-the-datathon">What is required to compete in the datathon?</h2>
+<h3 id="some-experience-with-r-or-python">Some experience with R or Python</h3>
+
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h3 data-toc-skip="true"><span style="color: var(--accent-colour, #008eaa);">Some programming knowledge is required!</span></h3>
+      
+    </div>
+    
+    <div class="card-text">
+      
+<p>You'll need to have a basic idea of either R or Python in order to follow along with the lectures and practicals. Materials will always be prepared for R, and when possible for Python as well.</p>
+<p>While we will do our best to introduce data science topics in the various workshops without relying on code, a basic understanding of R and/or Python will make it much easier to follow along.</p>
+
+    </div>
+    
+    
+  </div>
+</div>
+
+<p>If you have some experience with other programming languages, you should be able to follow along with a little preparation. More information on installing and using R can be found in the <a href="#what-can-i-do-to-prepare-for-the-datathon">What can I do to prepare for the datathon?</a> section.</p>
+
+<p>If you're new to programming in general or would like a deeper understanding of R, and would rather learn from one of our colleagues, the <a href="https://www.utwente.nl/en/bms/code/">Cognition, Data and Education (CoDE)</a> section provides <a href="https://canvas.utwente.nl/courses/4715">courses and materials aimed at teaching staff</a> and <a href="https://people.utwente.nl/j.steinrucke">Johannes Steinrücke</a> teaches half-day <a href="https://www.utwente.nl/en/ctd/courses/1897203/introduction-to-r-workshop/">introduction to R</a> and <a href="https://www.utwente.nl/en/ctd/courses/1897245/data-visualization-using-r-workshop/">data visualization in R</a> workshops for PhD's (and EngD's).</p>
+
+<p>If you’re confident you can participate in the datathon in another programming language, you’re more than welcome to do so (we challenge you to try in C, Fortran, <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainf***</a>, or JavaScript). Just be aware that we probably can’t offer support if or when you get stuck.</p>
+
+<h2 id="what-can-i-do-to-prepare-for-the-datathon">What can I do to prepare for the datathon?</h2>
+
+<h3 id="get-a-team">Get a team</h3>
+
+<p>First off, get a team together. The datathon is meant to be a collaborative experience where you work alongside a variety of expertises. While you can compete on your own, we strongly suggest working together.</p>
+
+<!-- ### Set up your coding environment
+
+If you're new to data science, you'll want to set up a working environment. We recommend working in R or Python, depending on your experience. 
+
+Install R and RStudio, and prepare a working environment - Our colleague Johannes Steinrücke has written a good [guide on how to set up R and RStudio for your projects](hhttps://www.utwente.nl/en/bms/m-store/faq/#getting-started-with-r), including some practical advice not covered in many other sources. The guide was written for students starting with coursework with R, but is equally applicable for other data science projects.
+
+Install Python - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures: <https://github.com/keikokamei/WiDS_Datathon_Tutorials>. -->
+
+<h3 id="further-reading">Further reading</h3>
+
+<p>If you’re looking for more information, a competitive edge, or just a good way to spend some time, we can recommend some more reading materials:</p>
+
+<p><a href="https://www.statlearning.com/">An Introduction to Statistical Learning</a> is a free to download book providing an excellent introduction to practical machine learning using both R and Python.</p>
+
+<p><a href="https://r4ds.hadley.nz/">R for Data Science</a> is a free online book compiled by Hadley Wickham and a long list of community contributors, covering the whole gamut of modern data science in R. It is well worth a look, and a good reference even for experienced data scientists.</p>
+
+<p>Kaggle.com provides resources to <a href="https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook">get started with Kaggle</a>, as well as <a href="https://www.kaggle.com/competitions?hostSegmentIdFilter=5">a long list of competitions that are approachable for beginners</a> - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good way to spend a rainy weekend.</p>
+
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Early sign up</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/">Sign up</a>
+    
+  </div>
+</div>
+
+<!-- 
+
+
+
+
+
+<div
+  class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2  data-toc-skip="true">Data Science Drinks & Poster Session</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/data-science-drinks-2025/">Sign up</a>
+    
+  </div>
+</div>
+ -->
+
+<h2 id="schedule">Schedule</h2>
+
+<p>The 2026 Data Science Week takes place from June 15th to June 22nd.</p>
+
+<p>Further details will be made available in the coming weeks and months.</p>
+
+<div id="calendar" style="height: 400px;"></div>
+
+<style>
+  #calendar .toastui-calendar-timegrid {
+    min-height: 0;
+    height: 100% !important;
+  }
+  #calendar .toastui-calendar-panel {
+    overflow-y: unset;
+  }
+</style>
+
+<!-- <script>
+  const Calendar = tui.Calendar;
+  const format_time = new Intl.DateTimeFormat('en-GB', {
+    timeStyle: "short"
+  })
+  
+  const calendar = new Calendar('#calendar', {
+    defaultView: 'week',
+    isReadOnly: true,
+    useDetailPopup: true,
+    week: {
+      startDayOfWeek: 1,
+      hourStart: 12,
+      hourEnd: 18.5,
+      narrowWeekend: true,
+      taskView: false,
+      eventView: ['time']
+    },
+    theme: {
+      common: {
+        dayName: { color: "#333" },
+        holiday: { color: "#9e9e9e" },
+        saturday: { color: "#9e9e9e" }
+      },
+      week: {
+        dayName: {
+          borderBottom: "none"
+        },
+        timeGrid: {
+          borderRight: "1px dashed #eee"
+        }
+      }
+    },
+    template: {
+      timegridDisplayPrimaryTime({time}) {
+        return format_time.format(time);
+      }
+    },
+    calendars: [
+      {
+        id: 'lectures',
+        name: 'Lectures',
+        backgroundColor: '#03bd9e',
+      },
+      {
+        id: 'practicals',
+        name: 'Practicals',
+        backgroundColor: '#00a9ff',
+      },
+      {
+        id: 'socials',
+        name: "Social events",
+        backgroundColor: '#bb3aff'
+      }
+    ],
+    usageStatistics: false
+  });
+
+  calendar.setDate(new Date("2025-03-03 12:00"))
+  calendar.createEvents([
+    
+  ])
+</script> -->
+
+<div class="card mt-2 mb-2 shadow">
+  <div class="card-body">
+    <div class="card-title">
+      <h2 data-toc-skip="true">Early sign up</h2>
+      
+    </div>
+    
+    <div class="card-text">
+      <p>You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!</p>
+
+    </div>
+    
+    
+    <a class="button lg mt-2" href="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/">Sign up</a>
+    
+  </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+  </div>
+  <footer id="footer">
+  <div class="footer-content">
+    <div class="footer-block">
+      <h2 class="mt-2 h5">
+        <span class="iconify-inline" data-icon="ph:users-three"></span>
+        Join the community
+      </h2>
+      <!-- todo: make this an actual form, with backing dbish thing (wait for webhare?) -->
+      <a
+        class="inset"
+        href="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter"
+      >
+        <span
+          class="iconify-inline icon"
+          data-icon="fluent:news-24-regular"
+        ></span>
+        subscribe to our newsletter
+      </a>
+      <a
+        class="inset"
+        href="https://twitter.com/BdsiUt"
+       
+      >
+        <span class="iconify-inline icon" data-icon="ph:twitter-logo"></span>
+        follow us on twitter
+      </a>
+      <a
+        class="inset"
+        href="https://www.linkedin.com/company/behavioural-data-science-incubator/about/"
+       
+      >
+        <span class="iconify-inline icon" data-icon="ph:linkedin-logo"></span>
+        connect with us on linkedin
+      </a>
+      <a class="inset" href="/community/#community" 
+        ><span
+          class="iconify-inline icon"
+          data-icon="mdi:microsoft-teams"
+        ></span>
+        join the team (chat)
+      </a>
+      <a
+        class="inset"
+        href="mailto:bdsi@utwente.nl?subject=Dear BDSi&body=Dear BDSi,"
+        ><span class="iconify-inline icon" data-icon="ph:envelope"></span>
+        write us a letter
+      </a>
+      <h2 class="mt-2 h5">Proud partners with</h2>
+      
+      <div class="inset" id="partners-list">
+        
+        <a href="https://bmslab.utwente.nl/" aria-label="BMS Lab">
+          
+          <img
+            src="/assets/images/content/bmslab/logo-light.svg"
+            alt=""
+            class="logo"
+          />
+          
+        </a>
+        
+        <a href="https://www.utwente.nl/en/dcc/" aria-label="Digital Competence Center">
+          
+          Digital Competence Center
+          
+        </a>
+        
+        <a href="https://hpc.wiki.utwente.nl/eemcs-hpc" aria-label="EEMCS High Performance Computing">
+          
+          EEMCS High Performance Computing
+          
+        </a>
+        
+        <a href="https://www.widsworldwide.org/" aria-label="Women in Data Science worldwide">
+          
+          <img
+            src="/assets/images/wids-logo.png"
+            alt=""
+            class="logo"
+          />
+          
+        </a>
+        
+      </div>
+    </div>
+    <div class="footer-block">
+      <h2 class="mt-2 h5">
+        <div id="team-icon-div"></div>
+        Meet the team
+      </h2>
+      
+       
+      
+      
+        
+        <div class="tiny-header">Head of BDSi</div>
+      
+      <a
+        href="/team/#stephanie-vandenberg"
+        class="inset"
+        ><img
+          src="/assets/images/team/Stephanie-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Stéphanie van den Berg</a
+      >
+      
+      
+        
+        <div class="tiny-header">Data Scientists</div>
+      
+      <a
+        href="/team/#a-k-machens"
+        class="inset"
+        ><img
+          src="/assets/images/team/Anna-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Anna Machens</a
+      >
+      
+      
+      <a
+        href="/team/#k-a-kroeze"
+        class="inset"
+        ><img
+          src="/assets/images/team/Karel-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Karel Kroeze</a
+      >
+      
+      
+        
+        <div class="tiny-header">Department Liaisons</div>
+      
+      <a
+        href="/team/#s-abhishta"
+        class="inset"
+        ><img
+          src="/assets/images/team/Abhishta-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Abhishta Abhishta <span class="tiny-header">HBE</span></a
+      >
+      
+      
+      <a
+        href="/team/#c-g-m-oudshoorn"
+        class="inset"
+        ><img
+          src="/assets/images/team/Karin-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Karin Groothuis-Oudshoorn <span class="tiny-header">TPS</span></a
+      >
+      
+      
+      <a
+        href="/team/#martin-schmettow"
+        class="inset"
+        ><img
+          src="/assets/images/team/Martin-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Martin Schmettow <span class="tiny-header">LDT</span></a
+      >
+      
+      
+      <a
+        href="/team/#p-m-tenklooster"
+        class="inset"
+        ><img
+          src="/assets/images/team/Peter-thumbnail.png"
+          alt=""
+          class="profile-image"
+        />Peter ten Klooster <span class="tiny-header">HIB</span></a
+      >
+      
+    </div>
+    <div class="footer-block sitemap">
+      <h2 class="mt-2 h5">
+        <span class="iconify-inline" data-icon="ph:git-merge"></span>
+        Sitemap
+      </h2>
+      <ul>
+        <li>
+          <a href="/about/">About us</a>
+          <ul>
+              <li><a href="/about/#services">Services</a></li>
+              <li><a href="/about/#partners">Partners</a></li>
+          </ul>
+        </li>
+        <li><a href="/news/">News</a></li>
+        <li>
+          <a href="/research/">Research Support</a>
+          <ul>
+            <li><a href="/projects/">Projects</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/expertise/">Expertise Sharing</a>
+          <ul>
+            <li><a href="/events/">BDSi Events</a></li>
+            <li><a href="/community/#topical-communities">Community Events</a></li>
+            <li><a href="/blogs/">Blog</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/community/">Community Building</a>
+          <ul>
+            <li><a href="/community/#topical-communities">Data Science communities</a></li>
+          </ul>
+        </li>
+        <li><a href="/team/">Team</a></li>
+      </ul>
+      
+    </div>
+    <div class="footer-block">
+      <h2 class="mt-2 h5">
+        <span class="iconify-inline" data-icon="ph:package"></span>
+        Postal address
+      </h2>
+      <pre class="address-block inset">
+        Behavioural Data Science incubator
+Faculty of Behavioural and Management Sciences
+University of Twente
+PO BOX 217
+7500 AE Enschede, The Netherlands
+      </pre>
+      <h2 class="mt-2 h5">
+        <span class="iconify-inline" data-icon="ph:hand-waving"></span>
+        Visiting address
+      </h2>
+      <pre class="address-block inset">
+          Langezijds 1514
+Hallenweg 6
+7522 NH Enschede, The Netherlands
+      </pre>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <div class="title">
+      BDSi - Behavioural Data Science incubator, 2021–2026
+    </div>
+    <a
+      class="ml-auto"
+     
+      href="https://www.utwente.nl/en/about-our-website/"
+      >Privacy & Cookies</a
+    >
+    <a
+     
+      href="https://www.utwente.nl/en/about-our-website/disclaimer/"
+      >Disclaimer & Copyright</a
+    >
+  </div>
+</footer>
+
+<script src="/assets/js/pages/people.js"></script>
+
+    
+  <script type="text/javascript" src="/assets/js/scripts.js?v=1776160853"></script>
+</body>
+</html>
