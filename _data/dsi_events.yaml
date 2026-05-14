@@ -1,13 +1,3 @@
-- title: "Open Talks: AI ethics - current issues and perspectives"
-  description: A space for reflection, dialogue and open exchange of ideas
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2026/5/767373/open-talks-ai-ethics-current-issues-and-perspectives
-  img_url: https://utwente.becdn.net/.wh/ea/uc/ia50351dc0102d2aa50040f963a02334e8118c96493b20701c3a401ee0085/data.avif
-  start: 2026-05-13T15:00:00+00:00
-  end: 2026-05-13T17:00:00+00:00
-  date: 2026-05-13
-  endDate: 2026-05-13
-  time: 15:00 - 17:00
 - title: Pint of Science returns to Enschede
   description: Employees of the UT are organising Pint of Science again, after a
     successful first edition last year. Pint of Science is an international
@@ -22,12 +12,12 @@
 - title: "DSI Meet Up: Seminar Series on Computer Vision"
   description: This DSI Meet Up focuses on Pure Motion for Video Analysis,
     exploring how motion based representations can improve the way computer
-    vision models analyse and understand video. The series is co-organised by
-    members of the DMB group and collaborating colleagues across the University
+    vision models analyse and understand video. The series is co-organised by
+    members of the DMB group and collaborating colleagues across the University
     of Twente.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2026/5/913161/dsi-meet-up-seminar-series-on-computer-vision
-  img_url: https://utwente.becdn.net/.wh/ea/uc/i3fce87770102729fc20466ddf10173cd575086f3ec9e0701c33a003a0085/data.avif
+  img_url: https://utwente.becdn.net/.wh/ea/uc/if8209e7f0102729fc20466ddf10173cd575086f3ec9e0701c3a401ee0085/data.avif
   start: 2026-05-28T10:45:00+00:00
   end: 2026-05-28T12:00:00+00:00
   date: 2026-05-28
@@ -47,19 +37,6 @@
   date: 2026-06-09
   endDate: 2026-06-09
   time: 10:30 - 12:30
-- title: AI Day 2026
-  description: On 30 June 2026, the University of Twente hosts AI Day 2026, a full
-    day event that brings together companies, public organisations and
-    researchers to explore how artificial intelligence can be applied in
-    practice.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2026/6/842824/ai-day-2026
-  img_url: https://utwente.becdn.net/.wh/ea/uc/id206962601025c3b88047c1f0702b410000352ea436e0701c33a003a0085/data.avif
-  start: 2026-06-30T09:00:00+00:00
-  end: 2026-06-30T17:15:00+00:00
-  date: 2026-06-30
-  endDate: 2026-06-30
-  time: 09:00 - 17:15
 - title: Risk & Resilience Festival - Digital Autonomy
   description: "On Thursday, 5 November 2026, the campus of the University of
     Twente will host the Risk & Resilience Festival. This edition focuses on a
