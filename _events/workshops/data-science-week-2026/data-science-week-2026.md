@@ -23,100 +23,132 @@ accentColour: "#809200"
 date: 2026-06-15
 endDate: 2026-06-22
 frontpage: true
-speakers: []
-  # - name: Anna Machens
-  #   image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
-  #   tags: 
-  #   - "mon-practical"
-  #   - "mon-data"
-  #   - "tue-practical"
-  #   - "wed-practical"
-  #   - "thu-practical"
-  #   - "fri-practical"
-  # - name: Karel Kroeze
-  #   image_url: https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg
-  #   tags: 
-  #   - "mon-practical"
-  #   - "mon-data"
-  #   - "tue-practical"
-  #   - "wed-practical"
-  #   - "fri-practical"
+speakers: 
+  - name: Anna Machens
+    image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
+    tags: 
+    - "mon-practical"
+    - "mon-data"
+    - "tue-practical"
+    - "wed-practical"
+    - "thu-practical"
+    - "fri-practical"
+  - name: Karel Kroeze
+    image_url: https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg
+    tags: 
+    - "mon-practical"
+    - "mon-data"
+    - "tue-practical"
+    - "wed-practical"
+    - "thu-practical"
+    - "fri-practical"
+  - name: Pieter Trapman
+    prefix: Prof. dr.
+    tags: ["talk-trapman", "hero"]
+    url: https://www.rug.nl/staff/j.p.trapman
+    image_url: https://www.rug.nl/staff/j.p.trapman/kerbielake-crop-qknkp9ynq.jpg
+    affiliation: University of Groningen
+    affiliation_url: https://www.rug.nl/
+    affiliation_image_url: https://www.rug.nl/about-ug/practical-matters/huisstijl/logobank-new/corporatelogo/corporatelogorood/rugr_logoenv_rood_rgb.png
+    description: |
+      <p>Pieter Trapman is an Associate Professor of Probability and Statistics at the Faculty of Science and Engineering at the University of Groningen, the Netherlands.</p>
+      <p>His epidemic research focuses on the mathematical and stochastic modeling of infectious diseases, with an emphasis on how social structures (e.g., households and contact networks) and control measures influence outbreaks.</p>
+  - name: Doina Bucur
+    prefix: dr.
+    tags: ["talk-bucur", "hero"]
+    url: https://people.utwente.nl/d.bucur
+    image_url: https://doina.net/images/doina.jpg
+    description: |
+      <p>Doina Bucur is Assistant Professor in network data science at the Faculty of Electrical Engineering, Mathematics and Computer Science at the University of Twente, the Netherlands. Her name is pronounced: <a href="https://en.wikipedia.org/wiki/Doina">'Doy-nah</a> 'Boo-koor (and has a <a href="https://en.wikipedia.org/wiki/List_of_Romanian_words_of_possible_pre-Roman_origin">complicated etymology</a>). </p>
+      <p>She specializes in the intersection of Network Science and Artificial Intelligence. Her research focuses on understanding network growth mechanisms, the topology of neural networks, and the development of human-centric Explainable AI (XAI). Through a highly interdisciplinary approach, Dr. Bucur adapts advanced computational frameworks to diverse scientific challenges, including the study of ecological community structures in microbial biology and complex graph representations in machine learning.</p>
+  - name: Tom Boogerd
+    prefix: ir.
+    tags: ["talk-tom", "hero"]
+    url: https://people.utwente.nl/t.c.boogerd
+    image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
+    description: |
+      <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
+      <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
+  - name: More to come...
+    tags: ["hero"]
+    description: <p>Additional speakers will be announced over the coming weeks!</p>
+    image_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg
+events:
+  - title: "Datathon: kick-off"
+    type: practicals
+    start: 2026-06-15 13:45
+    end: 2026-06-15 14:30
+    location: Langezijds 2516
+    description: Introduction to the datathon, finding and matching teams.
+    tag: mon-practical
+  - title: "Workshop: Text Analysis and LLMs"
+    type: practicals
+    start: 2026-06-16 13:45
+    end: 2026-06-16 15:30
+    location: Citadel T300
+    tag: tue-practical
+    description: Introduction to methods of text analysis for research, followed by a practical hands-on leveraging LLM's for automated text analysis on the BDSi local inference mini-cluster.
+  - title: "Workshop: Network Science" 
+    type: practicals
+    start: 2026-06-17 13:45
+    end: 2026-06-17 15:30
+    location: Citadel T300
+    tag: wed-practical
+    description: Introduction to network science, followed by a hands-on practical implementing network metrics in R using the datathon dataset. 
+  - title: "Workshop: Data Wrangling and Visualization"
+    type: practicals
+    start: 2026-06-18 13:45
+    end: 2026-06-18 15:30
+    location: Citadel T300
+    tag: thu-practical
+    description: Data Wrangling (preparing 'raw' data for anaylsis) and visualization (presenting data in a persuasive manner) are the fundamental building blocks of data science. In this hands-on practical we'll combine short theoretical presentations with real world examples, before directly applying these skills to the datathon dataset.
+  - title: "Workshop: Machine Learning"
+    type: practicals
+    start: 2026-06-19 13:45
+    end: 2026-06-19 15:30
+    location: Citadel T300
+    tag: fri-practical
+    description: Machine Learning encompasses everything from 'traditional' statistics to generative artificial intelligence. We'll provide an overview of the types of machine learning, and what the relative advantages are. After the break, we'll get hands-on and practice implementing these techniques in R. We'll use tidymodels, a modern framework that makes it easy to create a structured research pipeline that is both replicable and flexible.
+  - title: "Datathon: Submission deadline"
+    type: other
+    start: 2026-06-21 23:59
+    description: Deadline for datathon submissions on the leaderboard.
+  - title: "Datathon: Team presentations"
+    type: lectures
+    start: 2026-06-22 13:45
+    end: 2026-06-22 14:30 
+    location: Citadel T300
+    description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
+  - title: "Datathon: Prize ceremony"
+    type: speaker
+    start: 2026-06-22 14:45
+    end: 2026-06-22 15:00
+    location: Citadel T300
+    description: Prizes for the best performing, most innovative, and most noteworthy solutions.
+    tag: fin-prizes
 
-events: []
-#   - title: "Datathon: kick-off"
-#     type: practicals
-#     start: 2025-03-03 13:45
-#     end: 2025-03-03 14:30
-#     location: Citadel T300
-#     description: Introduction to the datathon, finding and matching teams.
-#     tag: mon-practical
-#   - title: "Datathon: Gathering data"
-#     type: practicals
-#     start: 2025-03-03 14:45
-#     end: 2025-03-03 16:30
-#     location: Citadel T300
-#     description: Digital phenotyping often relies on highly personalized data. What could be more personalized than working on data gathered by and from you and the other participants? We will use real physiological measurements in a simple and fun experimental design to gather data from participants, _for_ participants. 
-#     tag: mon-data
-#     tag: tue-talk
-#   - title: "Workshop: Data Wrangling"
-#     type: practicals
-#     start: 2025-03-04 13:45
-#     end: 2025-03-04 15:30
-#     location: Citadel T300
-#     tag: tue-practical
-#     description: Cleaning and combining datasets, (visually) exploring data and patterns, preparing raw data for further analysis.
-#   - title: "Workshop: Feature Engineering"
-#     type: practicals
-#     start: 2025-03-05 13:45
-#     end: 2025-03-05 15:30
-#     location: Citadel T300
-#     tag: wed-practical
-#     description: How to go from 'raw' sensor data to usable signals or 'features'. We will provide some background and context for the choices you will have to make (or that are made for you with commercial products), and implement a basic pipeline for extracting features from raw signals data in R. 
-#   - title: "Workshop: Modelling"
-#     type: practicals
-#     start: 2025-03-06 13:45
-#     end: 2025-03-06 15:30
-#     location: Citadel T300
-#     tag: thu-practical
-#     description: Introduction to modelling and machine learning in R.
-#   - title: Posters & Drinks
-#     type: socials
-#     start: 2025-03-06 16:00
-#     end: 2025-03-06 18:00
-#     location: TBA
-#     description: (Social) networking with other participants, and other University of Twente students and staff interested in data science.
-#   - title: "Workshop: Modelling II"
-#     type: practicals
-#     start: 2025-03-07 13:45
-#     end: 2025-03-07 15:30
-#     location: Citadel T300
-#     tag: fri-practical
-#     description: "More in-depth continuation of modelling, implications of different modeling choices and 'fairness' in AI models. [Note: exact contents may still change]"
-#   - title: "Datathon: Submission deadline"
-#     type: other
-#     start: 2025-03-09 23:59
-#     description: Deadline for datathon submissions on the leaderboard.
-#   - title: "Datathon: Team presentations"
-#     type: lectures
-#     start: 2025-03-10 13:45
-#     end: 2025-03-10 14:30 
-#     location: Citadel T300
-#     description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
-#   - title: "Datathon: Prize ceremony"
-#     type: speaker
-#     start: 2025-03-10 14:45
-#     end: 2025-03-10 15:00
-#     location: Citadel T300
-#     description: Prizes for the best and most innovative teams.
-#     tag: fin-prizes
-#   - title: Final keynote
-#     type: speaker
-#     start: 2025-03-10 15:00
-#     end: 2025-03-10 15:30
-#     location: Citadel T300
-#     description: Final keynote speech and official closing of the Data Science Week.
-#     tag: fin-keynote
-
+  # SPEAKERS 
+  - title: "Lunch talk: Pieter Trapman"
+    type: speaker
+    start: 2026-06-18 12:45
+    end: 2026-06-18 13:30
+    location: Citadel T300
+    description: "Abstract: TBD"
+    tag: talk-trapman
+  - title: "Lunch talk: Doina Bucur"
+    type: speaker
+    start: 2026-06-17 12:45
+    end: 2026-06-17 13:30
+    location: Citadel T300
+    description: "Abstract: TBD"
+    tag: talk-bucur
+  - title: "Lunch talk: Impact in your research"
+    type: speaker
+    start: 2026-06-22 15:00
+    end: 2026-06-22 15:30
+    location: Citadel T300
+    description: "Abstract: TBD"
+    tag: talk-tom
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
@@ -246,7 +278,7 @@ Further details will be made available in the coming weeks and months.
   }
 </style>
 
-<!-- <script>
+<script>
   const Calendar = tui.Calendar;
   const format_time = new Intl.DateTimeFormat('en-GB', {
     timeStyle: "short"
@@ -304,7 +336,7 @@ Further details will be made available in the coming weeks and months.
     usageStatistics: false
   });
 
-  calendar.setDate(new Date("2025-03-03 12:00"))
+  calendar.setDate(new Date("2026-06-15 12:00"))
   calendar.createEvents([
     {% for event in page.events %}
 
@@ -318,7 +350,7 @@ Further details will be made available in the coming weeks and months.
 
     {% endfor %}
   ])
-</script> -->
+</script>
 
 {% assign events_sorted = page.events | sort: "start" %}
 {% assign previous_day = "None" %}
