@@ -1,3 +1,9 @@
+
+// note: token only gives access to the public people API, but was nevertheless revoked to 
+// prevent making gathering data from the people API unnecessarily easy. 
+// this means this functionality is currently broken! 
+// TODO: either replace functionality with webhare equivalents when moving to webhare, embed 
+// people data manually, or do the lookup in a build step. 
 const token =
   "c2VjcmV0LXRva2VuOjcwNWE0OTQyNGE3OTRiNTM1Mzc2MzE2YzQ2NGI1OTYzNzI3NTcwNzc1NjUx";
 const localStorageKey = "bdsi.people";
