@@ -42,37 +42,37 @@ speakers:
     - "wed-practical"
     - "thu-practical"
     - "fri-practical"
-  - name: Pieter Trapman
-    prefix: Prof. dr.
-    tags: ["talk-trapman", "hero"]
-    url: https://www.rug.nl/staff/j.p.trapman
-    image_url: https://www.rug.nl/staff/j.p.trapman/kerbielake-crop-qknkp9ynq.jpg
-    affiliation: University of Groningen
-    affiliation_url: https://www.rug.nl/
-    affiliation_image_url: https://www.rug.nl/about-ug/practical-matters/huisstijl/logobank-new/corporatelogo/corporatelogorood/rugr_logoenv_rood_rgb.png
-    description: |
-      <p>Pieter Trapman is an Associate Professor of Probability and Statistics at the Faculty of Science and Engineering at the University of Groningen, the Netherlands.</p>
-      <p>His epidemic research focuses on the mathematical and stochastic modeling of infectious diseases, with an emphasis on how social structures (e.g., households and contact networks) and control measures influence outbreaks.</p>
-  - name: Doina Bucur
-    prefix: dr.
-    tags: ["talk-bucur", "hero"]
-    url: https://people.utwente.nl/d.bucur
-    image_url: https://doina.net/images/doina.jpg
-    description: |
-      <p>Doina Bucur is Assistant Professor in network data science at the Faculty of Electrical Engineering, Mathematics and Computer Science at the University of Twente, the Netherlands. Her name is pronounced: <a href="https://en.wikipedia.org/wiki/Doina">'Doy-nah</a> 'Boo-koor (and has a <a href="https://en.wikipedia.org/wiki/List_of_Romanian_words_of_possible_pre-Roman_origin">complicated etymology</a>). </p>
-      <p>She specializes in the intersection of Network Science and Artificial Intelligence. Her research focuses on understanding network growth mechanisms, the topology of neural networks, and the development of human-centric Explainable AI (XAI). Through a highly interdisciplinary approach, Dr. Bucur adapts advanced computational frameworks to diverse scientific challenges, including the study of ecological community structures in microbial biology and complex graph representations in machine learning.</p>
-  - name: Tom Boogerd
-    prefix: ir.
-    tags: ["talk-tom", "hero"]
-    url: https://people.utwente.nl/t.c.boogerd
-    image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
-    description: |
-      <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
-      <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
-  - name: More to come...
-    tags: ["hero"]
-    description: <p>Additional speakers will be announced over the coming weeks!</p>
-    image_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg
+  # - name: Pieter Trapman
+  #   prefix: Prof. dr.
+  #   tags: ["talk-trapman", "hero"]
+  #   url: https://www.rug.nl/staff/j.p.trapman
+  #   image_url: https://www.rug.nl/staff/j.p.trapman/kerbielake-crop-qknkp9ynq.jpg
+  #   affiliation: University of Groningen
+  #   affiliation_url: https://www.rug.nl/
+  #   affiliation_image_url: https://www.rug.nl/about-ug/practical-matters/huisstijl/logobank-new/corporatelogo/corporatelogorood/rugr_logoenv_rood_rgb.png
+  #   description: |
+  #     <p>Pieter Trapman is an Associate Professor of Probability and Statistics at the Faculty of Science and Engineering at the University of Groningen, the Netherlands.</p>
+  #     <p>His epidemic research focuses on the mathematical and stochastic modeling of infectious diseases, with an emphasis on how social structures (e.g., households and contact networks) and control measures influence outbreaks.</p>
+  # - name: Doina Bucur
+  #   prefix: dr.
+  #   tags: ["talk-bucur", "hero"]
+  #   url: https://people.utwente.nl/d.bucur
+  #   image_url: https://doina.net/images/doina.jpg
+  #   description: |
+  #     <p>Doina Bucur is Assistant Professor in network data science at the Faculty of Electrical Engineering, Mathematics and Computer Science at the University of Twente, the Netherlands. Her name is pronounced: <a href="https://en.wikipedia.org/wiki/Doina">'Doy-nah</a> 'Boo-koor (and has a <a href="https://en.wikipedia.org/wiki/List_of_Romanian_words_of_possible_pre-Roman_origin">complicated etymology</a>). </p>
+  #     <p>She specializes in the intersection of Network Science and Artificial Intelligence. Her research focuses on understanding network growth mechanisms, the topology of neural networks, and the development of human-centric Explainable AI (XAI). Through a highly interdisciplinary approach, Dr. Bucur adapts advanced computational frameworks to diverse scientific challenges, including the study of ecological community structures in microbial biology and complex graph representations in machine learning.</p>
+  # - name: Tom Boogerd
+  #   prefix: ir.
+  #   tags: ["talk-tom", "hero"]
+  #   url: https://people.utwente.nl/t.c.boogerd
+  #   image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
+  #   description: |
+  #     <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
+  #     <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
+  # - name: More to come...
+  #   tags: ["hero"]
+  #   description: <p>Additional speakers will be announced over the coming weeks!</p>
+  #   image_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg
 events:
   - title: "Datathon: kick-off"
     type: practicals
@@ -128,27 +128,27 @@ events:
     tag: fin-prizes
 
   # SPEAKERS 
-  - title: "Lunch talk: Pieter Trapman"
-    type: speaker
-    start: 2026-06-18 12:45
-    end: 2026-06-18 13:30
-    location: Citadel T300
-    description: "Abstract: TBD"
-    tag: talk-trapman
-  - title: "Lunch talk: Doina Bucur"
-    type: speaker
-    start: 2026-06-17 12:45
-    end: 2026-06-17 13:30
-    location: Citadel T300
-    description: "Abstract: TBD"
-    tag: talk-bucur
-  - title: "Lunch talk: Impact in your research"
-    type: speaker
-    start: 2026-06-22 15:00
-    end: 2026-06-22 15:30
-    location: Citadel T300
-    description: "Abstract: TBD"
-    tag: talk-tom
+  # - title: "Lunch talk: Pieter Trapman"
+  #   type: speaker
+  #   start: 2026-06-18 12:45
+  #   end: 2026-06-18 13:30
+  #   location: Citadel T300
+  #   description: "Abstract: TBD"
+  #   tag: talk-trapman
+  # - title: "Lunch talk: Doina Bucur"
+  #   type: speaker
+  #   start: 2026-06-17 12:45
+  #   end: 2026-06-17 13:30
+  #   location: Citadel T300
+  #   description: "Abstract: TBD"
+  #   tag: talk-bucur
+  # - title: "Lunch talk: Impact in your research"
+  #   type: speaker
+  #   start: 2026-06-22 15:00
+  #   end: 2026-06-22 15:30
+  #   location: Citadel T300
+  #   description: "Abstract: TBD"
+  #   tag: talk-tom
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
