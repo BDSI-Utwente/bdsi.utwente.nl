@@ -61,14 +61,14 @@ speakers:
   #   description: |
   #     <p>Doina Bucur is Assistant Professor in network data science at the Faculty of Electrical Engineering, Mathematics and Computer Science at the University of Twente, the Netherlands. Her name is pronounced: <a href="https://en.wikipedia.org/wiki/Doina">'Doy-nah</a> 'Boo-koor (and has a <a href="https://en.wikipedia.org/wiki/List_of_Romanian_words_of_possible_pre-Roman_origin">complicated etymology</a>). </p>
   #     <p>She specializes in the intersection of Network Science and Artificial Intelligence. Her research focuses on understanding network growth mechanisms, the topology of neural networks, and the development of human-centric Explainable AI (XAI). Through a highly interdisciplinary approach, Dr. Bucur adapts advanced computational frameworks to diverse scientific challenges, including the study of ecological community structures in microbial biology and complex graph representations in machine learning.</p>
-  # - name: Tom Boogerd
-  #   prefix: ir.
-  #   tags: ["talk-tom", "hero"]
-  #   url: https://people.utwente.nl/t.c.boogerd
-  #   image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
-  #   description: |
-  #     <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
-  #     <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
+  - name: Tom Boogerd
+    prefix: ir.
+    tags: ["talk-tom"]
+    url: https://people.utwente.nl/t.c.boogerd
+    image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
+    description: |
+      <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
+      <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
   # - name: More to come...
   #   tags: ["hero"]
   #   description: <p>Additional speakers will be announced over the coming weeks!</p>
@@ -115,14 +115,14 @@ events:
     description: Deadline for datathon submissions on the leaderboard.
   - title: "Datathon: Team presentations"
     type: lectures
-    start: 2026-06-22 13:45
-    end: 2026-06-22 14:30 
+    start: 2026-06-22 15:45
+    end: 2026-06-22 16:30 
     location: Citadel T300
     description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
   - title: "Datathon: Prize ceremony"
     type: speaker
-    start: 2026-06-22 14:45
-    end: 2026-06-22 15:00
+    start: 2026-06-22 16:30
+    end: 2026-06-22 17:00
     location: Citadel T300
     description: Prizes for the best performing, most innovative, and most noteworthy solutions.
     tag: fin-prizes
@@ -142,13 +142,13 @@ events:
   #   location: Citadel T300
   #   description: "Abstract: TBD"
   #   tag: talk-bucur
-  # - title: "Lunch talk: Impact in your research"
-  #   type: speaker
-  #   start: 2026-06-22 15:00
-  #   end: 2026-06-22 15:30
-  #   location: Citadel T300
-  #   description: "Abstract: TBD"
-  #   tag: talk-tom
+  - title: "Workshop: Impact in your research"
+    type: practicals
+    start: 2026-06-22 15:00
+    end: 2026-06-22 15:45
+    location: Citadel T300
+    description: "Abstract: TBD"
+    tag: talk-tom
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
