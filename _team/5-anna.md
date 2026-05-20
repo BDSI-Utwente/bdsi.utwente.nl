@@ -4,7 +4,6 @@ image: '/assets/images/team/Anna-thumbnail.png'
 jobtitle: 'Data Scientist'
 section: "Data Scientists"
 email: 'a.k.machens@utwente.nl'
-linkedinurl: 'https://www.linkedin.com/in/anna-machens-5a82b180/'
 sortorder: 2
 expertise: 
     - text analysis
