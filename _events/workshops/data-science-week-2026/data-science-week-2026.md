@@ -25,6 +25,7 @@ endDate: 2026-06-22
 frontpage: true
 speakers: 
   - name: Anna Machens
+    postfix: ", PhD"
     image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
     tags: 
     - "mon-practical"
@@ -42,113 +43,127 @@ speakers:
     - "wed-practical"
     - "thu-practical"
     - "fri-practical"
-  # - name: Pieter Trapman
-  #   prefix: Prof. dr.
-  #   tags: ["talk-trapman", "hero"]
-  #   url: https://www.rug.nl/staff/j.p.trapman
-  #   image_url: https://www.rug.nl/staff/j.p.trapman/kerbielake-crop-qknkp9ynq.jpg
-  #   affiliation: University of Groningen
-  #   affiliation_url: https://www.rug.nl/
-  #   affiliation_image_url: https://www.rug.nl/about-ug/practical-matters/huisstijl/logobank-new/corporatelogo/corporatelogorood/rugr_logoenv_rood_rgb.png
-  #   description: |
-  #     <p>Pieter Trapman is an Associate Professor of Probability and Statistics at the Faculty of Science and Engineering at the University of Groningen, the Netherlands.</p>
-  #     <p>His epidemic research focuses on the mathematical and stochastic modeling of infectious diseases, with an emphasis on how social structures (e.g., households and contact networks) and control measures influence outbreaks.</p>
-  # - name: Doina Bucur
-  #   prefix: dr.
-  #   tags: ["talk-bucur", "hero"]
-  #   url: https://people.utwente.nl/d.bucur
-  #   image_url: https://doina.net/images/doina.jpg
-  #   description: |
-  #     <p>Doina Bucur is Assistant Professor in network data science at the Faculty of Electrical Engineering, Mathematics and Computer Science at the University of Twente, the Netherlands. Her name is pronounced: <a href="https://en.wikipedia.org/wiki/Doina">'Doy-nah</a> 'Boo-koor (and has a <a href="https://en.wikipedia.org/wiki/List_of_Romanian_words_of_possible_pre-Roman_origin">complicated etymology</a>). </p>
-  #     <p>She specializes in the intersection of Network Science and Artificial Intelligence. Her research focuses on understanding network growth mechanisms, the topology of neural networks, and the development of human-centric Explainable AI (XAI). Through a highly interdisciplinary approach, Dr. Bucur adapts advanced computational frameworks to diverse scientific challenges, including the study of ecological community structures in microbial biology and complex graph representations in machine learning.</p>
-  - name: Tom Boogerd
-    prefix: ir.
-    tags: ["talk-tom"]
-    url: https://people.utwente.nl/t.c.boogerd
-    image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
+  - name: Pieter Trapman
+    prefix: "prof. dr. "
+    tags: ["talk-trapman", "hero"]
+    url: https://www.rug.nl/staff/j.p.trapman
+    image_url: /assets/images/events/dsw2026/pieter-trapman.webp
+    affiliation: University of Groningen
+    affiliation_url: https://www.rug.nl/
+    affiliation_image_url: /assets/images/events/dsw2026/rug-logo.png
     description: |
-      <p>Tom Boogerd is the Policy Advisor Research at the Faculty of Behavioural, Management, and Social Sciences at the University of Twente, Enschede. Together with his colleagues, he supports researchers with grants, ethics, privacy and policy questions. Tom is also the manager of the university-wide Recognition and Rewards program.</p>
-      <p>Tom believes policy should always be informed by the experiences of the user. His work focuses on understanding societal and academic impact and how to best support researchers in making impact; PhD delay, dropout and wellbeing; and University of Twente research policy development.</p>
-  # - name: More to come...
-  #   tags: ["hero"]
-  #   description: <p>Additional speakers will be announced over the coming weeks!</p>
-  #   image_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg
+      <p>Pieter Trapman is an Associate Professor of Probability and Statistics at the Faculty of Science and Engineering at the University of Groningen, the Netherlands.</p>
+      <p>His epidemic research focuses on the mathematical and stochastic modeling of infectious diseases, with an emphasis on how social structures (e.g., households and contact networks) and control measures influence outbreaks.</p>
+  - name: Leto Peel
+    prefix: "dr. "
+    tags: ["talk-peel", "hero"]
+    url: https://piratepeel.github.io/
+    image_url: /assets/images/events/dsw2026/leto-peel.webp
+    affiliation: Maastricht University
+    affiliation_url: https://www.maastrichtuniversity.nl/
+    affiliation_image_url: /assets/images/events/dsw2026/maastricht-logo.png
+    description: |
+      <p>Leto Peel is an Assistant Professor in the Department of Data Analytics and Digitalisation at Maastricht University. His research focuses on machine learning for complex networks, with an emphasis on probabilistic generative models and Bayesian inference for community structure and network dynamics.</p>
+  - name: Akrati Saxena
+    prefix: "dr. "
+    tags: ["talk-saxena", "hero"]
+    url: https://www.universiteitleiden.nl/en/staffmembers/akrati-saxena#tab-1
+    image_url: /assets/images/events/dsw2026/akrati-saxena.webp
+    affiliation: Leiden University
+    affiliation_url: https://www.universiteitleiden.nl/
+    affiliation_image_url: /assets/images/events/dsw2026/leiden-logo.png
+    description: |
+      <p>Akrati Saxena is an Assistant Professor at Leiden University and leads the Algorithmic Fairness (AlFa) research group within LIACS. Her work sits at the intersection of complex networks, computational social science, and algorithmic fairness, focusing on bias and fairness in networked systems.</p>
+  - name: Nan Chen
+    tags: ["talk-chen", "hero"]
+    url: https://people.utwente.nl/n.chen
+    image_url: /assets/images/events/dsw2026/nan-chen.webp
+    description: |
+      <p>Nan Chen is a PhD candidate at the University of Twente working in network data science and machine learning. Her research explores how network science methods can uncover structure and dynamics in complex systems, spanning brain networks and ecological networks.</p>
 events:
   - title: "Datathon: kick-off"
     type: practicals
     start: 2026-06-15 13:45
     end: 2026-06-15 14:30
-    location: Langezijds 2516
+    location: Langezijds 2516 (Instruction Room)
     description: Introduction to the datathon, finding and matching teams.
     tag: mon-practical
   - title: "Workshop: Text Analysis and LLMs"
     type: practicals
     start: 2026-06-16 13:45
     end: 2026-06-16 15:30
-    location: Citadel T300
+    location: Citadel T300 (Teaching and Learning Lab)
     tag: tue-practical
     description: Introduction to methods of text analysis for research, followed by a practical hands-on leveraging LLM's for automated text analysis on the BDSi local inference mini-cluster.
   - title: "Workshop: Network Science" 
     type: practicals
     start: 2026-06-17 13:45
     end: 2026-06-17 15:30
-    location: Citadel T300
+    location: Citadel T300 (Teaching and Learning Lab)
     tag: wed-practical
     description: Introduction to network science, followed by a hands-on practical implementing network metrics in R using the datathon dataset. 
   - title: "Workshop: Data Wrangling and Visualization"
     type: practicals
     start: 2026-06-18 13:45
     end: 2026-06-18 15:30
-    location: Citadel T300
+    location: Citadel T300 (Teaching and Learning Lab)
     tag: thu-practical
     description: Data Wrangling (preparing 'raw' data for anaylsis) and visualization (presenting data in a persuasive manner) are the fundamental building blocks of data science. In this hands-on practical we'll combine short theoretical presentations with real world examples, before directly applying these skills to the datathon dataset.
   - title: "Workshop: Machine Learning"
     type: practicals
     start: 2026-06-19 13:45
     end: 2026-06-19 15:30
-    location: Citadel T300
+    location: Citadel T300 (Teaching and Learning Lab)
     tag: fri-practical
     description: Machine Learning encompasses everything from 'traditional' statistics to generative artificial intelligence. We'll provide an overview of the types of machine learning, and what the relative advantages are. After the break, we'll get hands-on and practice implementing these techniques in R. We'll use tidymodels, a modern framework that makes it easy to create a structured research pipeline that is both replicable and flexible.
   - title: "Datathon: Submission deadline"
     type: other
     start: 2026-06-21 23:59
+    end: 2026-06-21 23:59
     description: Deadline for datathon submissions on the leaderboard.
   - title: "Datathon: Team presentations"
     type: lectures
-    start: 2026-06-22 15:45
-    end: 2026-06-22 16:30 
-    location: Citadel T300
+    start: 2026-06-22 13:45
+    end: 2026-06-22 14:30 
+    location: Citadel T300 (Teaching and Learning Lab)
     description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
   - title: "Datathon: Prize ceremony"
     type: speaker
-    start: 2026-06-22 16:30
-    end: 2026-06-22 17:00
-    location: Citadel T300
+    start: 2026-06-22 14:45
+    end: 2026-06-22 15:00
+    location: Citadel T300 (Teaching and Learning Lab)
     description: Prizes for the best performing, most innovative, and most noteworthy solutions.
     tag: fin-prizes
 
   # SPEAKERS 
-  # - title: "Lunch talk: Pieter Trapman"
-  #   type: speaker
-  #   start: 2026-06-18 12:45
-  #   end: 2026-06-18 13:30
-  #   location: Citadel T300
-  #   description: "Abstract: TBD"
-  #   tag: talk-trapman
-  # - title: "Lunch talk: Doina Bucur"
-  #   type: speaker
-  #   start: 2026-06-17 12:45
-  #   end: 2026-06-17 13:30
-  #   location: Citadel T300
-  #   description: "Abstract: TBD"
-  #   tag: talk-bucur
-  - title: "Workshop: Impact in your research"
-    type: practicals
-    start: 2026-06-22 15:00
-    end: 2026-06-22 15:45
-    location: Citadel T300
-    description: "Abstract: TBD"
-    tag: talk-tom
+  - title: "Lunch talk: Pieter Trapman"
+    type: speaker
+    start: 2026-06-18 12:45
+    end: 2026-06-18 13:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "Topic: Epidemic spreading on networks. Abstract will follow."
+    tag: talk-trapman
+  - title: "Lunch talk: Leto Peel"
+    type: speaker
+    start: 2026-06-16 12:45
+    end: 2026-06-16 13:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "Topic: Social networks and communities. Abstract will follow."
+    tag: talk-peel
+  - title: "Lunch talk: Akrati Saxena (online)"
+    type: speaker
+    start: 2026-06-19 12:45
+    end: 2026-06-19 13:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "Topic: Algorithmic fairness on networks. Abstract will follow."
+    tag: talk-saxena
+  - title: "Short talk: From Brain Networks to Ecological Networks: Understanding Complex Systems Through Network Science"
+    type: speaker
+    start: 2026-06-22 13:15
+    end: 2026-06-22 13:30
+    location: Langezijds 2516 (Instruction Room)
+    description: "Complex systems are everywhere, from the human brain to ecological communities. Although these systems differ greatly in scale and function, they share a common characteristic: they consist of many interacting components whose collective behavior cannot be understood by studying individual elements alone. Network science provides a powerful framework for representing and analyzing such interactions. In this talk, I will share my research journey to show how network science can be used to investigate complex systems through two research domains: brain networks and ecological networks."
+    tag: talk-chen
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
@@ -163,7 +178,7 @@ Experienced research data scientists will provide lectures on the most important
 
 Expert (guest) speakers will be hosting lunch talks during the week to provide a deeper background and give context to the topics and methods covered in the lectures and datathon. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.
 
-{% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
+{% include card.html title="Sign up now" content="Places are limited and the dates are filling up. Register soon to reserve your spot." cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
 
 {% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2026-drinks/" %}
 
@@ -254,7 +269,7 @@ If you're looking for more information, a competitive edge, or just a good way t
 
 Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook), as well as [a long list of competitions that are approachable for beginners](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good way to spend a rainy weekend.
 
-{% include card.html title="Early sign up" content="You can now sign up to block the dates, and reserve your spot. Places are limited, so sign up now!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
+{% include card.html title="Sign up now" content="Places are limited and the dates are filling up. Register soon to reserve your spot." cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week%202026/" %}
 
 {% include card.html title="Data Science Drinks & Poster Session" content="Come join us for a drink, updates on the latest BMS Data Science in research, and an excellent networking opportunity!" cta="Sign up" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2026-drinks/" %}
 
@@ -345,7 +360,7 @@ Further details will be made available in the coming weeks and months.
       title: "{{event.title}}",
       start: new Date("{{event.start}}"),
       end: new Date("{{event.end}}"),
-      description: "Location: {{event.location}}\n\n{{event.description}}"
+      description: "Location: {{event.location}} - {{event.description}}"
     },
 
     {% endfor %}
@@ -365,7 +380,7 @@ Further details will be made available in the coming weeks and months.
 
 {% endif %}
 <h4 class="mt-4">{{ event.title }}</h4>
-<h5 class="h6">{{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}, Location: {{ event.location }}</h5>
+<h5 class="h6">{{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}{% if event.location %}{% if event.location == "TBD" %}, location: TBD{% else %}, {{ event.location }}{% endif %}{% endif %}</h5>
 
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains event.tag" %}
 {% if event.type == "practicals" %}
