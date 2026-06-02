@@ -11906,6 +11906,12 @@ a.text-dark:hover, a.text-dark:focus {
   width: 200px;
   height: 200px;
 }
+.profile-widget-list-hero .profile-widget-generic .avatar .avatar-portrait {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.profile-widget-list-hero .profile-widget-generic .avatar .avatar-badge {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
 .profile-widget-list-hero .profile-widget-generic .content {
   align-items: center;
 }
