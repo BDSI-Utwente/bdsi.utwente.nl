@@ -190,5 +190,19 @@ function create_toc_entry(heading, toc) {
   return toc_li_element;
 }
 
-document.addEventListener("DOMContentLoaded", () => create_toc());
-document.addEventListener("readystatechange", () => create_toc());
+let toc_initialized = false;
+
+function init_toc_once() {
+  if (toc_initialized) {
+    return;
+  }
+  toc_initialized = true;
+  create_toc();
+}
+
+document.addEventListener("DOMContentLoaded", () => init_toc_once());
+document.addEventListener("readystatechange", () => {
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    init_toc_once();
+  }
+});
