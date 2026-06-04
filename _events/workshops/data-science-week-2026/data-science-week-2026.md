@@ -29,20 +29,34 @@ speakers:
     image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
     tags: 
     - "mon-practical"
-    - "mon-data"
     - "tue-practical"
     - "wed-practical"
     - "thu-practical"
     - "fri-practical"
+    - "tue-lecture"
+    - "wed-lecture"
+    - "fri-lecture"
+    - "tue-workshop"
+    - "wed-workshop"
+    - "thu-workshop"
+    - "fri-workshop"
   - name: Karel Kroeze
     image_url: https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg
     tags: 
     - "mon-practical"
-    - "mon-data"
     - "tue-practical"
     - "wed-practical"
     - "thu-practical"
     - "fri-practical"
+    - "tue-workshop"
+    - "wed-workshop"
+    - "thu-workshop"
+    - "fri-workshop"
+    - "thu-lecture"
+  - name: Nestor de la Paz Ruiz
+    affiliation: University of Twente
+    image_url: https://utwente.becdn.net/.wh/ea/uc/i6afa44480103491ef201c2397603fb10d82013cc87800c016340014001804100000000/ndelapazruiz.png
+    tags: ["mon-workshop"]
   - name: Pieter Trapman
     prefix: "prof. dr. "
     tags: ["talk-trapman", "hero"]
@@ -80,90 +94,177 @@ speakers:
     image_url: /assets/images/events/dsw2026/nan-chen.webp
     description: |
       <p>Nan Chen is a PhD candidate at the University of Twente working in network data science and machine learning. Her research explores how network science methods can uncover structure and dynamics in complex systems, spanning brain networks and ecological networks.</p>
+  - name: Tom Boogerd
+    prefix: "ir. "
+    affiliation: University of Twente
+    url: https://people.utwente.nl/t.c.boogerd
+    image_url: https://utwente.becdn.net/.wh/ea/uc/id34fa64401038b2ff201788c7603fbb7890cd130c88f0c016340014001804100000000/tcboogerd.jpg
+    tags: ["mon2-workshop"]
+    description: |
+      <p>Tom Boogerd is a Policy Advisor Research as part of BMS Research Support, offering support on grant support, ethics, privacy, and policy. He is also the UT-wide program manager of the Recognition and Rewards program.</p>
 events:
-  - title: "Datathon: kick-off"
-    type: practicals
+  # MONDAY
+  - title: "Introduction: Complex Systems and Citation Prediction"
+    type: lectures
     start: 2026-06-15 13:45
     end: 2026-06-15 14:30
-    location: Langezijds 2516 (Instruction Room)
-    description: Introduction to the datathon, finding and matching teams.
-    tag: mon-practical
-  - title: "Workshop: Text Analysis and LLMs"
-    type: practicals
-    start: 2026-06-16 13:45
-    end: 2026-06-16 15:30
-    location: Citadel T300 (Teaching and Learning Lab)
-    tag: tue-practical
-    description: Introduction to methods of text analysis for research, followed by a practical hands-on leveraging LLM's for automated text analysis on the BDSi local inference mini-cluster.
-  - title: "Workshop: Network Science" 
-    type: practicals
-    start: 2026-06-17 13:45
-    end: 2026-06-17 15:30
-    location: Citadel T300 (Teaching and Learning Lab)
-    tag: wed-practical
-    description: Introduction to network science, followed by a hands-on practical implementing network metrics in R using the datathon dataset. 
-  - title: "Workshop: Data Wrangling and Visualization"
-    type: practicals
-    start: 2026-06-18 13:45
-    end: 2026-06-18 15:30
-    location: Citadel T300 (Teaching and Learning Lab)
-    tag: thu-practical
-    description: Data Wrangling (preparing 'raw' data for anaylsis) and visualization (presenting data in a persuasive manner) are the fundamental building blocks of data science. In this hands-on practical we'll combine short theoretical presentations with real world examples, before directly applying these skills to the datathon dataset.
-  - title: "Workshop: Machine Learning"
-    type: practicals
-    start: 2026-06-19 13:45
-    end: 2026-06-19 15:30
-    location: Citadel T300 (Teaching and Learning Lab)
-    tag: fri-practical
-    description: Machine Learning encompasses everything from 'traditional' statistics to generative artificial intelligence. We'll provide an overview of the types of machine learning, and what the relative advantages are. After the break, we'll get hands-on and practice implementing these techniques in R. We'll use tidymodels, a modern framework that makes it easy to create a structured research pipeline that is both replicable and flexible.
-  - title: "Datathon: Submission deadline"
+    location: Langezijds 2516 (InstructionLab)
+    tag: mon-lecture
+    description: Opening of the data science week. Anna provides a short introduction to complex systems and our datathon problem, citation prediction. Anna will give an overview of the schedule, and how to participate in the datathon.
+  - title: "Coffee Break: Group Formation"
     type: other
-    start: 2026-06-21 23:59
-    end: 2026-06-21 23:59
-    description: Deadline for datathon submissions on the leaderboard.
-  - title: "Datathon: Team presentations"
+    start: 2026-06-15 14:30
+    end: 2026-06-15 14:45
+    location: Langezijds 2516 (InstructionLab)
+  - title: "Workshop: An Introduction to research code publishing"
     type: lectures
-    start: 2026-06-22 13:45
-    end: 2026-06-22 14:30 
-    location: Citadel T300 (Teaching and Learning Lab)
-    description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
-  - title: "Datathon: Prize ceremony"
-    type: speaker
-    start: 2026-06-22 14:45
-    end: 2026-06-22 15:00
-    location: Citadel T300 (Teaching and Learning Lab)
-    description: Prizes for the best performing, most innovative, and most noteworthy solutions.
-    tag: fin-prizes
+    start: 2026-06-15 14:45
+    end: 2026-06-15 15:30
+    location: Langezijds 2516 (InstructionLab)
+    description: "<p>This workshop introduces a practical workflow designed to enhance the impact and reproducibility of your research code. Participants will learn how to manage their software outputs while aligning with the University of Twente (UT) data management guidelines. This workshop primarily targets first-year UT PhD candidates and researchers interested in learning to code. The main highlights include learning how to:</p><ul><li>Assess research code as a primary scientific output.</li><li>Apply the UT  research code management workflow.</li><li>Evaluate the significance of research code quality, reuse, and reproducibility.</li><li>Leverage the benefits of the UT research software policy, guidelines, and management plan.</li></ul>"
+    tag: mon-workshop
+  - title: "Open Practical: Getting Data, Setting up the repository, first steps in Git and R"
+    type: practicals
+    start: 2026-06-15 15:45
+    end: 2026-06-15 16:30
+    location: Langezijds 2516 (InstructionLab)
+    tag: mon-practical
+    description: "<p>This open practical session gives you time to get started with the datathon. Work on your own pace with getting the data, setting up your repository, and taking your first steps in Git and R. Anna and Karel will be on hand to answer questions and provide guidance.</p>"
 
-  # SPEAKERS 
-  - title: "Lunch talk: Pieter Trapman"
-    type: speaker
-    start: 2026-06-18 12:45
-    end: 2026-06-18 13:30
-    location: Citadel T300 (Teaching and Learning Lab)
-    description: "Topic: Epidemic spreading on networks. Abstract will follow."
-    tag: talk-trapman
+  # TUESDAY
   - title: "Lunch talk: Leto Peel"
     type: speaker
     start: 2026-06-16 12:45
     end: 2026-06-16 13:30
     location: Citadel T300 (Teaching and Learning Lab)
-    description: "Topic: Social networks and communities. Abstract will follow."
+    description: "Abstract will be added soon."
     tag: talk-peel
-  - title: "Lunch talk: Akrati Saxena (online)"
+  - title: "Lecture: Text Analysis with local LLMs"
+    type: lectures
+    start: 2026-06-16 13:45
+    end: 2026-06-16 14:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: tue-lecture
+  - title: "Workshop: Topic Modelling, Embeddings and Classification with LLMs in R [Tidytext]"
+    type: lectures
+    start: 2026-06-16 14:45
+    end: 2026-06-16 15:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "<p>This workshop covers setting up APIs for local LLMs, extracting embeddings from text, and performing text clustering and topic modelling. Participants will explore prompt engineering and text classification techniques using LLMs, all while working with the Tidytext package for handling text data in R.</p>"
+    tag: tue-workshop
+    speakers_inline: true
+  - title: "Open Practical: setting up local LLMs, more text analysis help with R"
+    type: practicals
+    start: 2026-06-16 15:45
+    end: 2026-06-16 16:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: tue-practical
+    description: "<p>This open practical session gives you time to apply today's lecture materials to your datathon work. Set up your local LLM, experiment with text analysis techniques in R, and get help from Anna and Karel who will be on hand to answer questions and provide guidance.</p>"
+
+  # WEDNESDAY
+  - title: "Lecture: complex networks"
+    type: lectures
+    start: 2026-06-17 13:45
+    end: 2026-06-17 14:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: wed-lecture
+  - title: "Workshop: Network Analysis with R [Tidygraph]"
+    type: lectures
+    start: 2026-06-17 14:45
+    end: 2026-06-17 15:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "<p>This workshop introduces network analysis using the Tidygraph and igraph packages in R. Participants will learn to visualize networks, extract key metrics such as degree centrality and cluster coefficient, and apply the Leiden algorithm to detect communities within networks.</p>"
+    tag: wed-workshop
+    speakers_inline: true
+  - title: "Open Practical: Q&A and free coding"
+    type: practicals
+    start: 2026-06-17 15:45
+    end: 2026-06-17 16:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: wed-practical
+    description: "<p>This open practical session gives you time to apply today's lecture materials to your datathon work. Work on your own pace with network analysis, and get help from Anna and Karel who will be on hand to answer questions and provide guidance.</p>"
+
+  # THURSDAY
+  - title: "Lunch talk: Epidemics and networks: When does heterogeneity matter?"
+    type: speaker
+    start: 2026-06-18 12:45
+    end: 2026-06-18 13:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "<p>We will discuss stochastic models for the spread of infectious diseases in homogeneous populations and in populations structured through a random network. We introduce some important quantities, such as the basic reproduction number, the (often observable) real time growth rate of the epidemic and herd-immunity threshold.</p><p>We show that the relationship between the real time growth rate and the basic reproduction number is quite insensitive to the underlying network structure. While the underlying network structure is important for the herd immunity level, if immunity is obtained through spread of the disease and not through vaccination.</p><p>This talk is based on joint work with F Ball, JS Dhersin, VC Tran, J Wallinga and T Britton in Journal of The Royal Society Interface, 2016 and with T Britton and F Ball in Science, 2020</p>"
+    tag: talk-trapman
+  - title: "Lecture: Visualization"
+    type: lectures
+    start: 2026-06-18 13:45
+    end: 2026-06-18 14:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: thu-lecture
+    description: "<p>This lecture explores the principles and purpose of effective data visualization, covering how to craft visualizations that gain insight and save time by highlighting key patterns. Participants will learn what makes a good visualization — where data, story, goal, and visual form complement each other — and explore the grammar of graphics and LangVIS as useful frameworks for understanding the building blocks of visualizations.</p><p>The lecture also addresses how visualizations can mislead and how to recognize bias in chart design. Participants will leave with practical guidance on both crafting and viewing visualizations: how to present data clearly without distortion, provide appropriate context, and ask critical questions about the visualizations we encounter in academia as well as in our daily life. </p>"
+  - title: "Workshop: Data Wrangling and Data Exploration in R [Tidyverse]"
+    type: lectures
+    start: 2026-06-18 14:45
+    end: 2026-06-18 15:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "<p>This workshop covers essential data wrangling and exploration techniques using the Tidyverse in R. Participants will learn tips and tricks for handling data frames, cleaning data including text processing, and performing exploratory data analysis to better understand their datasets.</p>"
+    tag: thu-workshop
+    speakers_inline: true
+  - title: "Drinks and Poster Session"
+    type: socials
+    start: 2026-06-18 16:00
+    end: 2026-06-18 18:00
+    location: Teams Room LA2518
+    tag: drinks
+
+  # FRIDAY
+  - title: "Lunch talk: Why Network Algorithms Can Be Unfair? and What to Do About It? (online)"
     type: speaker
     start: 2026-06-19 12:45
     end: 2026-06-19 13:30
     location: Citadel T300 (Teaching and Learning Lab)
-    description: "Topic: Algorithmic fairness on networks. Abstract will follow."
+    description: "<p>Complex networks, such as social, financial, e-commerce, and criminal networks, provide a powerful framework for representing real-world systems by capturing intricate structural patterns and interactions, consisting of nodes (entities) and edges (connections or interactions). For example, in social networks, nodes represent individuals, and edges denote social connections, while in banking transaction networks, nodes correspond to bank accounts, and edges represent financial transactions. Complex networks are analyzed to understand individual and group behavior at a large scale and solve critical research problems, such as fraud detection, link prediction, social media surveillance, and resource allocation. However, these networks often encode structural inequalities related to gender, ethnicity, race, or socioeconomic status. Moreover, groups' distribution may be inherently imbalanced, with certain groups being underrepresented or more sparsely connected. If such structural inequalities are not considered while designing network analysis algorithms, the outcome might be unfair, particularly disadvantaging minorities or underrepresented groups.</p><p>In this talk, I will highlight how the structural inequalities of complex networks impact the fairness of different network analysis methods using a case study of link prediction. I will first discuss link prediction methods and the impact of structural inequalities on the fairness of link prediction. Next, I will discuss a few approaches in depth to address structural biases for fair and diverse link prediction. Finally, I will briefly introduce other approaches for developing fair solutions across diverse downstream network analysis tasks, along with the primary research focus of our group.</p>"
     tag: talk-saxena
-  - title: "Short talk: From Brain Networks to Ecological Networks: Understanding Complex Systems Through Network Science"
+  - title: "Lecture: Modelling"
+    type: lectures
+    start: 2026-06-19 13:45
+    end: 2026-06-19 14:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: fri-lecture
+  - title: "Workshop: Machine Learning with R [Tidymodels]"
+    type: lectures
+    start: 2026-06-19 14:45
+    end: 2026-06-19 15:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    description: "<p>This workshop introduces the tidymodels framework in R, guiding participants through the Tidymodels workflow from feature generation and model training to evaluation and feature explanations.</p>"
+    tag: fri-workshop
+    speakers_inline: true
+  - title: "Open Practical: putting it all together: the Datathon Submissions"
+    type: practicals
+    start: 2026-06-19 15:45
+    end: 2026-06-19 16:30
+    location: Citadel T300 (Teaching and Learning Lab)
+    tag: fri-practical
+    description: "<p>This open practical session gives you time to put everything together ahead of the datathon deadline. Work on your final submissions, refine your models, and get help from Anna and Karel who will be on hand to answer questions and provide guidance.</p>"
+    speakers_inline: true
+
+  # MONDAY 22
+  - title: "PhD Talk: Nan Chen (University of Twente) — From Brain Networks to Ecological Networks: Understanding Complex Systems Through Network Science"
     type: speaker
-    start: 2026-06-22 13:15
-    end: 2026-06-22 13:30
-    location: Langezijds 2516 (Instruction Room)
-    description: "Complex systems are everywhere, from the human brain to ecological communities. Although these systems differ greatly in scale and function, they share a common characteristic: they consist of many interacting components whose collective behavior cannot be understood by studying individual elements alone. Network science provides a powerful framework for representing and analyzing such interactions. In this talk, I will share my research journey to show how network science can be used to investigate complex systems through two research domains: brain networks and ecological networks."
+    start: 2026-06-22 14:15
+    end: 2026-06-22 14:30
+    location: Langezijds 2516 (InstructionLab)
+    description: "<p>Complex systems are everywhere, from the human brain to ecological communities. Although these systems differ greatly in scale and function, they share a common characteristic: they consist of many interacting components whose collective behavior cannot be understood by studying individual elements alone. Network science provides a powerful framework for representing and analyzing such interactions. In this talk, I will share my research journey to show how network science can be used to investigate complex systems through two research domains: brain networks and ecological networks.</p>"
     tag: talk-chen
+  - title: "Closing: Datathon Winners and Solutions"
+    type: lectures
+    start: 2026-06-22 14:45
+    end: 2026-06-22 15:30
+    location: Langezijds 2516 (InstructionLab)
+  - title: "Workshop: Beyond citations: a narrative approach to reflecting on impact"
+    type: lectures
+    start: 2026-06-22 15:45
+    end: 2026-06-22 16:30
+    location: Langezijds 2516 (InstructionLab)
+    tag: mon2-workshop
+    description: "Description will be added soon."
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
@@ -383,7 +484,7 @@ Further details will be made available in the coming weeks and months.
 <h5 class="h6">{{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}{% if event.location %}{% if event.location == "TBD" %}, location: TBD{% else %}, {{ event.location }}{% endif %}{% endif %}</h5>
 
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains event.tag" %}
-{% if event.type == "practicals" %}
+{% if event.type == "practicals" or event.speakers_inline %}
   {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 {% else %}
   {% include profile-widget-list-generic.html speakers=_speakers %}
