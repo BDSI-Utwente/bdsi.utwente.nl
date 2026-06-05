@@ -132,12 +132,12 @@ events:
     description: "<p>This open practical session gives you time to get started with the datathon. Work on your own pace with getting the data, setting up your repository, and taking your first steps in Git and R. Anna and Karel will be on hand to answer questions and provide guidance.</p>"
 
   # TUESDAY
-  - title: "Lunch talk: Leto Peel"
+  - title: "Lunch talk: Success, collaborations and the networks we keep"
     type: speaker
     start: 2026-06-16 12:45
     end: 2026-06-16 13:30
     location: Citadel T300 (Teaching and Learning Lab)
-    description: "Abstract will be added soon."
+    description: "What makes a scientific career succeed? We tend to reach for the obvious answers — papers, citations, titles — but science itself is now something we can study as data: a vast, shifting network of who builds on whom and who works with whom. I will take a look at what that network can tell us, from the shape of science as a whole down to the collaboration patterns of individual researchers, before turning the question back on itself. We count certain things as success — but what are we really measuring, and what slips through?"
     tag: talk-peel
   - title: "Lecture: Text Analysis with local LLMs"
     type: lectures
