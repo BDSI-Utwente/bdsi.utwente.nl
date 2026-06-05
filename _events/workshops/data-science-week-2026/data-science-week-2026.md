@@ -264,7 +264,7 @@ events:
     end: 2026-06-22 16:30
     location: Langezijds 2516 (InstructionLab)
     tag: mon2-workshop
-    description: "Description will be added soon."
+    description: "<p>Note: this description is provisional, and likely to change.</p><p>Citation counts are an incomplete and often misleading measure of research impact. This workshop introduces a narrative approach to reflecting on and capturing the broader impact of your work — from policy influence and public engagement to open science practices and societal outcomes.</p><p>Based on the 'Let's Talk About Impact!' series, participants will explore practical frameworks for articulating impact beyond bibliometrics, including impact pathways, sphere of control, and capturing different types of impact across grant contexts. Whether you're preparing an impact statement for a grant application, reflecting on your career trajectory, or simply curious about how to communicate the value of your research, this workshop offers tools and perspectives to go beyond the numbers.</p>"
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />

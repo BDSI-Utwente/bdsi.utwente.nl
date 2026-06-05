@@ -13,7 +13,7 @@ Static Jekyll site for the Behavioural Data Science incubator (BMS faculty, UT).
 ## Commands
 
 ```sh
-bundler install                          # install deps (run after any Gemfile change)
+bundle install                           # install deps (run after any Gemfile change)
 bundle exec jekyll serve                 # local dev at http://localhost:4000
 bundle exec jekyll serve -l              # same + live-reload
 bundle exec jekyll build                 # production build → _site/
@@ -21,10 +21,15 @@ bundle exec htmlproofer --only-4xx --ignore-status-codes "403,429" --assume-exte
                                          # dead-link check (CI only)
 ```
 
+## Platform
+
+- Lockfile platform: `x64-mingw-ucrt`. The `wdm` gem is pinned for Windows compatibility.
+
 ## Content conventions
 
-- Each collection folder (`_news/`, `_blogs/`, `_events/`, `_team/`, `_services/`, `_communities/`, `_projects/`) holds Markdown files with YAML front matter.
-- Permalinks: `pretty` (no `.html` extension). Apache rewrite in `.htaccess` appends `.html` on the server.
+- Collections with `output: true` (produce pages): `_news/`, `_blogs/`, `_events/`, `_services/`, `_communities/`, `_projects/`, `_archive/`
+- Collections with `output: false` (data-only, no pages): `_partners/`, `_team/`
+- Permalinks: `pretty` (no `.html` extension). `.htaccess` on the webserver appends `.html` via rewrite.
 - `future: true` in `_config.yml` — events/news with future dates render locally and in CI.
 - Calendar data is auto-generated (see Calendar Sync below). Hand-edit `_data/calendar.yaml` only for recurring entries the sync does not cover.
 
@@ -46,5 +51,5 @@ node ut-events-scraper.js <url> <source-name> ../../_data/<output>.yaml
 
 ## Ruby & Node versions
 
-- Ruby 2.7 (CI), Bundler 2.7.x (lockfile). Use `ruby/setup-ruby@v1` with `bundler-cache: true`.
+- Ruby 2.7 (CI), Bundler 4.0.12 (lockfile). Use `ruby/setup-ruby@v1` with `bundler-cache: true`.
 - Node 20 for calendar sync only.
