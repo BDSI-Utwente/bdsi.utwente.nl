@@ -104,12 +104,12 @@ speakers:
       <p>Tom Boogerd is a Policy Advisor Research as part of BMS Research Support, offering support on grant support, ethics, privacy, and policy. He is also the UT-wide program manager of the Recognition and Rewards program.</p>
 events:
   # MONDAY
-  - title: "Walk-in and registration
+  - title: "Walk-in and registration" 
     type: other
     start: 2026-06-15 13:20
     end: 2026-06-15 13:30
     location: Langezijds 2516 (InstructionLab)
-  - title: "Welcome to Data Science Week
+  - title: "Welcome to Data Science Week"
     type: other
     start: 2026-06-15 13:30
     end: 2026-06-15 13:40
@@ -263,18 +263,23 @@ events:
     location: Langezijds 2516 (InstructionLab)
     description: "<p>Complex systems are everywhere, from the human brain to ecological communities. Although these systems differ greatly in scale and function, they share a common characteristic: they consist of many interacting components whose collective behavior cannot be understood by studying individual elements alone. Network science provides a powerful framework for representing and analyzing such interactions. In this talk, I will share my research journey to show how network science can be used to investigate complex systems through two research domains: brain networks and ecological networks.</p>"
     tag: talk-chen
-  - title: "Closing: Datathon Winners and Solutions"
+  - title: "Awards: Datathon Winners and Solutions"
     type: lectures
     start: 2026-06-22 14:45
     end: 2026-06-22 15:30
     location: Langezijds 2516 (InstructionLab)
-  - title: "Workshop: Beyond citations: a narrative approach to reflecting on impact"
+  - title: "Outlook: Beyond citations: a narrative approach to reflecting on impact"
     type: lectures
-    start: 2026-06-22 15:45
-    end: 2026-06-22 16:30
+    start: 2026-06-22 15:35
+    end: 2026-06-22 16:20
     location: Langezijds 2516 (InstructionLab)
     tag: mon2-workshop
-    description: "<p>Note: this description is provisional, and likely to change.</p><p>Citation counts are an incomplete and often misleading measure of research impact. This workshop introduces a narrative approach to reflecting on and capturing the broader impact of your work — from policy influence and public engagement to open science practices and societal outcomes.</p><p>Based on the 'Let's Talk About Impact!' series, participants will explore practical frameworks for articulating impact beyond bibliometrics, including impact pathways, sphere of control, and capturing different types of impact across grant contexts. Whether you're preparing an impact statement for a grant application, reflecting on your career trajectory, or simply curious about how to communicate the value of your research, this workshop offers tools and perspectives to go beyond the numbers.</p>"
+    description: "<p>Citation counts are an incomplete and often misleading measure of research impact. This workshop introduces a narrative approach to reflecting on and capturing the broader impact of your work — from policy influence and public engagement to open science practices and societal outcomes.</p><p>Based on the 'Let's Talk About Impact!' series, participants will explore practical frameworks for articulating impact beyond bibliometrics, including impact pathways, sphere of control, and capturing different types of impact across grant contexts. Whether you're preparing an impact statement for a grant application, reflecting on your career trajectory, or simply curious about how to communicate the value of your research, this workshop offers tools and perspectives to go beyond the numbers.</p>"
+  - title: "Closing and Feedback"
+    type: other
+    start: 2026-06-22 16:20
+    end: 2026-06-22 16:30
+    location: Langezijds 2516 (InstructionLab)
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
