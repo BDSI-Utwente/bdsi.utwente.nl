@@ -104,6 +104,16 @@ speakers:
       <p>Tom Boogerd is a Policy Advisor Research as part of BMS Research Support, offering support on grant support, ethics, privacy, and policy. He is also the UT-wide program manager of the Recognition and Rewards program.</p>
 events:
   # MONDAY
+  - title: "Walk-in and registration
+    type: other
+    start: 2026-06-15 13:20
+    end: 2026-06-15 13:30
+    location: Langezijds 2516 (InstructionLab)
+  - title: "Welcome to Data Science Week
+    type: other
+    start: 2026-06-15 13:30
+    end: 2026-06-15 13:40
+    location: Langezijds 2516 (InstructionLab)
   - title: "Introduction: Complex Systems and Citation Prediction"
     type: lectures
     start: 2026-06-15 13:45
