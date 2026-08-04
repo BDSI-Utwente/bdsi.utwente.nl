@@ -1,12 +1,5 @@
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2026-08-03T15:00:00+00:00
-  end: 2026-08-03T16:00:00+00:00
-  date: 2026-08-03
-  endDate: 2026-08-03
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Langezijds 1514
   start: 2026-08-10T15:00:00+00:00
   end: 2026-08-10T16:00:00+00:00
   date: 2026-08-10
@@ -25,4 +18,11 @@
   end: 2026-08-24T16:00:00+00:00
   date: 2026-08-24
   endDate: 2026-08-24
+  time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Langezijds 1514
+  start: 2026-08-31T15:00:00+00:00
+  end: 2026-08-31T16:00:00+00:00
+  date: 2026-08-31
+  endDate: 2026-08-31
   time: 15:00 - 16:00
